@@ -28,14 +28,14 @@ Module owners **SHOULD NOT** map every RBAC Role Definition within this variable
 
 Therefore module owners **SHOULD** only map the most applicable and common RBAC Role Definition names for their module and **SHOULD NOT** exceed 15 RBAC Role Definitions in the variable.
 
-{{< hint type=important >}}
+{{% notice style="important" %}}
 
 Remember if the RBAC Role Definition name is not included in the variable this does not mean it cannot be declared, used and assigned to an identity via an RBAC Role Assignment as part of a module, as any RBAC Role Definition can be specified via its ID without being in the variable.
 
-{{< /hint >}}
+{{% /notice %}}
 
-{{< hint type=tip >}}
+{{% notice style="tip" %}}
 
 Review the [Bicep Contribution Guide's 'RBAC Role Definition Name Mapping' section](/Azure-Verified-Modules/contributing/bicep/#rbac-role-definition-name-mapping) for a code sample to achieve this requirement.
 
-{{< /hint >}}
+{{% /notice %}}

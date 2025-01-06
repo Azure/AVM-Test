@@ -19,7 +19,7 @@ images = ['images/hero.png']
     showVisitedLinks = false
     titleSeparator = '|'
     sidebarmenus = [
-      { type = 'page', identifier = 'home', main = false, disableTitle = true, pageRef = '' },
+      { type = 'page', identifier = 'home', main = true, disableTitle = true, pageRef = '' },
       # { type = 'menu', identifier = 'defined', main = true, disableTitle = true },
       # { type = 'menu', identifier = 'shortcuts', main = false, disableTitle = false },
     ]

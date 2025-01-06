@@ -26,8 +26,8 @@ Modules that deploy resources or patterns that support data redundancy **SHOULD*
 
 For example, a Storage Account module can simply set the `sku.name` property to `Standard_RAGZRS`. Whereas a SQL DB or Cosmos DB module will need to expose more properties, via parameters/variables, to allow the specification of the regions to replicate data to as per the consumers requirements.
 
-{{< hint type=note >}}
+{{% notice style="note" %}}
 
 For information on the data redundancy options in Azure, see [Cross-region replication in Azure](https://learn.microsoft.com/en-us/azure/reliability/cross-region-replication-azure)
 
-{{< /hint >}}
+{{% /notice %}}

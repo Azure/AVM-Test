@@ -28,7 +28,7 @@ Each module **MUST** have separate GitHub teams assigned for module owners **AND
 
 There **MUST NOT** be any GitHub repository permissions assigned to individual users.
 
-{{< hint type=note >}}
+{{% notice style="note" %}}
 The names for the GitHub teams for each approved module are already defined in the respective [Module Indexes](/Azure-Verified-Modules/indexes/). These teams **MUST** be created (and used) for each module.
 
 - [Bicep Resource Modules](/Azure-Verified-Modules/indexes/bicep/bicep-resource-modules/#module-name-telemetry-id-prefix-github-teams-for-owners--contributors)
@@ -38,11 +38,11 @@ The names for the GitHub teams for each approved module are already defined in t
 
 The `@Azure` prefix in the last column of the tables linked above represents the "Azure" GitHub organization all AVM-related repositories exist in. **DO NOT** include this segment in the team's name!
 
-{{< /hint >}}
+{{% /notice %}}
 
-{{< hint type=important >}}
+{{% notice style="important" %}}
 Non-FTE / external contributors (subject matter experts that aren't Microsoft employees) can't be members of the teams described in this chapter, hence, they won't gain any extra permissions on AVM repositories, therefore, they need to work in forks.
-{{< /hint >}}
+{{% /notice %}}
 
 <br>
 
@@ -53,9 +53,9 @@ The naming convention for the GitHub teams **MUST** follow the below pattern:
 - `<hyphenated module name>-module-owners-<bicep/tf>` - to be assigned as the GitHub repository's `Module Owners` team
 - `<hyphenated module name>-module-contributors-<bicep/tf>` - to be assigned as the GitHub repository's `Module Contributors` team
 
-{{< hint type=note >}}
+{{% notice style="note" %}}
 The naming convention for Bicep modules is slightly different than the naming convention for their respective GitHub teams.
-{{< /hint >}}
+{{% /notice %}}
 
 Segments:
 
@@ -86,11 +86,11 @@ Unless explicitly requested and agreed, members of the AVM core team or any PG t
 
 ##### Team memberships
 
-{{< hint type=note >}}
+{{% notice style="note" %}}
 
 In case of Bicep modules, permissions to the [BRM](https://aka.ms/BRM) repository (the repo of the Bicep Registry) are granted via assigning the `-module-owners-` and `-module-contributors-` teams to parent teams that already have the required level access configured. While it is the module owner's responsibility to initiate the addition of their teams to the respective parents, only the AVM core team can approve this parent-child relationship.
 
-{{< /hint >}}
+{{% /notice %}}
 
 Module owners **MUST** create their `-module-owners-` and `-module-contributors-` teams and as part of the provisioning process, they **MUST** request the addition of these teams to their respective parent teams (see the table below for details).
 
@@ -104,7 +104,7 @@ Examples - GitHub teams required for the Bicep resource module of Azure Virtual 
 - `avm-res-network-virtualnetwork-module-owners-bicep` --> assign to the `avm-technical-reviewers-bicep` parent team.
 - `avm-res-network-virtualnetwork-module-contributors-bicep` --> assign to the `avm-module-contributors-bicep` parent team.
 
-{{< hint type=tip >}}
+{{% notice style="tip" %}}
 Direct link to create a new GitHub team and assign it to its parent: [Create new team](https://github.com/orgs/Azure/new-team)
 
 Fill in the values as follows:
@@ -114,15 +114,15 @@ Fill in the values as follows:
 - **Parent team**: Follow the guidance above (see the Permissions granted through column in the table above).
 - **Team visibility**: `Visible`
 - **Team notifications**: `Enabled`
-{{< /hint >}}
+{{% /notice %}}
 
 ##### CODEOWNERS file
 
 As part of the "initial Pull Request" (that publishes the first version of the module), module owners **MUST** add an entry to the `CODEOWNERS` file in the BRM repository ([here](https://github.com/Azure/bicep-registry-modules/blob/main/.github/CODEOWNERS)).
 
-{{< hint type=note >}}
+{{% notice style="note" %}}
 Through this approach, the AVM core team will grant review permission to module owners as part of the standard PR review process.
-{{< /hint >}}
+{{% /notice %}}
 
 Every `CODEOWNERS` entry (line) **MUST** include the following segments separated by a single whitespace character:
 
@@ -145,7 +145,7 @@ Module owners **MUST** assign the `-module-owners-`and `-module-contributors-` t
 | `<module name>-module-owners-tf`       | AVM Terraform Module Owners - \<module name>       | **Admin**   | Direct assignment to repo   | Module owner can decide whether they want to work in a branch local to the repo or in a fork. |
 | `<module name>-module-contributors-tf` | AVM Terraform Module Contributors - \<module name> | **Write**   | Direct assignment to repo   | Need to work in a fork.                                                                       |
 
-{{< hint type=tip >}}
+{{% notice style="tip" %}}
 Direct link to create a new GitHub team: [Create new team](https://github.com/orgs/Azure/new-team)
 
 Fill in the values as follows:
@@ -155,4 +155,4 @@ Fill in the values as follows:
 - **Parent team**: Do not assign the team to any parent team.
 - **Team visibility**: `Visible`
 - **Team notifications**: `Enabled`
-{{< /hint >}}
+{{% /notice %}}

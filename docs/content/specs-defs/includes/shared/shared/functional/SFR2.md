@@ -34,8 +34,8 @@ They **SHOULD NOT** align to these recommendations when it requires an external 
 
 Alignment **SHOULD** prioritize best-practices and security over cost optimization, but **MUST** allow for these to be overridden by a module consumer easily, if desired.
 
-{{< hint type=tip >}}
+{{% notice style="tip" %}}
 
 Read the FAQ of [What does AVM mean by "WAF Aligned"?](/Azure-Verified-Modules/faq/#what-does-avm-mean-by-waf-aligned) for more detailed information and examples.
 
-{{< /hint >}}
+{{% /notice %}}

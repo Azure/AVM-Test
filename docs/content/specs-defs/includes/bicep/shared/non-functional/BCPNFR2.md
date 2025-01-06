@@ -22,11 +22,11 @@ priority: 11030
 
 #### ID: BCPNFR2 - Category: Documentation - Module Documentation Generation
 
-{{< hint type=note >}}
+{{% notice style="note" %}}
 
 This script/tool is currently being developed by the AVM team and will be made available very soon.
 
-{{< /hint >}}
+{{% /notice %}}
 
 Bicep modules documentation **MUST** be automatically generated via the provided script/tooling from the AVM team, providing the following headings:
 

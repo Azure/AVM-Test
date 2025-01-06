@@ -56,7 +56,7 @@ To leverage the feature you **MUST**:
 
   A full test file may look like:
 
-  {{< expand "➕ Pester post-deployment test file example" "expand/collapse">}}
+  {{% expand title="➕ Pester post-deployment test file example" expanded="false" %}}
 
   ```pwsh
   param (
@@ -79,4 +79,4 @@ To leverage the feature you **MUST**:
   }
   ```
 
-  {{< /expand >}}
+  {{% /expand %}}

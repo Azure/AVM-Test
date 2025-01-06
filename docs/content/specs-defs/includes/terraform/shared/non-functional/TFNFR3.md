@@ -34,8 +34,8 @@ Module owners **MUST** set a branch protection policy on their GitHub Repositori
 8. Do not allow bypassing the above settings
 9. Above settings **MUST** also be enforced to administrators
 
-{{< hint type=tip >}}
+{{% notice style="tip" %}}
 
 If you use the [template repository](/Azure-Verified-Modules/contributing/terraform/#template-repository) as mentioned in the contribution guide, the above will automatically be set.
 
-{{< /hint >}}
+{{% /notice %}}

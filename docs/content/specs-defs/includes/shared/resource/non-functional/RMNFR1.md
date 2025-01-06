@@ -21,13 +21,13 @@ priority: 3010
 
 #### ID: RMNFR1 - Category: Naming - Module Naming
 
-{{< hint type=note >}}
+{{% notice style="note" %}}
 
 We will maintain a set of CSV files in the [AVM Central Repo (`Azure/Azure-Verified-Modules`)](https://github.com/Azure/Azure-Verified-Modules/tree/main/docs/static/module-indexes) with the correct singular names for all resource types to enable checks to utilize this list to ensure repos are named correctly. To see the formatted content of these CSV files with additional information, please visit the [AVM Module Indexes](/Azure-Verified-Modules/indexes) page.
 
 This will be updated quarterly, or ad-hoc as new RPs/ Resources are created and highlighted via a check failure.
 
-{{< /hint >}}
+{{% /notice %}}
 
 Resource modules **MUST** follow the below naming conventions (all lower case):
 

@@ -32,8 +32,8 @@ Furthermore, as per [RMNFR2](/Azure-Verified-Modules/spec/RMNFR2), Resource Modu
 
 The name provided **MAY** be used by the module owner to generate the rest of the default name for child, extension, and interface resources if they wish to. For example, for the Private Endpoint mentioned above, the full default name that can be overridden by the consumer, **MAY** be `pep-<primary-resource-name>`.
 
-{{< hint type=tip >}}
+{{% notice style="tip" %}}
 
 If the resource does not have a documented abbreviation in [Abbreviation examples for Azure resources](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations), then the module owner is free to use a sensible prefix instead.
 
-{{< /hint >}}
+{{% /notice %}}

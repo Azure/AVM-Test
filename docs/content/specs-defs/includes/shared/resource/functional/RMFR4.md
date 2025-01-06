@@ -37,19 +37,19 @@ Resource modules support the following optional features/extension resources, as
 
 Resource modules **MUST NOT** deploy required/dependent resources for the optional features/extension resources specified above. For example, for Diagnostic Settings the resource module **MUST NOT** deploy the Log Analytics Workspace, this is expected to be already in existence from the perspective of the resource module deployed via another method/module etc.
 
-{{< hint type=note >}}
+{{% notice style="note" %}}
 
 Please note that the implementation of Customer Managed Keys from an ARM API perspective is different across various RPs that implement Customer Managed Keys in their service. For that reason you may see differences between modules on how Customer Managed Keys are handled and implemented, but functionality will be as expected.
 
-{{< /hint >}}
+{{% /notice %}}
 
 Module owners **MAY** choose to utilize cross repo dependencies for these "add-on" resources, or **MAY** chose to implement the code directly in their own repo/module. So long as the implementation and outputs are as per the specifications requirements, then this is acceptable.
 
-{{< hint type=tip >}}
+{{% notice style="tip" %}}
 
 Make sure to checkout the language specific specifications for more info on this:
 
 - [Bicep](/Azure-Verified-Modules/spec/BCPNFR1)
 - [Terraform](/Azure-Verified-Modules/spec/TFNFR1)
 
-{{< /hint >}}
+{{% /notice %}}

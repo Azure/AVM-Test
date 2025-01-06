@@ -28,8 +28,8 @@ Modules that deploy ***zonal*** resources **MUST** provide the ability to specif
 
 For both scenarios the modules **MUST** expose these configuration options via configurable parameters/variables.
 
-{{< hint type=note >}}
+{{% notice style="note" %}}
 
 For information on the differences between zonal and zone-redundant services, see [Availability zone service and regional support](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support#azure-services-with-availability-zone-support)
 
-{{< /hint >}}
+{{% /notice %}}

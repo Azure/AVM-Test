@@ -24,17 +24,17 @@ priority: 1160
 
 GitHub repositories where modules are held **MUST** use the below labels and **SHOULD** not use any additional labels:
 
-{{< expand "➕ AVM Standard GitHub Labels" "expand/collapse" >}}
+{{% expand title="➕ AVM Standard GitHub Labels" expanded="false" %}}
 
 These labels are available in a CSV file from [here](/Azure-Verified-Modules/governance/avm-standard-github-labels.csv)
 
 {{< ghLabelsCsvToTable header=true csv="/static/governance/avm-standard-github-labels.csv" >}}
 
-{{< /expand >}}
+{{% /expand %}}
 
 To help apply these to a module GitHub repository you can use the below PowerShell script:
 
-{{< expand "➕ Set-AvmGitHubLabels.ps1" "expand/collapse" >}}
+{{% expand title="➕ Set-AvmGitHubLabels.ps1" expanded="false" %}}
 
 For most scenario this is the command you'll need to call the below PowerShell script with, replacing the value for `RepositoryName`:
 
@@ -74,4 +74,4 @@ These `Set-AvmGitHubLabels.ps1` can be downloaded from <a href="/Azure-Verified-
 
 {{< include file="/static/scripts/Set-AvmGitHubLabels.ps1" language="powershell" options="linenos=false" >}}
 
-{{< /expand >}}
+{{% /expand %}}

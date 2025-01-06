@@ -29,6 +29,8 @@ Valid reasons for not using a Resource Module for a resource required by a Patte
 - When using a Resource Module would result in hitting scaling limitations and/or would reduce the capabilities of the Pattern Module due to the limitations of Azure Resource Manager.
 - Developing a Pattern Module under time constraint, without having all required Resource Modules readily available.
 
-{{< hint type=note >}}
+{{% notice style="note" %}}
+
 In the latter case, the Pattern Module **SHOULD** be updated to use the Resource Module when the required Resource Module becomes available, to avoid accumulating technical debt. Ideally, all required Resource Modules **SHOULD** be developed first, and then leveraged by the Pattern Module.
-{{< /hint >}}
+
+{{% /notice %}}
