@@ -1,5 +1,5 @@
 +++
-title = "Usage"
+title = "Usage Guide"
 linkTitle = 'Usage Guide'
 type = "chapter"
 weight = 3
