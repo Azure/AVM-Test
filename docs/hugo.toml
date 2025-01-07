@@ -29,6 +29,7 @@ images = ['images/hero.png']
     alwaysopen = true
     collapsibleMenu = false
     disableRootBreadcrumb = false
+    enableGitInfo = true
 
 [module]
   [[module.imports]]
