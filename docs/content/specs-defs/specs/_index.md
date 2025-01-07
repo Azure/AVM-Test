@@ -11,11 +11,11 @@ This section documents all the specifications for Azure Verified Modules (AVM) a
 
 ## Specifications by IaC Language
 
-{{< specsHistory folder="content/specs-defs/includes" recursive=true daysShown=30 >}}
+{{< tagsStats folder="content/specs-defs/includes" recursive=true >}}
 
 ## What changed recently?
 
-
+{{< specsHistory folder="content/specs-defs/includes" recursive=true daysShown=30 >}}
 
 ## How to navigate the specifications?
 
@@ -42,9 +42,7 @@ The following tags are used to qualify the specifications:
 
 Each tag is a concatenation of exactly one of the keys and one of the values, e.g., `Language-Bicep`, `Class-Resource`, `Type-Functional`, etc. When it's marked as `Multiple`, it means that the tag can have multiple values, e.g., `Language-Bicep, Language-Terraform`, or `Persona-Owner, Persona-Contributor`, etc. When it's marked as `Single`, it means that the tag can have only one value, e.g., `Type-Functional`, `Lifecycle-Initial`, etc.
 
-<details>
-
-<summary>Click here to see the definition of the Severity, Persona, Lifecycle and Validation tags...</summary>
+{{% expand title="➕ Click here to see the definition of the Severity, Persona, Lifecycle and Validation tags..." expanded="false" %}}
 
 **Severity**
 
@@ -72,7 +70,7 @@ How is this specification checked/validated/enforced?
 
 Note: the `BCP/` or `TF/` prefix is required as shared (language-agnostic) specifications may have different level of validation/enforcement per each language - e.g., it is possible that a specification is enforced by a CI pipeline for Bicep modules, while it is manually enforced for Terraform modules.
 
-</details>
+{{% /expand %}}
 
 ## Why are there language specific specifications?
 
