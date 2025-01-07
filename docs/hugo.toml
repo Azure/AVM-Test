@@ -19,15 +19,15 @@ images = ['images/hero.png']
     showVisitedLinks = false
     titleSeparator = '|'
     sidebarmenus = [
-      { type = 'page', identifier = 'home', main = true, disableTitle = true, pageRef = '' },
-      # { type = 'menu', identifier = 'defined', main = true, disableTitle = true },
+      { type = 'menu', identifier = 'defined', main = true, disableTitle = true },
+      # { type = 'page', identifier = 'home', main = true, disableTitle = true, pageRef = '' },
       # { type = 'menu', identifier = 'shortcuts', main = false, disableTitle = false },
     ]
     editURL = 'https://github.com/Azure/AVM-Test/edit/main/docs/content/${FilePath}'
     disableInlineCopyToClipBoard = true
     disableAnchorScrolling = false
-    alwaysopen = false
-    collapsibleMenu = true
+    alwaysopen = true
+    collapsibleMenu = false
     disableRootBreadcrumb = false
 
 [module]
@@ -59,19 +59,150 @@ images = ['images/hero.png']
 #   pageRef = '/'
 #   weight = 10
 
-# [[menu.defined]]
-#   identifier = 'overview'
-#   parent = 'home'
-#   name = 'Overview'
-#   weight = 20
+[[menu.defined]]
+  identifier = 'overview'
+  parent = 'home'
+  name = 'Overview'
+  weight = 1
 
-#   [[menu.defined]]
-#     identifier = 'introduction'
-#     parent = 'overview'
-#     name = 'Introduction'
-#     pageRef = '/overview/introduction'
-#     weight = 30
+  [[menu.defined]]
+    identifier = 'introduction'
+    parent = 'overview'
+    name = 'Introduction'
+    pageRef = '/overview/introduction'
+    weight = 1
 
+[[menu.defined]]
+  identifier = 'module-indexes'
+  parent = 'home'
+  name = 'Module Indexes'
+  pageRef = '/indexes'
+  weight = 2
+  params = { alwaysopen = true }
+
+  [[menu.defined]]
+    identifier = 'bicep-module-indexes'
+    parent = 'module-indexes'
+    name = 'Bicep'
+    pageRef = '/indexes/bicep'
+    weight = 1
+    params = { alwaysopen = false, collapsibleMenu = true }
+    
+    [[menu.defined]]
+      identifier = 'bicep-resource-module-indexes'
+      parent = 'bicep-module-indexes'
+      name = 'Resource Modules'
+      pageRef = '/indexes/bicep/bicep-resource-modules'
+      weight = 1
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'bicep-pattern-module-indexes'
+      parent = 'bicep-module-indexes'
+      name = 'Pattern Modules'
+      pageRef = '/indexes/bicep/bicep-pattern-modules'
+      weight = 2
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'bicep-utility-module-indexes'
+      parent = 'bicep-module-indexes'
+      name = 'Utility Modules'
+      pageRef = '/indexes/bicep/bicep-utility-modules'
+      weight = 3
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+  [[menu.defined]]
+    identifier = 'terraform-module-indexes'
+    parent = 'module-indexes'
+    name = 'Terraform'
+    pageRef = '/indexes/terraform'
+    weight = 2
+    params = { alwaysopen = false, collapsibleMenu = true }
+    
+    [[menu.defined]]
+      identifier = 'terraform-resource-module-indexes'
+      parent = 'terraform-module-indexes'
+      name = 'Resource Modules'
+      pageRef = '/indexes/terraform/tf-resource-modules'
+      weight = 1
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'terraform-pattern-module-indexes'
+      parent = 'terraform-module-indexes'
+      name = 'Pattern Modules'
+      pageRef = '/indexes/terraform/tf-pattern-modules'
+      weight = 2
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'terraform-utility-module-indexes'
+      parent = 'terraform-module-indexes'
+      name = 'Utility Modules'
+      pageRef = '/indexes/terraform/tf-utility-modules'
+      weight = 3
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+[[menu.defined]]
+  identifier = 'usage'
+  parent = 'home'
+  name = 'Usage Guide'
+  weight = 3
+
+  [[menu.defined]]
+    identifier = 'quickstart'
+    parent = 'usage'
+    name = 'Quickstart'
+    pageRef = '/usage/quickstart'
+    weight = 1
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'bicep-quickstart'
+      parent = 'quickstart'
+      name = 'Bicep'
+      pageRef = '/usage/quickstart/bicep'
+      weight = 1
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'terraform-quickstart'
+      parent = 'quickstart'
+      name = 'Terraform'
+      pageRef = '/usage/quickstart/terraform'
+      weight = 2
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+[[menu.defined]]
+  identifier = 'specs-defs'
+  parent = 'home'
+  name = 'Specifications & Definitions'
+  weight = 4
+
+  [[menu.defined]]
+    identifier = 'module-specs'
+    parent = 'specs-defs'
+    name = 'Module Specifications'
+    pageRef = '/specs-defs/specs'
+    weight = 1
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'bicep-specs'
+      parent = 'module-specs'
+      name = 'Bicep'
+      pageRef = '/specs-defs/specs/bicep'
+      weight = 1
+      params = { alwaysopen = true, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'terraform-specs'
+      parent = 'module-specs'
+      name = 'Terraform'
+      pageRef = '/specs-defs/specs/terraform'
+      weight = 2
+      params = { alwaysopen = true, collapsibleMenu = true }      
 
 
 [[menu.shortcuts]]
