@@ -14,8 +14,6 @@ tags: [
   Lifecycle-BAU, # SINGLE VALUE: this can be "Lifecycle-Initial" OR "Lifecycle-BAU" OR "Lifecycle-EOL"
   Validation-TBD # SINGLE VALUE (PER LANGUAGE): for Bicep, this can be "Validation-BCP/Manual" OR "Validation-BCP/CI/Informational" OR "Validation-BCP/CI/Enforced" and for Terraform, this can be "Validation-TF/Manual" OR "Validation-TF/CI/Informational" OR "Validation-TF/CI/Enforced"
 ]
-_build:
-  render: never
 priority: 4050
 ---
 
@@ -25,6 +23,6 @@ An item **MUST** be logged onto as an issue on the [AVM Central Repo (`Azure/Azu
 
 {{% notice style="important" title="Exception" %}}
 
-If the Resource Module adds no value, see Resource Module functional requirement [ID: RMFR2](/Azure-Verified-Modules/spec/RMFR2).
+If the Resource Module adds no value, see Resource Module functional requirement [ID: RMFR2]({{% siteparam base %}}/spec/RMFR2).
 
 {{% /notice %}}

@@ -14,8 +14,6 @@ tags: [
   Lifecycle-BAU, # SINGLE VALUE: this can be "Lifecycle-Initial" OR "Lifecycle-BAU" OR "Lifecycle-EOL"
   Validation-TBD # SINGLE VALUE: this can be "Validation-BCP/Manual" OR "Validation-BCP/CI/Informational" OR "Validation-BCP/CI/Enforced"
 ]
-_build:
-  render: never
 priority: 10020
 ---
 
@@ -25,6 +23,6 @@ Module owners **MAY** define common RBAC Role Definition names and IDs within a 
 
 However, they **MUST** use only the official RBAC Role Definition name within the variable and nothing else.
 
-To meet the requirements of [BCPFR2](/Azure-Verified-Modules/spec/BCPFR2), [BCPNFR5](/Azure-Verified-Modules/spec/BCPNFR5) and [BCPNFR6](/Azure-Verified-Modules/spec/BCPNFR6) you **MUST** use the below code sample in your AVM Modules to achieve this.
+To meet the requirements of [BCPFR2]({{% siteparam base %}}/spec/BCPFR2), [BCPNFR5]({{% siteparam base %}}/spec/BCPNFR5) and [BCPNFR6]({{% siteparam base %}}/spec/BCPNFR6) you **MUST** use the below code sample in your AVM Modules to achieve this.
 
 {{< include file="/static/includes/sample.rbacMapping.bicep" language="bicep" options="linenos=false" >}}

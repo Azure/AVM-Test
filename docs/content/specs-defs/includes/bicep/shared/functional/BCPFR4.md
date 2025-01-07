@@ -14,13 +14,11 @@ tags: [
   Lifecycle-BAU, # SINGLE VALUE: this can be "Lifecycle-Initial" OR "Lifecycle-BAU" OR "Lifecycle-EOL"
   Validation-TBD # SINGLE VALUE: this can be "Validation-BCP/Manual" OR "Validation-BCP/CI/Informational" OR "Validation-BCP/CI/Enforced"
 ]
-_build:
-  render: never
 priority: 10030
 ---
 
 #### ID: BCPFR4 - Category: Composition - Telemetry Enablement
 
-To comply with specifications outlined in [SFR3](/Azure-Verified-Modules/spec/SFR3) & [SFR4](/Azure-Verified-Modules/spec/SFR4) you **MUST** incorporate the following code snippet into your modules. Place this code sample in the "top level" `main.bicep` file; it is not necessary to include it in any nested Bicep files (child modules).
+To comply with specifications outlined in [SFR3]({{% siteparam base %}}/spec/SFR3) & [SFR4]({{% siteparam base %}}/spec/SFR4) you **MUST** incorporate the following code snippet into your modules. Place this code sample in the "top level" `main.bicep` file; it is not necessary to include it in any nested Bicep files (child modules).
 
 {{< include file="/static/includes/sample.telem.bicep" language="bicep" options="linenos=false" >}}

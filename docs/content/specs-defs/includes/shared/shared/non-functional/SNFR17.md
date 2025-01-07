@@ -16,8 +16,6 @@ tags: [
   Lifecycle-BAU, # SINGLE VALUE: this can be "Lifecycle-Initial" OR "Lifecycle-BAU" OR "Lifecycle-EOL"
   Validation-TBD # SINGLE VALUE (PER LANGUAGE): for Bicep, this can be "Validation-BCP/Manual" OR "Validation-BCP/CI/Informational" OR "Validation-BCP/CI/Enforced" and for Terraform, this can be "Validation-TF/Manual" OR "Validation-TF/CI/Informational" OR "Validation-TF/CI/Enforced"
 ]
-_build:
-  render: never
 priority: 1210
 ---
 
@@ -27,7 +25,7 @@ priority: 1210
 
 You cannot specify the patch version for Bicep modules in the public Bicep Registry, as this is automatically incremented by 1 each time a module is published. You can only set the Major and Minor versions.
 
-See the [Bicep Contribution Guide](/Azure-Verified-Modules/contributing/bicep/) for more information.
+See the [Bicep Contribution Guide]({{% siteparam base %}}/contributing/bicep/) for more information.
 
 {{% /notice %}}
 

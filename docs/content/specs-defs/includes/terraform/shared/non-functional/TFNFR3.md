@@ -14,8 +14,6 @@ tags: [
   Lifecycle-BAU, # SINGLE VALUE: this can be "Lifecycle-Initial" OR "Lifecycle-BAU" OR "Lifecycle-EOL"
   Validation-TBD # SINGLE VALUE: this can be "Validation-TF/Manual" OR "Validation-TF/CI/Informational" OR "Validation-TF/CI/Enforced"
 ]
-_build:
-  render: never
 priority: 21030
 ---
 
@@ -35,6 +33,6 @@ Module owners **MUST** set a branch protection policy on their GitHub Repositori
 
 {{% notice style="tip" %}}
 
-If you use the [template repository](/Azure-Verified-Modules/contributing/terraform/#template-repository) as mentioned in the contribution guide, the above will automatically be set.
+If you use the [template repository]({{% siteparam base %}}/contributing/terraform/#template-repository) as mentioned in the contribution guide, the above will automatically be set.
 
 {{% /notice %}}

@@ -15,8 +15,6 @@ tags: [
   Lifecycle-BAU, # SINGLE VALUE: this can be "Lifecycle-Initial" OR "Lifecycle-BAU" OR "Lifecycle-EOL"
   Validation-TBD # SINGLE VALUE (PER LANGUAGE): for Bicep, this can be "Validation-BCP/Manual" OR "Validation-BCP/CI/Informational" OR "Validation-BCP/CI/Enforced" and for Terraform, this can be "Validation-TF/Manual" OR "Validation-TF/CI/Informational" OR "Validation-TF/CI/Enforced"
 ]
-_build:
-  render: never
 priority: 1220
 ---
 
@@ -26,7 +24,7 @@ A module **SHOULD** avoid breaking changes, e.g., deprecating inputs vs. removin
 
 {{% notice style="info" %}}
 
-Modules that have not been released as `1.0.0` may introduce breaking changes, as explained in the previous ID [SNFR17](/Azure-Verified-Modules/spec/SNFR17). That means that you have to introduce non-breaking and breaking changes with a minor version jump, as long as the module has not reached version `1.0.0`.
+Modules that have not been released as `1.0.0` may introduce breaking changes, as explained in the previous ID [SNFR17]({{% siteparam base %}}/spec/SNFR17). That means that you have to introduce non-breaking and breaking changes with a minor version jump, as long as the module has not reached version `1.0.0`.
 
 {{% /notice %}}
 
@@ -36,6 +34,6 @@ There are, however, scenarios where you want to include breaking changes into a 
 
 See the language specific examples to find out how you can deal with deprecations in AVM modules.
 
-- [Bicep](/Azure-Verified-Modules/contributing/bicep/composition/#deprecation)
+- [Bicep]({{% siteparam base %}}/contributing/bicep/composition/#deprecation)
 
 {{% /notice %}}

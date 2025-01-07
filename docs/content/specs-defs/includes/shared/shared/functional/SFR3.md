@@ -14,8 +14,6 @@ tags: [
   Lifecycle-Initial, # SINGLE VALUE: this can be "Lifecycle-Initial" OR "Lifecycle-BAU" OR "Lifecycle-EOL"
   Validation-TBD # SINGLE VALUE (PER LANGUAGE): for Bicep, this can be "Validation-BCP/Manual" OR "Validation-BCP/CI/Informational" OR "Validation-BCP/CI/Enforced" and for Terraform, this can be "Validation-TF/Manual" OR "Validation-TF/CI/Informational" OR "Validation-TF/CI/Enforced"
 ]
-_build:
-  render: never
 priority: 30
 ---
 
@@ -23,13 +21,13 @@ priority: 30
 
 {{% notice style="important" %}}
 
-We will maintain a set of CSV files in the [AVM Central Repo (`Azure/Azure-Verified-Modules`)](https://github.com/Azure/Azure-Verified-Modules/tree/main/docs/static/module-indexes) with the required TelemetryId prefixes to enable checks to utilize this list to ensure the correct IDs are used. To see the formatted content of these CSV files with additional information, please visit the [AVM Module Indexes](/Azure-Verified-Modules/indexes) page.
+We will maintain a set of CSV files in the [AVM Central Repo (`Azure/Azure-Verified-Modules`)](https://github.com/Azure/Azure-Verified-Modules/tree/main/docs/static/module-indexes) with the required TelemetryId prefixes to enable checks to utilize this list to ensure the correct IDs are used. To see the formatted content of these CSV files with additional information, please visit the [AVM Module Indexes]({{% siteparam base %}}/indexes) page.
 
 These will also be provided as a comment on the module proposal, once accepted, from the AVM core team.
 
 {{% /notice %}}
 
-Modules **MUST** provide the capability to collect deployment/usage telemetry as detailed in [Telemetry](/Azure-Verified-Modules/help-support/telemetry/) further.
+Modules **MUST** provide the capability to collect deployment/usage telemetry as detailed in [Telemetry]({{% siteparam base %}}/help-support/telemetry/) further.
 
 To highlight that AVM modules use telemetry, an information notice **MUST** be included in the footer of each module's `README.md` file with the below content. (See more details on this requirement, [here](https://docs.opensource.microsoft.com/releasing/general-guidance/telemetry/).)
 
@@ -80,7 +78,7 @@ An example deployment name for a shortened module name would be: `46d3xbcp.res.d
 
 **General**: See the language specific contribution guides for detailed guidance and sample code to use in AVM modules to achieve this requirement.
 
-- [Bicep](/Azure-Verified-Modules/contributing/bicep/)
-- [Terraform](/Azure-Verified-Modules/contributing/terraform/)
+- [Bicep]({{% siteparam base %}}/contributing/bicep/)
+- [Terraform]({{% siteparam base %}}/contributing/terraform/)
 
 {{% /notice %}}

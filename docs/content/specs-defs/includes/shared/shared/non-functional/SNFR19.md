@@ -15,8 +15,6 @@ tags: [
   Lifecycle-BAU, # SINGLE VALUE: this can be "Lifecycle-Initial" OR "Lifecycle-BAU" OR "Lifecycle-EOL"
   Validation-TBD # SINGLE VALUE (PER LANGUAGE): for Bicep, this can be "Validation-BCP/Manual" OR "Validation-BCP/CI/Informational" OR "Validation-BCP/CI/Enforced" and for Terraform, this can be "Validation-TF/Manual" OR "Validation-TF/CI/Informational" OR "Validation-TF/CI/Enforced"
 ]
-_build:
-  render: never
 priority: 1230
 ---
 
@@ -32,7 +30,7 @@ Modules **MUST** be published to their respective language public registries.
 
 See the language specific contribution guides for detailed guidance and sample code to use in AVM modules to achieve this requirement.
 
-- [Bicep](/Azure-Verified-Modules/contributing/bicep/)
-- [Terraform](/Azure-Verified-Modules/contributing/terraform/)
+- [Bicep]({{% siteparam base %}}/contributing/bicep/)
+- [Terraform]({{% siteparam base %}}/contributing/terraform/)
 
 {{% /notice %}}

@@ -14,14 +14,12 @@ tags: [
   Lifecycle-BAU, # SINGLE VALUE: this can be "Lifecycle-Initial" OR "Lifecycle-BAU" OR "Lifecycle-EOL"
   Validation-TBD # SINGLE VALUE: this can be "Validation-BCP/Manual" OR "Validation-BCP/CI/Informational" OR "Validation-BCP/CI/Enforced"
 ]
-_build:
-  render: never
 priority: 10040
 ---
 
 #### ID: BCPFR5 - Category: Inputs - Availability Zones Implementation
 
-To implement requirement [SFR5](/Azure-Verified-Modules/spec/SFR5), the following convention **SHOULD** apply:
+To implement requirement [SFR5]({{% siteparam base %}}/spec/SFR5), the following convention **SHOULD** apply:
 
 {{< tabs "zones" >}}
   {{< tab "Module accepts multiple zones" >}}

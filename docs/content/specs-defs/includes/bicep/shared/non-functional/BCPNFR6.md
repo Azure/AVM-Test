@@ -14,8 +14,6 @@ tags: [
   Lifecycle-BAU, # SINGLE VALUE: this can be "Lifecycle-Initial" OR "Lifecycle-BAU" OR "Lifecycle-EOL"
   Validation-TBD # SINGLE VALUE: this can be "Validation-BCP/Manual" OR "Validation-BCP/CI/Informational" OR "Validation-BCP/CI/Enforced"
 ]
-_build:
-  render: never
 priority: 11070
 ---
 
@@ -31,6 +29,6 @@ Module owners **MUST** include the following roles in the variable for RBAC Role
 
 {{% notice style="tip" %}}
 
-Review the [Bicep Contribution Guide's 'RBAC Role Definition Name Mapping' section](/Azure-Verified-Modules/contributing/bicep/#rbac-role-definition-name-mapping) for a code sample to achieve this requirement.
+Review the [Bicep Contribution Guide's 'RBAC Role Definition Name Mapping' section]({{% siteparam base %}}/contributing/bicep/#rbac-role-definition-name-mapping) for a code sample to achieve this requirement.
 
 {{% /notice %}}

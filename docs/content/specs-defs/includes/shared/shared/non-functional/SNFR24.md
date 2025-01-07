@@ -15,13 +15,11 @@ tags: [
   Lifecycle-BAU, # SINGLE VALUE: this can be "Lifecycle-Initial" OR "Lifecycle-BAU" OR "Lifecycle-EOL"
   Validation-TBD # SINGLE VALUE (PER LANGUAGE): for Bicep, this can be "Validation-BCP/Manual" OR "Validation-BCP/CI/Informational" OR "Validation-BCP/CI/Enforced" and for Terraform, this can be "Validation-TF/Manual" OR "Validation-TF/CI/Informational" OR "Validation-TF/CI/Enforced"
 ]
-_build:
-  render: never
 priority: 1090
 ---
 
 #### ID: SNFR24 - Category: Testing - Testing Child, Extension & Interface Resources
 
-Module owners **MUST** test that child and extension resources and those [Bicep](/Azure-Verified-Modules/specs/bcp/interfaces/) or [Terreform](/Azure-Verified-Modules/specs/tf/interfaces/) interface resources that are supported by their modules, are validated in E2E tests as per [SNFR2](/Azure-Verified-Modules/spec/SNFR2) to ensure they deploy and are configured correctly.
+Module owners **MUST** test that child and extension resources and those [Bicep]({{% siteparam base %}}/specs/bcp/interfaces/) or [Terreform]({{% siteparam base %}}/specs/tf/interfaces/) interface resources that are supported by their modules, are validated in E2E tests as per [SNFR2]({{% siteparam base %}}/spec/SNFR2) to ensure they deploy and are configured correctly.
 
 These **MAY** be tested in a separate E2E test and **DO NOT** have to be tested in each E2E test.

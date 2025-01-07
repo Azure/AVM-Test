@@ -15,14 +15,12 @@ tags: [
   Lifecycle-BAU, # SINGLE VALUE: this can be "Lifecycle-Initial" OR "Lifecycle-BAU" OR "Lifecycle-EOL"
   Validation-TBD # SINGLE VALUE: this can be "Validation-BCP/Manual" OR "Validation-BCP/CI/Informational" OR "Validation-BCP/CI/Enforced"
 ]
-_build:
-  render: never
 priority: 11090
 ---
 
 #### ID: BCPNFR14 - Category: Composition - Versioning
 
-To meet [SNFR17](/Azure-Verified-Modules/spec/SNFR17) and depending on the changes you make, you may need to bump the version in the `version.json` file.
+To meet [SNFR17]({{% siteparam base %}}/spec/SNFR17) and depending on the changes you make, you may need to bump the version in the `version.json` file.
 
 {{< include file="/static/includes/sample.bicep.version.json" language="json" options="linenos=false" >}}
 
