@@ -24,6 +24,7 @@ images = ['images/hero.png']
       # { type = 'menu', identifier = 'shortcuts', main = false, disableTitle = false },
     ]
     editURL = 'https://github.com/Azure/AVM-Test/edit/main/docs/content/${FilePath}'
+    disableInlineCopyToClipBoard = true
     disableAnchorScrolling = false
     alwaysopen = false
     collapsibleMenu = true
