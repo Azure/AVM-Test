@@ -46,7 +46,7 @@ Each tag is a concatenation of exactly one of the keys and one of the values, e.
 
 **Severity**
 
-What's the severity or importance of this specification? See "[How to read the specifications?](/Azure-Verified-Modules/specs/module-specs/#how-to-read-the-specifications)" section for more details.
+What's the severity or importance of this specification? See "[How to read the specifications?]({{% siteparam base %}}/specs/module-specs/#how-to-read-the-specifications)" section for more details.
 
 **Persona**
 
