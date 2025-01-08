@@ -23,4 +23,6 @@ Terraform modules documentation **MUST** be automatically generated via [Terrafo
 
 A file called `.terraform-docs.yml` **MUST** be present in the root of the module and have the following content:
 
-{{< include file="/static/includes/terraform-docs.yml" language="yaml" options="linenos=false" >}}
+{{< highlight lineNos="false" type="yaml" wrap="true" title="" >}}
+  {{% include file="/static/includes/terraform-docs.yml" %}}  
+{{< /highlight >}}

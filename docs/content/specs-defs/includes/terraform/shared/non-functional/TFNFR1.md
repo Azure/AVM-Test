@@ -23,4 +23,6 @@ Where descriptions for variables and outputs spans multiple lines. The descripti
 
 Example:
 
-{{< include file="/static/includes/sample.var_example.tf" language="terraform" options="linenos=false" >}}
+{{< highlight lineNos="false" type="terraform" wrap="true" title="" >}}
+  {{% include file="/static/includes/sample.var_example.tf" %}}  
+{{< /highlight >}}

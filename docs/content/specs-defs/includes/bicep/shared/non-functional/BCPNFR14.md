@@ -22,7 +22,9 @@ priority: 11090
 
 To meet [SNFR17]({{% siteparam base %}}/spec/SNFR17) and depending on the changes you make, you may need to bump the version in the `version.json` file.
 
-{{< include file="/static/includes/sample.bicep.version.json" language="json" options="linenos=false" >}}
+{{< highlight lineNos="false" type="json" wrap="true" title="sample.bicep.version.json" >}}
+  {{% include file="/static/includes/sample.bicep.version.json" %}}
+{{< /highlight >}}
 
 The `version` value is in the form of `MAJOR.MINOR`. The PATCH version will be incremented by the CI automatically when publishing the module to the Public Bicep Registry once the corresponding pull request is merged. Therefore, contributions that would only require an update of the patch version, can keep the `version.json` file intact.
 

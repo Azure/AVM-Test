@@ -25,4 +25,6 @@ However, they **MUST** use only the official RBAC Role Definition name within th
 
 To meet the requirements of [BCPFR2]({{% siteparam base %}}/spec/BCPFR2), [BCPNFR5]({{% siteparam base %}}/spec/BCPNFR5) and [BCPNFR6]({{% siteparam base %}}/spec/BCPNFR6) you **MUST** use the below code sample in your AVM Modules to achieve this.
 
-{{< include file="/static/includes/sample.rbacMapping.bicep" language="bicep" options="linenos=false" >}}
+{{< highlight lineNos="false" type="bicep" wrap="true" title="sample.rbacMapping.bicep" >}}
+  {{% include "/static/includes/sample.rbacMapping.bicep" %}}
+{{< /highlight >}}

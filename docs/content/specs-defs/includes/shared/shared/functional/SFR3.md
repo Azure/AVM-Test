@@ -31,7 +31,7 @@ Modules **MUST** provide the capability to collect deployment/usage telemetry as
 
 To highlight that AVM modules use telemetry, an information notice **MUST** be included in the footer of each module's `README.md` file with the below content. (See more details on this requirement, [here](https://docs.opensource.microsoft.com/releasing/general-guidance/telemetry/).)
 
-{{% expand title="➕ Telemetry Information Notice" expanded="false" %}}
+##### Telemetry Information Notice
 
 {{% notice style="note" %}}
 
@@ -42,10 +42,11 @@ The following information notice is automatically added at the bottom of the `RE
 
 {{% /notice %}}
 
-`## Data Collection`
-{{< include file="static/includes/telemetry-information-notice.md" language="md" options="linenos=false" >}}
+{{< highlight lineNos="false" type="markdown" wrap="true" title="" >}}
+## Data Collection
 
-{{% /expand %}}
+{{% include file="/static/includes/telemetry-information-notice.md" %}}  
+{{< /highlight >}}
 
 ##### Bicep
 

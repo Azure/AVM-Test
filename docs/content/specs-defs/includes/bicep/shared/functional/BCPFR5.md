@@ -21,11 +21,10 @@ priority: 10040
 
 To implement requirement [SFR5]({{% siteparam base %}}/spec/SFR5), the following convention **SHOULD** apply:
 
-{{< tabs "zones" >}}
-  {{< tab "Module accepts multiple zones" >}}
-  In this case, the parameter should be implemented like
+{{< tabs title="Availability Zones" >}}
+{{% tab title="Module accepts multiple zones" %}}
 
-  ```bicep
+  {{< highlight lineNos="false" type="bicep" wrap="true" title="" >}}
   @description('Optional. The Availability Zones to place the resources in.')
   @allowed([
     1
@@ -45,13 +44,12 @@ To implement requirement [SFR5]({{% siteparam base %}}/spec/SFR5), the following
       zones: map(zones, zone => string(zone))
     }
   }
-  ```
+  {{< /highlight >}}
 
-  {{< /tab >}}
-  {{< tab "Module accepts a single zone" >}}
-  In this case, the parameter should be implemented using a singular-named `zone` parameter of type `int` like
+{{% /tab %}}
+{{% tab title="Module accepts a single zone" %}}
 
-  ```bicep
+  {{< highlight lineNos="false" type="bicep" wrap="true" title="" >}}
   @description('Required. The Availability Zone to place the resource in. If set to 0, then Availability Zone is not set.')
   @allowed([
     0
@@ -68,7 +66,8 @@ To implement requirement [SFR5]({{% siteparam base %}}/spec/SFR5), the following
       zones: zone != 0 ? [ string(zone) ] : null
     }
   }
-  ```
+  {{< /highlight >}}
 
-  {{< /tab >}}
+{{% /tab %}}
+
 {{< /tabs >}}
