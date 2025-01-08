@@ -1,0 +1,21 @@
+{{ $tags := index . "pageTags" }}
+{{ $baseURL := index . "baseURL" }}
+{{ $class := index . "class" }}
+
+{{ with $tags }}
+  <div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: rgb(146, 146, 146);">
+    <ul>
+      {{ range sort . }}
+        <li>
+          <a
+            class="term-link"
+            href="{{ $baseURL }}tags/{{ . | urlize }}"
+            title="All specifications tagged with '{{ . }}'"
+          >
+            {{ . }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}
