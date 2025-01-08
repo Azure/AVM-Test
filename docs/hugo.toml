@@ -50,9 +50,15 @@ enableGitInfo = true
     noUgly = true
     permalinkable = false
 
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+
 [markup.goldmark.renderer]
     unsafe = true
     hardWraps = true
+
+[markup.goldmark.parser]
+  autoHeadingID = true
   
 # [[menu.defined]]
 #   pre = '<i class="fa-fw fas fa-home"></i> '
@@ -198,13 +204,85 @@ enableGitInfo = true
       weight = 1
       params = { alwaysopen = true, collapsibleMenu = true }
 
+      [[menu.defined]]
+        identifier = 'bicep-resource-specs'
+        parent = 'bicep-specs'
+        name = 'Resource'
+        pageRef = '/specs-defs/specs/bicep/resource'
+        weight = 1
+        params = { alwaysopen = false, collapsibleMenu = true }
+
+        [[menu.defined]]
+          identifier = 'bicep-resource-interfaces'
+          parent = 'bicep-resource-specs'
+          name = 'Interfaces'
+          pageRef = '/specs-defs/specs/bicep/resource/interfaces'
+          weight = 1
+          params = { alwaysopen = true, collapsibleMenu = true }        
+
+      [[menu.defined]]
+        identifier = 'bicep-pattern-specs'
+        parent = 'bicep-specs'
+        name = 'Pattern'
+        pageRef = '/specs-defs/specs/bicep/pattern'
+        weight = 2
+        params = { alwaysopen = true, collapsibleMenu = true }
+
+      [[menu.defined]]
+        identifier = 'bicep-utility-specs'
+        parent = 'bicep-specs'
+        name = 'Utility'
+        pageRef = '/specs-defs/specs/bicep/utility'
+        weight = 3
+        params = { alwaysopen = true, collapsibleMenu = true }          
+
     [[menu.defined]]
       identifier = 'terraform-specs'
       parent = 'module-specs'
       name = 'Terraform'
       pageRef = '/specs-defs/specs/terraform'
       weight = 2
-      params = { alwaysopen = true, collapsibleMenu = true }      
+      params = { alwaysopen = true, collapsibleMenu = true }
+
+      [[menu.defined]]
+        identifier = 'terraform-resource-specs'
+        parent = 'terraform-specs'
+        name = 'Resource'
+        pageRef = '/specs-defs/specs/terraform/resource'
+        weight = 1
+        params = { alwaysopen = false, collapsibleMenu = true }
+
+        [[menu.defined]]
+          identifier = 'terraform-resource-interfaces'
+          parent = 'terraform-resource-specs'
+          name = 'Interfaces'
+          pageRef = '/specs-defs/specs/terraform/resource/interfaces'
+          weight = 1
+          params = { alwaysopen = true, collapsibleMenu = true }        
+
+      [[menu.defined]]
+        identifier = 'terraform-pattern-specs'
+        parent = 'terraform-specs'
+        name = 'Pattern'
+        pageRef = '/specs-defs/specs/terraform/pattern'
+        weight = 2
+        params = { alwaysopen = true, collapsibleMenu = true }
+
+      [[menu.defined]]
+        identifier = 'terraform-utility-specs'
+        parent = 'terraform-specs'
+        name = 'Utility'
+        pageRef = '/specs-defs/specs/terraform/utility'
+        weight = 3
+        params = { alwaysopen = true, collapsibleMenu = true }          
+
+    [[menu.defined]]
+      identifier = 'terraform-specs'
+      parent = 'module-specs'
+      name = 'Terraform'
+      pageRef = '/specs-defs/specs/terraform'
+      weight = 2
+      params = { alwaysopen = true, collapsibleMenu = true }         
 
 
 [[menu.shortcuts]]
