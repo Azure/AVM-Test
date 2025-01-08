@@ -29,16 +29,16 @@ To find what you need, simply decide which IaC language you'd like develop in, a
 
 The following tags are used to qualify the specifications:
 
-| Key       | Allowed Values                                                                                                             | Multiple/Single     |
-|-----------|----------------------------------------------------------------------------------------------------------------------------|-------------------- |
-| Language  | Bicep, Terraform                                                                                                           | Multiple            |
-| Class     | Resource, Pattern, Utility                                                                                                 | Multiple            |
-| Type      | Functional, NonFunctional                                                                                                  | Single              |
-| Category  | Testing, Telemetry, Contribution/Support, Documentation, CodeStyle, Naming/Composition, Inputs/Outputs, Release/Publishing | Single              |
-| Severity  | MUST, SHOULD, MAY                                                                                                          | Single              |
-| Persona   | Owner, Contributor                                                                                                         | Multiple            |
-| Lifecycle | Initial, BAU, EOL                                                                                                          | Single              |
-| Validation| **Bicep**: BCP/Manual, BCP/CI/Informational, BCP/CI/Enforced <br>**Terraform**: TF/Manual, TF/CI/Informational, TF/CI/Enforced                         | Single per language |
+| Key       | Allowed Values                                                                                                                 | Multiple/Single     |
+|-----------|--------------------------------------------------------------------------------------------------------------------------------|-------------------- |
+| Language  | Bicep, Terraform                                                                                                               | Multiple            |
+| Class     | Resource, Pattern, Utility                                                                                                     | Multiple            |
+| Type      | Functional, NonFunctional                                                                                                      | Single              |
+| Category  | Testing, Telemetry, Contribution/Support, Documentation, CodeStyle, Naming/Composition, Inputs/Outputs, Release/Publishing     | Single              |
+| Severity  | MUST, SHOULD, MAY                                                                                                              | Single              |
+| Persona   | Owner, Contributor                                                                                                             | Multiple            |
+| Lifecycle | Initial, BAU, EOL                                                                                                              | Single              |
+| Validation| **Bicep**: BCP/Manual, BCP/CI/Informational, BCP/CI/Enforced <br>**Terraform**: TF/Manual, TF/CI/Informational, TF/CI/Enforced | Single per language |
 
 Each tag is a concatenation of exactly one of the keys and one of the values, e.g., `Language-Bicep`, `Class-Resource`, `Type-Functional`, etc. When it's marked as `Multiple`, it means that the tag can have multiple values, e.g., `Language-Bicep, Language-Terraform`, or `Persona-Owner, Persona-Contributor`, etc. When it's marked as `Single`, it means that the tag can have only one value, e.g., `Type-Functional`, `Lifecycle-Initial`, etc.
 
