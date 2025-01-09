@@ -432,6 +432,20 @@ enableGitInfo = true
       weight = 5
       params = { alwaysopen = false, collapsibleMenu = true }
 
+[[menu.defined]]
+  identifier = 'contributing'
+  parent = 'home'
+  name = 'Contributing'
+  weight = 6
+
+  [[menu.defined]]
+    identifier = 'process-overview'
+    parent = 'contributing'
+    name = 'Process Overview'
+    pageRef = '/contributing/process'
+    weight = 1
+    params = { alwaysopen = false, collapsibleMenu = true }
+
 [[menu.shortcuts]]
   pre = '<i class="fa-fw fab fa-github"></i> '
   name = 'GitHub Repo'
