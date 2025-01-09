@@ -189,11 +189,35 @@ enableGitInfo = true
   weight = 4
 
   [[menu.defined]]
+    identifier = 'team-def-and-raci'
+    parent = 'specs-defs'
+    name = 'Team Definitions & RACI'
+    pageRef = '/specs-defs/team-definitions'
+    weight = 1
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+  [[menu.defined]]
+    identifier = 'module-classifications'
+    parent = 'specs-defs'
+    name = 'Module Classifications'
+    pageRef = '/specs-defs/module-classifications'
+    weight = 2
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+  [[menu.defined]]
+    identifier = 'module-lifecycle'
+    parent = 'specs-defs'
+    name = 'Module Lifecycle'
+    pageRef = '/specs-defs/module-lifecycle.md'
+    weight = 3
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+  [[menu.defined]]
     identifier = 'module-specs'
     parent = 'specs-defs'
     name = 'Module Specifications'
     pageRef = '/specs-defs/specs'
-    weight = 1
+    weight = 4
     params = { alwaysopen = false, collapsibleMenu = true }
 
     [[menu.defined]]
@@ -218,7 +242,7 @@ enableGitInfo = true
           name = 'Interfaces'
           pageRef = '/specs-defs/specs/bicep/resource/interfaces'
           weight = 1
-          params = { alwaysopen = true, collapsibleMenu = true }        
+          params = { alwaysopen = true, collapsibleMenu = true }
 
       [[menu.defined]]
         identifier = 'bicep-pattern-specs'
@@ -234,7 +258,7 @@ enableGitInfo = true
         name = 'Utility'
         pageRef = '/specs-defs/specs/bicep/utility'
         weight = 3
-        params = { alwaysopen = true, collapsibleMenu = true }          
+        params = { alwaysopen = true, collapsibleMenu = true }
 
     [[menu.defined]]
       identifier = 'terraform-specs'
@@ -258,7 +282,7 @@ enableGitInfo = true
           name = 'Interfaces'
           pageRef = '/specs-defs/specs/terraform/resource/interfaces'
           weight = 1
-          params = { alwaysopen = true, collapsibleMenu = true }        
+          params = { alwaysopen = true, collapsibleMenu = true }
 
       [[menu.defined]]
         identifier = 'terraform-pattern-specs'
@@ -274,7 +298,7 @@ enableGitInfo = true
         name = 'Utility'
         pageRef = '/specs-defs/specs/terraform/utility'
         weight = 3
-        params = { alwaysopen = true, collapsibleMenu = true }          
+        params = { alwaysopen = true, collapsibleMenu = true }
 
     [[menu.defined]]
       identifier = 'terraform-specs'
@@ -282,7 +306,77 @@ enableGitInfo = true
       name = 'Terraform'
       pageRef = '/specs-defs/specs/terraform'
       weight = 2
-      params = { alwaysopen = true, collapsibleMenu = true }         
+      params = { alwaysopen = true, collapsibleMenu = true }
+
+[[menu.defined]]
+  identifier = 'help-support'
+  parent = 'home'
+  name = 'Help & Support'
+  weight = 5
+
+  [[menu.defined]]
+    identifier = 'module-support'
+    parent = 'help-support'
+    name = 'Module Support'
+    pageRef = '/help-support/module-support'
+    weight = 1
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+  [[menu.defined]]
+    identifier = 'known-issues'
+    parent = 'help-support'
+    name = 'Known Issues'
+    pageRef = '/help-support/known-issues'
+    weight = 2
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+  [[menu.defined]]
+    identifier = 'issue-triage'
+    parent = 'help-support'
+    name = 'Issue Triage'
+    pageRef = '/help-support/issue-triage'
+    weight = 3
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'avm-repository'
+      parent = 'issue-triage'
+      name = 'AVM Repository'
+      pageRef = '/help-support/issue-triage/avm-issue-triage'
+      weight = 1
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'brm-repository'
+      parent = 'issue-triage'
+      name = 'BRM Repository'
+      pageRef = '/help-support/issue-triage/brm-issue-triage'
+      weight = 2
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'terraform-repositories'
+      parent = 'issue-triage'
+      name = 'Terraform Repositories'
+      pageRef = '/help-support/issue-triage/terraform-issue-triage'
+      weight = 3
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'issue-triage-automation'
+      parent = 'issue-triage'
+      name = 'Issue Triage Automation'
+      pageRef = '/help-support/issue-triage/issue-triage-automation'
+      weight = 4
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+  [[menu.defined]]
+    identifier = 'telemetry'
+    parent = 'help-support'
+    name = 'Telemetry'
+    pageRef = '/help-support/telemetry'
+    weight = 4
+    params = { alwaysopen = false, collapsibleMenu = true }
 
 
 [[menu.shortcuts]]
