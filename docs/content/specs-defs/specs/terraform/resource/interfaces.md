@@ -3,7 +3,7 @@ title: Terraform Interfaces
 url: /specs/tf/interfaces/
 ---
 
-This chapter details the interfaces/schemas for the AVM Resource Modules features/extension resources as referenced in [RMFR4](/Azure-Verified-Modules/spec/RMFR4) and [RMFR5](/Azure-Verified-Modules/spec/RMFR5).
+This chapter details the interfaces/schemas for the AVM Resource Modules features/extension resources as referenced in [RMFR4]({{% siteparam base %}}/spec/RMFR4) and [RMFR5]({{% siteparam base %}}/spec/RMFR5).
 
 ## Diagnostic Settings
 
