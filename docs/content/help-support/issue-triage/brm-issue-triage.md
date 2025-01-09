@@ -37,8 +37,8 @@ The [BRM repository](https://aka.ms/BRM) includes other, non-AVM modules and rel
 
 {{% notice style="tip" %}}
 
-- To look for items that **need triaging**, click on the following link to use this saved query ➡️ <a href="https://aka.ms/BRM/AVMNeedsTriage"><mark style="background-color:#FBCA04;">Needs: Triage 🔍</mark></a> ⬅️.
-- To look for items that **need attention**, click on the following link to use this saved query ➡️ <a href="https://aka.ms/BRM/AVMNeedsAttention"><mark style="background-color:#E99695;color:white;">Needs: Attention 👋</mark></a> ⬅️.
+- To look for items that **need triaging**, click on the following link to use this saved query ➡️ <a href="https://aka.ms/BRM/AVMNeedsTriage"><mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark></a> ⬅️.
+- To look for items that **need attention**, click on the following link to use this saved query ➡️ <a href="https://aka.ms/BRM/AVMNeedsAttention"><mark style="background-image:none;background-color:#E99695;color:white;">Needs: Attention 👋</mark></a> ⬅️.
 - Open items that are <a href="https://aka.ms/BRM/NotInAProject">**not in a project**</a>.
 
 {{% /notice %}}
@@ -50,7 +50,7 @@ The [BRM repository](https://aka.ms/BRM) includes other, non-AVM modules and rel
 An issue is considered to be an "AVM module issue" if
 
 - it was opened through the **\[[AVM Module Issue](https://aka.ms/BRM/AVMModuleIssue)]** template in the [BRM repository](https://aka.ms/BRM),
-- it has the labels of "<mark style="background-color:#FBCA04;">Needs: Triage 🔍</mark>" and "<mark style="background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>" applied to it, and
+- it has the labels of "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" and "<mark style="background-image:none;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>" applied to it, and
 - it is assigned to the "[AVM - Module Issues](https://github.com/orgs/Azure/projects/566)" GitHub project.
 
 {{% notice style="note" %}}
@@ -62,17 +62,17 @@ If the issue was opened as a misplaced module proposal, mention the `@Azure/AVM-
 ### Triaging a Module Issue
 
 1. Check the Module issue:
-    - Make sure the issue has the "<mark style="background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>" applied to it.
+    - Make sure the issue has the "<mark style="background-image:none;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>" applied to it.
     - Use the AVM module indexes to identify the module owner(s) and make sure they are assigned/mentioned/informed.
     - If the module is orphaned (has no owner), make sure there's an orphaned module issue in the AVM repository.
     - Make sure the module's details are captured correctly in the description - i.e., name, classification (resource/pattern), language (Bicep/Terraform), etc.
     - Make sure the issue is categorized using one of the following type labels:
-      - "<mark style="background-color:#A2EEEF;">Type: Feature Request ➕</mark>"
-      - "<mark style="background-color:#D73A4A;color:white;">Type: Bug 🐛</mark>"
-      - "<mark style="background-color:#FFFF00;">Type: Security Bug 🔒</mark>"
-2. Apply relevant labels for module classification (resource/pattern): "<mark style="background-color:#D3D3D3;">Class: Resource Module 📦</mark>" or "<mark style="background-color:#A9A9A9;">Class: Pattern Module 📦</mark>"
+      - "<mark style="background-image:none;background-color:#A2EEEF;">Type: Feature Request ➕</mark>"
+      - "<mark style="background-image:none;background-color:#D73A4A;color:white;">Type: Bug 🐛</mark>"
+      - "<mark style="background-image:none;background-color:#FFFF00;">Type: Security Bug 🔒</mark>"
+2. Apply relevant labels for module classification (resource/pattern): "<mark style="background-image:none;background-color:#D3D3D3;">Class: Resource Module 📦</mark>" or "<mark style="background-image:none;background-color:#A9A9A9;">Class: Pattern Module 📦</mark>"
 3. Communicate next steps to the requestor (issue author).
-4. Remove the "<mark style="background-color:#FBCA04;">Needs: Triage 🔍</mark>" label.
+4. Remove the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" label.
 5. When more detailed plans are available, communicate expected timeline for the update/fix to the requestor (issue author).
 6. Only close the issue, once the next version of the module was fully developed, tested and published.
 
@@ -81,16 +81,16 @@ If the issue was opened as a misplaced module proposal, mention the `@Azure/AVM-
 ### Triaging a Module PR
 
 1. If the **PR is submitted by the module owner** and the **module is owned by a single person**, **the AVM core team must review and approve the PR**, (as the module owner can't approve their on PR).
-    - To indicate that the PR needs the core team's attention, apply the "<mark style="background-color:#DB4503;color:white;">Needs: Core Team 🧞</mark>" label.
+    - To indicate that the PR needs the core team's attention, apply the "<mark style="background-image:none;background-color:#DB4503;color:white;">Needs: Core Team 🧞</mark>" label.
 2. If the **PR is submitted by a contributor** (other than the module owner), or the **module is owned by at least 2 people**, **one of the module owners should review and approve the PR**.
 3. Apply relevant labels
     - Make sure the PR is categorized using one of the following type labels:
-      - "<mark style="background-color:#A2EEEF;">Type: Feature Request ➕</mark>"
-      - "<mark style="background-color:#D73A4A;color:white;">Type: Bug 🐛</mark>"
-      - "<mark style="background-color:#FFFF00;">Type: Security Bug 🔒</mark>"
-    - For module classification (resource/pattern): "<mark style="background-color:#D3D3D3;">Class: Resource Module 📦</mark>" or "<mark style="background-color:#A9A9A9;">Class: Pattern Module 📦</mark>"
+      - "<mark style="background-image:none;background-color:#A2EEEF;">Type: Feature Request ➕</mark>"
+      - "<mark style="background-image:none;background-color:#D73A4A;color:white;">Type: Bug 🐛</mark>"
+      - "<mark style="background-image:none;background-color:#FFFF00;">Type: Security Bug 🔒</mark>"
+    - For module classification (resource/pattern): "<mark style="background-image:none;background-color:#D3D3D3;">Class: Resource Module 📦</mark>" or "<mark style="background-image:none;background-color:#A9A9A9;">Class: Pattern Module 📦</mark>"
 4. If the module is orphaned (has no owner), make sure the related Orphaned module issue (in the AVM repository) is associated to the PR in a comment, so the new owner can easily identify all related issues and PRs when taking ownership.
-5. Remove the "<mark style="background-color:#FBCA04;">Needs: Triage 🔍</mark>" label.
+5. Remove the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" label.
 
 {{% notice style="important" title="Give your PR a meaningful title" %}}
 
@@ -105,25 +105,25 @@ If the issue was opened as a misplaced module proposal, mention the `@Azure/AVM-
 An issue is considered to be an "AVM Question/Feedback" if
 
 - it was opened through the **\[[AVM Question/Feedback](https://aka.ms/BRM/AVMQuestionFeedback)]** template in the [BRM repository](https://aka.ms/BRM),
-- it has the labels of "<mark style="background-color:#FBCA04;">Needs: Triage 🔍</mark>", "<mark style="background-color:#CB6BA2;">Type: Question/Feedback 🙋‍♀️</mark>" and "<mark style="background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>" applied to it, and
+- it has the labels of "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>", "<mark style="background-image:none;background-color:#CB6BA2;">Type: Question/Feedback 🙋‍♀️</mark>" and "<mark style="background-image:none;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>" applied to it, and
 - it is assigned to the "[AVM - Issue Triage](https://github.com/orgs/Azure/projects/538)" GitHub project.
 
-An issue is considered to be a "standard issue" or "blank issue" if it was opened without using an issue template, and hence it does **NOT** have any labels assigned, OR only has the "<mark style="background-color:#FBCA04;">Needs: Triage 🔍</mark>" label assigned.
+An issue is considered to be a "standard issue" or "blank issue" if it was opened without using an issue template, and hence it does **NOT** have any labels assigned, OR only has the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" label assigned.
 
 ### Triaging a General Question/Feedback and other standard issues
 
 1. When triaging the issue, consider adding one of the following labels as fits:
 
-    - <mark style="background-color:#0075CA;color:white;">Type: Documentation 📄</mark>
-    - <mark style="background-color:#A2EEEF;">Type: Feature Request ➕</mark>
-    - <mark style="background-color:#D73A4A;color:white;">Type: Bug 🐛</mark>
-    - <mark style="background-color:#FFFF00;">Type: Security Bug 🔒</mark>
+    - <mark style="background-image:none;background-color:#0075CA;color:white;">Type: Documentation 📄</mark>
+    - <mark style="background-image:none;background-color:#A2EEEF;">Type: Feature Request ➕</mark>
+    - <mark style="background-image:none;background-color:#D73A4A;color:white;">Type: Bug 🐛</mark>
+    - <mark style="background-image:none;background-color:#FFFF00;">Type: Security Bug 🔒</mark>
 
 > To see the full list of available labels, please refer to the [GitHub Repo Labels](/Azure-Verified-Modules/spec/SNFR23) section.
 
 2. Add any (additional) labels that apply.
 3. Communicate next steps to the requestor (issue author).
-4. Remove the "<mark style="background-color:#FBCA04;">Needs: Triage 🔍</mark>" label.
+4. Remove the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" label.
 5. When more detailed plans are available, communicate expected timeline for the update/fix to the requestor (issue author).
 6. Once the question/feedback/topic is fully addressed, close the issue.
 
