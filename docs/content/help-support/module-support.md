@@ -2,7 +2,7 @@
 title: Module Support
 ---
 
-As mentioned on the [Overview](/Azure-Verified-Modules/home/overview/) page, we understand that long-term support from Microsoft in an initiative like AVM is critical to its adoption by consumers and therefore the success of AVM. Therefore we have aligned and provide the below support statement/process for AVM modules.
+As mentioned on the [Overview]({{% siteparam base %}}/home/overview/) page, we understand that long-term support from Microsoft in an initiative like AVM is critical to its adoption by consumers and therefore the success of AVM. Therefore we have aligned and provide the below support statement/process for AVM modules.
 
 {{% notice style="important" %}}
 
@@ -14,7 +14,7 @@ Issues with an AVM module should be raised on the repo they are hosted on, not t
 
 <br>
 
-Azure Verified Modules are supported by the AVM teams, as defined [here](/Azure-Verified-Modules/specs/shared/team-definitions/), using GitHub issues in the following order of precedence:
+Azure Verified Modules are supported by the AVM teams, as defined [here]({{% siteparam base %}}/specs/shared/team-definitions/), using GitHub issues in the following order of precedence:
 
 1. Module owners/contributors
 2. If there is no response within 3 business days, then the AVM core team will step in by:
@@ -32,7 +32,7 @@ Please note that the durations stated above are for a reasonable and useful resp
 
 All of this will be automated via the use of the Resource Management feature of the [Microsoft GitHub Policy Service](https://github.com/apps/microsoft-github-policy-service) and GitHub Actions, where possible and appropriate.
 
-Modules that have to have the AVM core team or Product Groups step in due to the module owners/contributors not responding, the AVM module will become "orphaned"; see [Module Lifecycle](/Azure-Verified-Modules/specs/shared/module-lifecycle/) for more info.
+Modules that have to have the AVM core team or Product Groups step in due to the module owners/contributors not responding, the AVM module will become "orphaned"; see [Module Lifecycle]({{% siteparam base %}}/specs/shared/module-lifecycle/) for more info.
 
 {{% notice style="important" %}}
 

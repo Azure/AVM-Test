@@ -208,7 +208,7 @@ enableGitInfo = true
     identifier = 'module-lifecycle'
     parent = 'specs-defs'
     name = 'Module Lifecycle'
-    pageRef = '/specs-defs/module-lifecycle.md'
+    pageRef = '/specs-defs/module-lifecycle'
     weight = 3
     params = { alwaysopen = false, collapsibleMenu = true }
 
@@ -378,6 +378,59 @@ enableGitInfo = true
     weight = 4
     params = { alwaysopen = false, collapsibleMenu = true }
 
+  [[menu.defined]]
+    identifier = 'github-links'
+    parent = 'help-support'
+    pre = '<i class="fa-fw fab fa-github"></i> '
+    name = 'GitHub Links'
+    pageRef = '/help-support/GH-links'
+    weight = 5
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'propose-a-new-module'
+      parent = 'github-links'
+      pre = '<i class="fa-fw fab fa-github"></i> '
+      name = 'Propose a New Module'
+      url = 'https://aka.ms/AVM/ModuleProposal'
+      weight = 1
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'question-or-feedback'
+      parent = 'github-links'
+      pre = '<i class="fa-fw fab fa-github"></i> '
+      name = 'Question or Feedback'
+      url = 'https://aka.ms/AVM/QuestionFeedback'
+      weight = 2
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'module-triage-project'
+      parent = 'github-links'
+      pre = '<i class="fa-fw fab fa-github"></i> '
+      name = 'Module Triage (Project)'
+      url = 'https://aka.ms/AVM/ModuleTriage'
+      weight = 3
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'module-issues-project'
+      parent = 'github-links'
+      pre = '<i class="fa-fw fab fa-github"></i> '
+      name = 'Module Issues (Project)'
+      url = 'https://aka.ms/AVM/ModuleIssues'
+      weight = 4
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'issue-triage-project'
+      parent = 'github-links'
+      pre = '<i class="fa-fw fab fa-github"></i> '
+      name = 'Issue Triage (Project)'
+      url = 'https://aka.ms/AVM/IssueTriage'
+      weight = 5
+      params = { alwaysopen = false, collapsibleMenu = true }
 
 [[menu.shortcuts]]
   pre = '<i class="fa-fw fab fa-github"></i> '

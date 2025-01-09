@@ -1,8 +1,6 @@
 ---
 title: Issue/Triage Automation
-geekdocToC: 1
 ---
-
 
 This page details the automation that is in place to help with the triage of issues and PRs raised against the AVM modules.
 
@@ -16,7 +14,7 @@ When calculating the number of business days in the issue/triage automation, the
 
 ### ITA01BCP.1-2
 
-If a bug/feature/request/general question that has the labels of "<mark style="background-image:none;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>" and "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" is not responded to after 3 business days, then the issue will be marked with the "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>" label and the AVM Core team will be mentioned in a comment on the issue to reach out to the module owner.
+If a bug/feature/request/general question that has the labels of &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>&nbsp; and &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; is not responded to after 3 business days, then the issue will be marked with the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; label and the AVM Core team will be mentioned in a comment on the issue to reach out to the module owner.
 
 **Schedule:**
 
@@ -26,23 +24,23 @@ If a bug/feature/request/general question that has the labels of "<mark style="b
 
 - Is an open issue.
 - Had no activity in the last 3 business days.
-- Has the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" and "<mark style="background-image:none;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>" labels added.
+- Has the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; and &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>&nbsp; labels added.
 
 **Action(s):**
 
 - Add a reply, mentioning the `Azure/avm-core-team-technical-bicep` team.
-- Add the "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; label.
 
 {{% notice style="tip" %}}
-- To prevent further actions to take effect, the "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>" label must be removed, once this issue has been responded to.
-- To avoid this rule being (re)triggered, the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" must be removed as part of the triage process (when the issue is first responded to).
+- To prevent further actions to take effect, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; label must be removed, once this issue has been responded to.
+- To avoid this rule being (re)triggered, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; must be removed as part of the triage process (when the issue is first responded to).
 {{% /notice %}}
 
 ---
 
 ### ITA01TF.1-2
 
-If a bug/feature/request/general question that has the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" label added is not responded to after 3 business days, then the issue will be marked with the "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>" label and the AVM Core team will be mentioned in a comment on the issue to reach out to the module owner.
+If a bug/feature/request/general question that has the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; label added is not responded to after 3 business days, then the issue will be marked with the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; label and the AVM Core team will be mentioned in a comment on the issue to reach out to the module owner.
 
 **Schedule:**
 
@@ -52,23 +50,23 @@ If a bug/feature/request/general question that has the "<mark style="background-
 
 - Is an open issue.
 - Had no activity in the last 3 business days.
-- Has the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" label added.
+- Has the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; label added.
 
 **Action(s):**
 
 - Add a reply, mentioning the `Azure/avm-core-team-technical-bicep` team.
-- Add the "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; label.
 
 {{% notice style="tip" %}}
-- To prevent further actions to take effect, the "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>" label must be removed, once this issue has been responded to.
-- To avoid this rule being (re)triggered, the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" must be removed as part of the triage process (when the issue is first responded to).
+- To prevent further actions to take effect, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; label must be removed, once this issue has been responded to.
+- To avoid this rule being (re)triggered, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; must be removed as part of the triage process (when the issue is first responded to).
 {{% /notice %}}
 
 ---
 
 ### ITA02BCP.1-2
 
-If after an additional 3 business days there's still no update to the issue that has the labels of "<mark style="background-image:none;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>" and "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>", the AVM core team will be mentioned on the issue and a further comment stating module owner is unresponsive will be added. The "<mark style="background-image:none;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>" label will also be added.
+If after an additional 3 business days there's still no update to the issue that has the labels of &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>&nbsp; and &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp;, the AVM core team will be mentioned on the issue and a further comment stating module owner is unresponsive will be added. The &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label will also be added.
 
 **Schedule:**
 
@@ -78,23 +76,23 @@ If after an additional 3 business days there's still no update to the issue that
 
 - Is an open issue.
 - Had no activity in the last 3 business days.
-- Has the "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>" and "<mark style="background-image:none;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>" labels added.
+- Has the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; and &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>&nbsp; labels added.
 
 **Action(s):**
 
 - Add a reply, mentioning the `Azure/avm-core-team-technical-bicep` team.
-- Add the "<mark style="background-image:none;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label.
 
 {{% notice style="tip" %}}
-- To avoid this rule being (re)triggered, the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" and "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>" labels must be removed when the issue is first responded to!
-- Remove the "<mark style="background-image:none;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>" label once the issue has been responded to.
+- To avoid this rule being (re)triggered, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; and &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; labels must be removed when the issue is first responded to!
+- Remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label once the issue has been responded to.
 {{% /notice %}}
 
 ---
 
 ### ITA02TF.1-2
 
-If after an additional 3 business days there's still no update to the issue that has the "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>" label added, the AVM core team will be mentioned on the issue and a further comment stating module owner is unresponsive will be added. The "<mark style="background-image:none;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>" label will also be added.
+If after an additional 3 business days there's still no update to the issue that has the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; label added, the AVM core team will be mentioned on the issue and a further comment stating module owner is unresponsive will be added. The &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label will also be added.
 
 **Schedule:**
 
@@ -104,23 +102,23 @@ If after an additional 3 business days there's still no update to the issue that
 
 - Is an open issue.
 - Had no activity in the last 3 business days.
-- Has the "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>" label added.
+- Has the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; label added.
 
 **Action(s):**
 
 - Add a reply, mentioning the `Azure/avm-core-team-technical-bicep` team.
-- Add the "<mark style="background-image:none;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label.
 
 {{% notice style="tip" %}}
-- To avoid this rule being (re)triggered, the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" and "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>" labels must be removed when the issue is first responded to!
-- Remove the "<mark style="background-image:none;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>" label once the issue has been responded to.
+- To avoid this rule being (re)triggered, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; and &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; labels must be removed when the issue is first responded to!
+- Remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label once the issue has been responded to.
 {{% /notice %}}
 
 ---
 
 ### ITA03BCP
 
-If there's still no response after 5 days (total from start of issue being raised) on an issue that has the labels of "<mark style="background-image:none;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>", "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>", "<mark style="background-image:none;background-color:#FFFF00;">Type: Security Bug 🔒</mark>" and "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>", the Bicep PG GitHub Team will be mentioned on the issue to assist. The "<mark style="background-image:none;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>" label will also be added.
+If there's still no response after 5 days (total from start of issue being raised) on an issue that has the labels of &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>&nbsp;, &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp;, &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FFFF00;">Type: Security Bug 🔒</mark>&nbsp; and &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp;, the Bicep PG GitHub Team will be mentioned on the issue to assist. The &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label will also be added.
 
 **Schedule:**
 
@@ -130,23 +128,23 @@ If there's still no response after 5 days (total from start of issue being raise
 
 - Is an open issue.
 - Had no activity in the last 5 business days.
-- Has the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>", the "<mark style="background-image:none;background-color:#FFFF00;">Type: Security Bug 🔒</mark>", the "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>",  and "<mark style="background-image:none;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>" labels added.
+- Has the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp;, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FFFF00;">Type: Security Bug 🔒</mark>&nbsp;, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp;,  and &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>&nbsp; labels added.
 
 **Action(s):**
 
 - Add a reply, mentioning the `Azure/bicep-admins` team.
-- Add the "<mark style="background-image:none;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label.
 
 {{% notice style="tip" %}}
-- To avoid this rule being (re)triggered, the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" and "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>" labels must be removed when the issue is first responded to!
-- Remove the "<mark style="background-image:none;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>" label once the issue has been responded to.
+- To avoid this rule being (re)triggered, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; and &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; labels must be removed when the issue is first responded to!
+- Remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label once the issue has been responded to.
 {{% /notice %}}
 
 ---
 
 ### ITA03TF
 
-If there's still no response after 5 days (total from start of issue being raised) on an issue that has the labels of "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>", "<mark style="background-image:none;background-color:#FFFF00;">Type: Security Bug 🔒</mark>" and "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>", the Terraform PG GitHub Team will be mentioned on the issue to assist. The "<mark style="background-image:none;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>" label will also be added.
+If there's still no response after 5 days (total from start of issue being raised) on an issue that has the labels of &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp;, &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FFFF00;">Type: Security Bug 🔒</mark>&nbsp; and &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp;, the Terraform PG GitHub Team will be mentioned on the issue to assist. The &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label will also be added.
 
 **Schedule:**
 
@@ -156,18 +154,18 @@ If there's still no response after 5 days (total from start of issue being raise
 
 - Is an open issue.
 - Had no activity in the last 5 business days.
-- Has the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>", the "<mark style="background-image:none;background-color:#FFFF00;">Type: Security Bug 🔒</mark>", and "<mark style="background-image:none;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>" labels added.
+- Has the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp;, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FFFF00;">Type: Security Bug 🔒</mark>&nbsp;, and &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; labels added.
 
 **Action(s):**
 
 - Add a reply, mentioning the `Azure/terraform-avm` team.
-- Add the "<mark style="background-image:none;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label.
 
 ---
 
 ### ITA04
 
-If an issue/PR has been labelled with "<mark style="background-image:none;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>" and hasn't had a response in 4 days, label with "<mark style="background-image:none;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>" and add a comment.
+If an issue/PR has been labelled with &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>&nbsp; and hasn't had a response in 4 days, label with &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>&nbsp; and add a comment.
 
 **Schedule:**
 
@@ -177,20 +175,20 @@ If an issue/PR has been labelled with "<mark style="background-image:none;backgr
 
 - Is an open issue/PR.
 - Had no activity in the last 4 days.
-- Has the "<mark style="background-image:none;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>" label added.
-- Does not have the "<mark style="background-image:none;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>" label added.
+- Has the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>&nbsp; label added.
+- Does not have the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>&nbsp; label added.
 
 **Action(s):**
 
-- Add the "<mark style="background-image:none;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>&nbsp; label.
 - Add a reply.
 
 {{% notice style="tip" %}}
 To prevent further actions to take effect, one of the following conditions must be met:
 
 - The author must respond in a comment within 3 days of the automatic comment left on the issue.
-- The "<mark style="background-image:none;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>" label must be removed.
-- If applicable, the "<mark style="background-image:none;background-color:#B60205;color:white;">Status: Long Term ⏳</mark>" or the "<mark style="background-image:none;background-color:#FF0019;color:white;">Needs: Module Owner 📣</mark>" label must be added.
+- The &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>&nbsp; label must be removed.
+- If applicable, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#B60205;color:white;">Status: Long Term ⏳</mark>&nbsp; or the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0019;color:white;">Needs: Module Owner 📣</mark>&nbsp; label must be added.
 {{% /notice %}}
 
 ---
@@ -203,7 +201,7 @@ This rule is currently disabled in the AVM and BRM repositories.
 
 {{% /notice %}}
 
-If an issue/PR has been labelled with "<mark style="background-image:none;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>" and hasn't had any update in 3 days from that point, automatically close it and comment, unless the issue/PR has a "<mark style="background-image:none;background-color:#B60205;color:white;">Status: Long Term ⏳</mark>" - in which case, do not close it.
+If an issue/PR has been labelled with &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>&nbsp; and hasn't had any update in 3 days from that point, automatically close it and comment, unless the issue/PR has a &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#B60205;color:white;">Status: Long Term ⏳</mark>&nbsp; - in which case, do not close it.
 
 **Schedule:**
 
@@ -213,8 +211,8 @@ If an issue/PR has been labelled with "<mark style="background-image:none;backgr
 
 - Is an open issue.
 - Had no activity in the last 3 days.
-- Has the "<mark style="background-image:none;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>" and the "<mark style="background-image:none;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>" labels added.
-- Does not have the "<mark style="background-image:none;background-color:#FF0019;color:white;">Needs: Module Owner 📣</mark>" or "<mark style="background-image:none;background-color:#B60205;color:white;">Status: Long Term ⏳</mark>" labels added.
+- Has the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>&nbsp; and the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>&nbsp; labels added.
+- Does not have the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0019;color:white;">Needs: Module Owner 📣</mark>&nbsp; or &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#B60205;color:white;">Status: Long Term ⏳</mark>&nbsp; labels added.
 
 **Action(s):**
 
@@ -222,14 +220,14 @@ If an issue/PR has been labelled with "<mark style="background-image:none;backgr
 - Close the issue.
 
 {{% notice style="tip" %}}
-- In case the issue needs to be reopened (e.g., the author responds after the issue was closed), the "<mark style="background-image:none;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>" label must be removed.
+- In case the issue needs to be reopened (e.g., the author responds after the issue was closed), the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>&nbsp; label must be removed.
 {{% /notice %}}
 
 ---
 
 ### ITA24
 
-Remind module owner(s) to start or continue working on this module if there was no activity on the Module Proposal issue for more than 3 weeks. Add "<mark style="background-image:none;background-color:#E99695;color:white;">Needs: Attention 👋</mark>" label.
+Remind module owner(s) to start or continue working on this module if there was no activity on the Module Proposal issue for more than 3 weeks. Add &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#E99695;color:white;">Needs: Attention 👋</mark>&nbsp; label.
 
 **Schedule:**
 
@@ -239,16 +237,16 @@ Remind module owner(s) to start or continue working on this module if there was 
 
 - Is an open issue.
 - Had no activity in the last 21 days.
-- Has the "<mark style="background-image:none;background-color:#ADD8E6;">Type: New Module Proposal 💡</mark>" and the "<mark style="background-image:none;background-color:#FBEF2A;">Status: Owners Identified 🤘</mark>" labels added.
-- Does not have the "<mark style="background-image:none;background-color:#B60205;color:white;">Status: Long Term ⏳</mark>" label added.
+- Has the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#ADD8E6;">Type: New Module Proposal 💡</mark>&nbsp; and the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBEF2A;">Status: Owners Identified 🤘</mark>&nbsp; labels added.
+- Does not have the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#B60205;color:white;">Status: Long Term ⏳</mark>&nbsp; label added.
 
 **Action(s):**
 
 - Add a reply.
-- Add the "<mark style="background-image:none;background-color:#E99695;color:white;">Needs: Attention 👋</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#E99695;color:white;">Needs: Attention 👋</mark>&nbsp; label.
 
 {{% notice style="tip" %}}
-- To silence this notification, provide an update every 3 weeks on the Module Proposal issue, or add the "<mark style="background-image:none;background-color:#B60205;color:white;">Status: Long Term ⏳</mark>" label.
+- To silence this notification, provide an update every 3 weeks on the Module Proposal issue, or add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#B60205;color:white;">Status: Long Term ⏳</mark>&nbsp; label.
 {{% /notice %}}
 
 ---
@@ -261,7 +259,7 @@ This chapter details all automation rules that are based on an event.
 
 ### ITA06
 
-When a new issue or PR of any type is created add the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" label.
+When a new issue or PR of any type is created add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; label.
 
 **Trigger criteria:**
 
@@ -269,14 +267,14 @@ When a new issue or PR of any type is created add the "<mark style="background-i
 
 **Action(s):**
 
-- Add the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; label.
 - Add a reply to explain the action(s).
 
 ---
 
 ### ITA08BCP
 
-If AVM or "Azure Verified Modules" is mentioned in an uncategorized issue (i.e., one not using any template), apply the label of "<mark style="background-image:none;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>" on the issue.
+If AVM or "Azure Verified Modules" is mentioned in an uncategorized issue (i.e., one not using any template), apply the label of &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>&nbsp; on the issue.
 
 **Trigger criteria:**
 
@@ -284,13 +282,13 @@ If AVM or "Azure Verified Modules" is mentioned in an uncategorized issue (i.e.,
 
 **Action(s):**
 
-- Add the "<mark style="background-image:none;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#F0FFFF;">Type: AVM 🅰️ ✌️ ⓜ️</mark>&nbsp; label.
 
 ---
 
 ### ITA09
 
-When #RR is used in an issue, add the label of "<mark style="background-image:none;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>".
+When #RR is used in an issue, add the label of &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>&nbsp;.
 
 **Trigger criteria:**
 
@@ -298,13 +296,13 @@ When #RR is used in an issue, add the label of "<mark style="background-image:no
 
 **Action(s):**
 
-- Add the "<mark style="background-image:none;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>&nbsp; label.
 
 ---
 
 ### ITA10
 
-When #wontfix is used in an issue, mark it by using the label of "<mark style="background-image:none;background-color:#FFFFFF;">Status: Won't Fix 💔</mark>" and close the issue.
+When #wontfix is used in an issue, mark it by using the label of &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FFFFFF;">Status: Won't Fix 💔</mark>&nbsp; and close the issue.
 
 **Trigger criteria:**
 
@@ -312,26 +310,26 @@ When #wontfix is used in an issue, mark it by using the label of "<mark style="b
 
 **Action(s):**
 
-- Add the "<mark style="background-image:none;background-color:#FFFFFF;">Status: Won't Fix 💔</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FFFFFF;">Status: Won't Fix 💔</mark>&nbsp; label.
 - Close the issue.
 
 ---
 
 ### ITA11
 
-When the author replies, remove the "<mark style="background-image:none;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>" label and label with "<mark style="background-image:none;background-color:#E99695;color:white;">Needs: Attention 👋</mark>".
+When the author replies, remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>&nbsp; label and label with &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#E99695;color:white;">Needs: Attention 👋</mark>&nbsp;.
 
 **Trigger criteria:**
 
 - Any action on an issue comment or PR comment except closing.
-- Has the "<mark style="background-image:none;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>" label added.
+- Has the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>&nbsp; label added.
 - The activity was initiated by the issue/PR author.
 
 **Action(s):**
 
-- Remove the "<mark style="background-image:none;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>" label.
-- Remove the "<mark style="background-image:none;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>" label.
-- Add the "<mark style="background-image:none;background-color:#E99695;color:white;">Needs: Attention 👋</mark>" label.
+- Remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#CB6BA2;color:white;">Needs: Author Feedback 👂</mark>&nbsp; label.
+- Remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>&nbsp; label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#E99695;color:white;">Needs: Attention 👋</mark>&nbsp; label.
 
 ---
 
@@ -351,7 +349,7 @@ Clean up e-mail replies to GitHub Issues for readability.
 
 ### ITA13
 
-If the language is set to Bicep in the Module proposal, add the "<mark style="background-image:none;background-color:#1D73B3;color:white;">Language: Bicep 💪</mark>" label on the issue.
+If the language is set to Bicep in the Module proposal, add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#1D73B3;color:white;">Language: Bicep 💪</mark>&nbsp; label on the issue.
 
 **Trigger criteria:**
 
@@ -365,13 +363,13 @@ Bicep
 
 **Action(s):**
 
-- Add the "<mark style="background-image:none;background-color:#1D73B3;color:white;">Language: Bicep 💪</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#1D73B3;color:white;">Language: Bicep 💪</mark>&nbsp; label.
 
 ---
 
 ### ITA14
 
-If the language is set to Terraform in the Module proposal, add the "<mark style="background-image:none;background-color:#7740B6;color:white;">Language: Terraform 🌐</mark>" label on the issue.
+If the language is set to Terraform in the Module proposal, add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#7740B6;color:white;">Language: Terraform 🌐</mark>&nbsp; label on the issue.
 
 **Trigger criteria:**
 
@@ -385,45 +383,45 @@ Terraform
 
 **Action(s):**
 
-- Add the "<mark style="background-image:none;background-color:#7740B6;color:white;">Language: Terraform 🌐</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#7740B6;color:white;">Language: Terraform 🌐</mark>&nbsp; label.
 
 ---
 
 ### ITA15
 
-Remove the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" label from a PR, if it already has a "<mark>Type: *XYZ*</mark>" label added and is assigned to someone at the time of creating it.
+Remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; label from a PR, if it already has a "<mark>Type: *XYZ*</mark>&nbsp; label added and is assigned to someone at the time of creating it.
 
 **Trigger criteria:**
 
 - A PR is opened with any of the following labels added and is assigned to someone:
-  - "<mark style="background-image:none;background-color:#D73A4A;color:white;">Type: Bug 🐛</mark>"
-  - "<mark style="background-image:none;background-color:#0075CA;color:white;">Type: Documentation 📄</mark>"
-  - "<mark style="background-image:none;background-color:#CFD3D7;">Type: Duplicate 🤲</mark>"
-  - "<mark style="background-image:none;background-color:#A2EEEF;">Type: Feature Request ➕</mark>"
-  - "<mark style="background-image:none;background-color:#17016A;color:white;">Type: Hygiene 🧹</mark>"
-  - "<mark style="background-image:none;background-color:#ADD8E6;">Type: New Module Proposal 💡</mark>"
-  - "<mark style="background-image:none;background-color:#CB6BA2;color:white;">Type: Question/Feedback 🙋‍♀️</mark>"
-  - "<mark style="background-image:none;background-color:#FFFF00;">Type: Security Bug 🔒</mark>"
+  - &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#D73A4A;color:white;">Type: Bug 🐛</mark>&nbsp;
+  - &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#0075CA;color:white;">Type: Documentation 📄</mark>&nbsp;
+  - &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#CFD3D7;">Type: Duplicate 🤲</mark>&nbsp;
+  - &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#A2EEEF;">Type: Feature Request ➕</mark>&nbsp;
+  - &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#17016A;color:white;">Type: Hygiene 🧹</mark>&nbsp;
+  - &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#ADD8E6;">Type: New Module Proposal 💡</mark>&nbsp;
+  - &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#CB6BA2;color:white;">Type: Question/Feedback 🙋‍♀️</mark>&nbsp;
+  - &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FFFF00;">Type: Security Bug 🔒</mark>&nbsp;
 
 **Action(s):**
 
-- Remove the "<mark style="background-image:none;background-color:#FBCA04;">Needs: Triage 🔍</mark>" label.
+- Remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; label.
 
 ---
 
 ### ITA16
 
-Add the "<mark style="background-image:none;background-color:#FBEF2A;">Status: Owners Identified 🤘</mark>" label when someone is assigned to a Module Proposal.
+Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBEF2A;">Status: Owners Identified 🤘</mark>&nbsp; label when someone is assigned to a Module Proposal.
 
 **Trigger criteria:**
 
 - Any action on an issue except closing.
-- Has the "<mark style="background-image:none;background-color:#ADD8E6;">Type: New Module Proposal 💡</mark>" added.
+- Has the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#ADD8E6;">Type: New Module Proposal 💡</mark>&nbsp; added.
 - The issue is assigned to someone.
 
 **Action(s):**
 
-- Add the "<mark style="background-image:none;background-color:#FBEF2A;">Status: Owners Identified 🤘</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBEF2A;">Status: Owners Identified 🤘</mark>&nbsp; label.
 
 ---
 
@@ -458,7 +456,7 @@ If the issue author says they want to be the module owner, assign the issue to t
 
 ### ITA18
 
-Send automatic response to the issue author if they don't want to be module owner and don't have any candidate in mind. Add the "<mark style="background-image:none;background-color:#FF0019;color:white;">Needs: Module Owner 📣</mark>" label.
+Send automatic response to the issue author if they don't want to be module owner and don't have any candidate in mind. Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0019;color:white;">Needs: Module Owner 📣</mark>&nbsp; label.
 
 **Trigger criteria:**
 
@@ -476,7 +474,7 @@ Send automatic response to the issue author if they don't want to be module owne
 
 **Action(s):**
 
-- Add the "<mark style="background-image:none;background-color:#FF0019;color:white;">Needs: Module Owner 📣</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0019;color:white;">Needs: Module Owner 📣</mark>&nbsp; label.
 - Add the below reply and explain the action(s).
 
   ```markdown
@@ -488,7 +486,7 @@ Send automatic response to the issue author if they don't want to be module owne
 
 ### ITA19
 
-Send automatic response to the issue author if they don't want to be module owner but have a candidate in mind. Add the "<mark style="background-image:none;background-color:#FBEF2A;">Status: Owners Identified 🤘</mark>" label.
+Send automatic response to the issue author if they don't want to be module owner but have a candidate in mind. Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBEF2A;">Status: Owners Identified 🤘</mark>&nbsp; label.
 
 **Trigger criteria:**
 
@@ -510,7 +508,7 @@ Send automatic response to the issue author if they don't want to be module owne
 
 **Action(s):**
 
-- Add the "<mark style="background-image:none;background-color:#FBEF2A;">Status: Owners Identified 🤘</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBEF2A;">Status: Owners Identified 🤘</mark>&nbsp; label.
 - Add the below reply and explain the action(s).
 
   ```markdown
@@ -525,7 +523,7 @@ Send automatic response to the issue author if they don't want to be module owne
 
 ### ITA20
 
-If the issue type is feature request, add the "<mark style="background-image:none;background-color:#A2EEEF;">Type: Feature Request ➕</mark>" label on the issue.
+If the issue type is feature request, add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#A2EEEF;">Type: Feature Request ➕</mark>&nbsp; label on the issue.
 
 **Trigger criteria:**
 
@@ -539,13 +537,13 @@ If the issue type is feature request, add the "<mark style="background-image:non
 
 **Action(s):**
 
-- Add the "<mark style="background-image:none;background-color:#A2EEEF;">Type: Feature Request ➕</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#A2EEEF;">Type: Feature Request ➕</mark>&nbsp; label.
 
 ---
 
 ### ITA21
 
-If the issue type is bug, add the "<mark style="background-image:none;background-color:#D73A4A;color:white;">Type: Bug 🐛</mark>" label on the issue.
+If the issue type is bug, add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#D73A4A;color:white;">Type: Bug 🐛</mark>&nbsp; label on the issue.
 
 **Trigger criteria:**
 
@@ -559,13 +557,13 @@ If the issue type is bug, add the "<mark style="background-image:none;background
 
 **Action(s):**
 
-- Add the "<mark style="background-image:none;background-color:#D73A4A;color:white;">Type: Bug 🐛</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#D73A4A;color:white;">Type: Bug 🐛</mark>&nbsp; label.
 
 ---
 
 ### ITA22
 
-If the issue type is security bug, add the "<mark style="background-image:none;background-color:#FFFF00;">Type: Security Bug 🔒</mark>" label on the issue.
+If the issue type is security bug, add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FFFF00;">Type: Security Bug 🔒</mark>&nbsp; label on the issue.
 
 **Trigger criteria:**
 
@@ -579,13 +577,13 @@ If the issue type is security bug, add the "<mark style="background-image:none;b
 
 **Action(s):**
 
-- Add the "<mark style="background-image:none;background-color:#FFFF00;">Type: Security Bug 🔒</mark>" label.
+- Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FFFF00;">Type: Security Bug 🔒</mark>&nbsp; label.
 
 ---
 
 ### ITA23
 
-Remove the "<mark style="background-image:none;background-color:#EDEDED;">Status: In PR 👉</mark>" label from an issue when it's closed.
+Remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#EDEDED;">Status: In PR 👉</mark>&nbsp; label from an issue when it's closed.
 
 **Trigger criteria:**
 
@@ -593,13 +591,13 @@ Remove the "<mark style="background-image:none;background-color:#EDEDED;">Status
 
 **Action(s):**
 
-- Remove the "<mark style="background-image:none;background-color:#EDEDED;">Status: In PR 👉</mark>" label.
+- Remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#EDEDED;">Status: In PR 👉</mark>&nbsp; label.
 
 ---
 
 ### ITA25
 
-Inform module owners that they need to add the "<mark style="background-image:none;background-color:#DB4503;color:white;">Needs: Core Team 🧞</mark>" label to their PR if they're the sole owner of their module.
+Inform module owners that they need to add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#DB4503;color:white;">Needs: Core Team 🧞</mark>&nbsp; label to their PR if they're the sole owner of their module.
 
 **Trigger criteria:**
 
@@ -607,7 +605,7 @@ Inform module owners that they need to add the "<mark style="background-image:no
 
 **Action(s):**
 
-Inform module owners that they need to add the "<mark style="background-image:none;background-color:#DB4503;color:white;">Needs: Core Team 🧞</mark>" label to their PR if they're the sole owner of their module.
+Inform module owners that they need to add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#DB4503;color:white;">Needs: Core Team 🧞</mark>&nbsp; label to their PR if they're the sole owner of their module.
 
 ---
 

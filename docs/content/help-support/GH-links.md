@@ -1,6 +1,5 @@
 ---
 title: GitHub Links
-geekdocCollapseSection: true
 ---
 
 - [Propose a New Module](https://aka.ms/AVM/ModuleProposal)
