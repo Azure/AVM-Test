@@ -593,7 +593,37 @@ enableGitInfo = true
     url = 'https://opensource.microsoft.com/codeofconduct/'
     weight = 6
 
+[[menu.defined]]
+  identifier = 'resources'
+  parent = 'home'
+  name = 'Resources'
+  pageRef = '/resources'
+  weight = 7
+  params = { alwaysopen = true }
 
+  [[menu.defined]]
+    identifier = 'community'
+    parent = 'resources'
+    name = 'Community'
+    pageRef = '/resources/community'
+    weight = 1
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+    identifier = 'faq'
+    parent = 'resources'
+    name = 'FAQ'
+    pageRef = '/resources/faq'
+    weight = 2
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+    identifier = 'glossary'
+    parent = 'resources'
+    name = 'Glossary'
+    pageRef = '/resources/glossary'
+    weight = 3
+    params = { alwaysopen = false, collapsibleMenu = true }
 
 [[menu.shortcuts]]
   pre = '<i class="fa-fw fab fa-github"></i> '
