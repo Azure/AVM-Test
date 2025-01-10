@@ -66,9 +66,7 @@ flowchart TD
     O -->P[[ Module BAU Starts ]]
         click P "{{% siteparam base %}}/help-support/module-support/"
 {{< /mermaid >}}
-</div>
-<br>
-<!-- markdownlint-enable -->
+</div><!-- markdownlint-enable -->
 
 ### Provide details for module proposals
 

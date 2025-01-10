@@ -30,7 +30,7 @@ I have completed my initial development of the module and I would like to reques
 
     {{% expand title="➕ AVM Terraform Module Review Issue" %}}
 
-{{< include file="static/includes/avm-terraform-module-review-template.md" >}}
+{{% include file="static/includes/avm-terraform-module-review-template.md" %}}
 
 {{% /expand %}}
 

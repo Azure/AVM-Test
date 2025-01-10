@@ -91,8 +91,6 @@ The AVM core team will then triage the request and get back to you with next ste
 
 The [AVM core team][AVMCoreTeam] will maintain the module catalog and update it as new modules are created and published or existing ones are updated or retired. -->
 
-<br>
-
 ## Developing a module
 
 ---
@@ -174,8 +172,6 @@ To determine if this is the case you'll need to navigate to the [Microsoft Open 
 ### Where can I test my module during development?
 
 During initial module development module owners/developers need to use your own environment (Azure subscriptions) to test module. In later phase, during publishing process, we will conduct automated test that will use AVM dedicated environment.
-
-<br>
 
 ## Updating and managing a module
 

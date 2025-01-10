@@ -141,7 +141,7 @@ This checklist can be used in the development of AVM Bicep Modules.
 
 {{< highlight lineNos="false" type="powershell" wrap="true" title="" >}}
 
-{{< include file="/static/scripts/sample-localtest-helper.ps1" >}}
+{{% include file="/static/scripts/sample-localtest-helper.ps1" %}}
 
 {{< /highlight >}}
     

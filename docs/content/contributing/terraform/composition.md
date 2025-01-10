@@ -180,7 +180,7 @@ terraform {
 }
 ```
 
-{{< include file="/static/includes/sample.telem.tf" language="terraform" options="linenos=false" >}}
+{{% include file="/static/includes/sample.telem.tf" language="terraform" options="linenos=false" %}}
 
 ## Eventual Consistency
 
