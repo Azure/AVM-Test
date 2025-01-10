@@ -41,8 +41,6 @@ The `@Azure` prefix in the last column of the tables linked above represents the
 Non-FTE / external contributors (subject matter experts that aren't Microsoft employees) can't be members of the teams described in this chapter, hence, they won't gain any extra permissions on AVM repositories, therefore, they need to work in forks.
 {{% /notice %}}
 
-<br>
-
 ##### Naming Convention
 
 The naming convention for the GitHub teams **MUST** follow the below pattern:
@@ -67,8 +65,6 @@ Examples:
 - `avm-res-compute-virtualmachine-module-owners-bicep`
 - `avm-res-compute-virtualmachine-module-contributors-tf`
 
-<br>
-
 ##### Add Team Members
 
 All officially documented module owner(s) **MUST** be added to the `-module-owners-` team. The `-module-owners-` team **MUST NOT** have any other members.
@@ -76,8 +72,6 @@ All officially documented module owner(s) **MUST** be added to the `-module-owne
 Any additional module contributors whom the module owner(s) agreed to work with **MUST** be added to the `-module-contributors-` team.
 
 Unless explicitly requested and agreed, members of the AVM core team or any PG teams **MUST NOT** be added to the `-module-owners-` or `-module-contributors-` teams as permissions for them are granted through the teams described in [SNFR9]({{% siteparam base %}}/spec/SNFR9).
-
-<br>
 
 ##### Grant Permissions - Bicep
 
@@ -130,8 +124,6 @@ Every `CODEOWNERS` entry (line) **MUST** include the following segments separate
 Example - `CODEOWNERS` entry for the Bicep resource module of Azure Virtual Network (`avm/res/network/virtual-network`):
 
 - `/avm/res/network/virtual-network/ @Azure/avm-res-network-virtualnetwork-module-owners-bicep @Azure/avm-module-reviewers-bicep`
-
-<br>
 
 ##### Grant Permissions - Terraform
 

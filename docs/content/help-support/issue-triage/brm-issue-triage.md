@@ -22,8 +22,6 @@ Do **NOT** file the following types of issues in the **BRM repository**, as they
 Every module needs a module proposal to be created in the AVM repository.
 {{% /notice %}}
 
-<br>
-
 ## Module Owner Responsibilities
 
 During the triage process, module owners are expected to check, complete and follow up on the items described in the sections below.
@@ -41,8 +39,6 @@ The [BRM repository](https://aka.ms/BRM) includes other, non-AVM modules and rel
 - Open items that are <a href="https://aka.ms/BRM/NotInAProject">**not in a project**</a>.
 
 {{% /notice %}}
-
-<br>
 
 ## Module Issue
 
@@ -74,8 +70,6 @@ If the issue was opened as a misplaced module proposal, mention the `@Azure/AVM-
 4. Remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; label.
 5. When more detailed plans are available, communicate expected timeline for the update/fix to the requestor (issue author).
 6. Only close the issue, once the next version of the module was fully developed, tested and published.
-
-<br>
 
 ### Triaging a Module PR
 

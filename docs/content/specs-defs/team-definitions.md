@@ -12,8 +12,6 @@ Individuals can be members of multiple teams, at once, that are defined below.
 
 {{% /notice %}}
 
-<br>
-
 ### AVM Core Team
 
 GitHub Team: [`@Azure/avm-core-team`](https://github.com/orgs/Azure/teams/avm-core-team)
@@ -33,8 +31,6 @@ The AVM core team are responsible for:
 
 The team is made up of both technical and non-technical team members that are all Microsoft FTEs.
 
-<br>
-
 ### Module Owners
 
 {{% notice style="important" %}}
@@ -53,8 +49,6 @@ Module owners are responsible for:
 
 Ideally there **SHOULD** be at least 2 module owners per module and **MUST** be in a [GitHub Team in the `Azure` organization.](https://github.com/orgs/Azure/teams/)
 
-<br>
-
 ### Module Contributors
 
 {{% notice style="important" %}}
@@ -68,8 +62,6 @@ Module Contributors are responsible for:
 - Assisting the Module Owners with their responsibilities
 
 Module Contributors **MUST** be in a separate [GitHub Team in the `Azure` organization](https://github.com/orgs/Azure/teams/), that the Module Owners manage and are maintainers of.
-
-<br>
 
 ### Product Groups
 
@@ -89,8 +81,6 @@ The Azure Bicep & Terraform Product Groups are responsible for:
 We are investigating working with all Azure Product Groups as a future investment area that they take on ownership, or contribute to, the AVM modules for their service/product.
 
 {{% /notice %}}
-
-<br>
 
 ## RACI
 

@@ -55,8 +55,6 @@ In the provided example for Diagnostic Settings, both logs and metrics are enabl
 
 {{% /notice %}}
 
-<br>
-
 ## Role Assignments
 
 {{< highlight lineNos="false" type="bicep" wrap="true" title="User Defined Type, Parameter & Resource Example" >}}
@@ -70,8 +68,6 @@ In the provided example for Diagnostic Settings, both logs and metrics are enabl
 **Details on child, extension and cross-referenced resources:**
 
 - Modules **MUST** support Role Assignments on child, extension and cross-referenced resources as well as the primary resource via parameters/variables
-
-<br>
 
 ## Resource Locks
 
@@ -94,8 +90,6 @@ In the provided example for Diagnostic Settings, both logs and metrics are enabl
 
 An example of this is a Key Vault module that has a Private Endpoints enabled. If a lock is applied to the Key Vault via the `lock` parameter/variable then the lock should also be applied to the Private Endpoint automatically, unless the `privateEndpointLock/private_endpoint_lock` (example name) parameter/variable is set to `None`
 
-<br>
-
 ## Tags
 
 {{< highlight lineNos="false" type="bicep" wrap="true" title="User Defined Type, Parameter & Resource Example" >}}
@@ -112,8 +106,6 @@ An example of this is a Key Vault module that has a Private Endpoints enabled. I
   - By default, all tags set for the primary resource will automatically be passed down to child, extension and cross-referenced resources.
   - This **MUST** be able to be overridden by the module consumer so they can specify alternate tags for child, extension and cross-referenced resources, if they desire via a parameter/variable
     - If overridden by the module consumer, no merge/union of tags will take place from the primary resource and only the tags specified for the child, extension and cross-referenced resources will be applied
-
-<br>
 
 ## Managed Identities
 
@@ -158,8 +150,6 @@ An example of this is a Key Vault module that has a Private Endpoints enabled. I
 - We do not foresee the Managed Identity Resource Provider team to ever add additional properties within the empty object (`{}`) value required on the input of a User Assigned Managed Identity.
 - In Bicep we therefore have removed the need for this to be declared and just converted it to a simple array of Resource IDs
 
-<br>
-
 ## Private Endpoints
 
 {{< tabs title="Private Endpoints" >}}
@@ -200,8 +190,6 @@ An example of this is a Key Vault module that has a Private Endpoints enabled. I
   - However, they should do so with caution as should a new service appear for their resource module, a new release will need to be cut to add this new service to the allowed values
     - Whereas not specifying allowed values will allow flexibility from day 0 without the need for any changes and releases to be made
 
-<br>
-
 ## Customer Managed Keys
 
 {{< tabs title="Customer Managed Keys" >}}
@@ -228,8 +216,6 @@ An example of this is a Key Vault module that has a Private Endpoints enabled. I
 
 {{% /tab %}}
 {{< /tabs >}}
-
-<br>
 
 ## Secrets export
 
@@ -279,8 +265,6 @@ Which returns a JSON-formatted output like:
 {{< highlight lineNos="false" type="bicep" wrap="true" title="Output Usage Example" >}}
   {{% include file="/static/includes/interfaces/bicep/int.secExp.output.jsonFmt.json" %}}
 {{< /highlight >}}
-
-<br>
 
 ## Azure Monitor Alerts
 

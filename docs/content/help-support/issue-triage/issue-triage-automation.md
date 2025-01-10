@@ -251,8 +251,6 @@ Remind module owner(s) to start or continue working on this module if there was 
 
 ---
 
-<br>
-
 ## Event based automation
 
 This chapter details all automation rules that are based on an event.

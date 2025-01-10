@@ -12,8 +12,6 @@ The following table shows the number of all available, orphaned and planned **AV
 
 {{% moduleStats language="All" moduleType="All" showLanguage=true showClassification=true %}}
 
-<br>
-
 {{% notice style="tip" title="Want to contribute to AVM modules?" %}}
 
 | #  | <div style="width:250px">Labels</div> | Link and description |

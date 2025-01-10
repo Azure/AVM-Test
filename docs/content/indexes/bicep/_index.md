@@ -13,8 +13,6 @@ The following table shows the number of all available, orphaned and planned **Bi
 
 {{% moduleStats language="Bicep" moduleType="All" showLanguage=true showClassification=true %}}
 
-<br>
-
 {{% notice style="tip" title="Want to contribute to AVM Bicep modules?" %}}
 
 | #  | Labels | Link and description |
@@ -26,8 +24,6 @@ The following table shows the number of all available, orphaned and planned **Bi
 For more details on "**What are the different ways to contribute to AVM?**", see [here]({{% siteparam base %}}/faq/#are-there-different-ways-to-contribute-to-avm).
 
 {{% /notice %}}
-
-<br>
 
 ---
 

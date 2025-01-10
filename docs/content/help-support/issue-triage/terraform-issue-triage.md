@@ -21,8 +21,6 @@ Do **NOT** file the following types of issues in a **Terraform repository**, as 
 Every module needs a module proposal to be created in the AVM repository.
 {{% /notice %}}
 
-<br>
-
 ## Module Owner Responsibilities
 
 During the triage process, module owners are expected to check, complete and follow up on the items described in the sections below.
@@ -35,8 +33,6 @@ Module owners **MUST** meet the SLAs defined on the [Module Support]({{% sitepar
 - To look for items that **need attention**, look for issue labled with ➡️ &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#E99695;color:white;">Needs: Attention 👋</mark>&nbsp; ⬅️.
 
 {{% /notice %}}
-
-<br>
 
 ## Module Issue
 
@@ -67,8 +63,6 @@ If the issue was opened as a misplaced module proposal, mention the `@Azure/AVM-
 4. Remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; label.
 5. When more detailed plans are available, communicate expected timeline for the update/fix to the requestor (issue author).
 6. Only close the issue, once the next version of the module was fully developed, tested and published.
-
-<br>
 
 ## General Question/Feedback and other standard issues
 

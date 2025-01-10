@@ -28,8 +28,6 @@ The following table shows the number of all available, orphaned and proposed **T
 
 {{% moduleStats language="Terraform" moduleType="Utility" showLanguage=true showClassification=true %}}
 
-<br>
-
 ### Module Publication History - 📅
 
 {{% expand title="➕ Module Publication History - Module names, status and owners" expanded="false" %}}

@@ -27,8 +27,6 @@ In the provided example for Diagnostic Settings, both logs and metrics are enabl
 
 {{% /notice %}}
 
-<br>
-
 ## Role Assignments
 
 {{< highlight lineNos="false" type="terraform" wrap="true" title="Variable Declaration" >}}
@@ -42,8 +40,6 @@ In the provided example for Diagnostic Settings, both logs and metrics are enabl
 **Details on child, extension and cross-referenced resources:**
 
 - Modules **MUST** support Role Assignments on child, extension and cross-referenced resources as well as the primary resource via parameters/variables
-
-<br>
 
 ## Resource Locks
 
@@ -72,8 +68,6 @@ In Terraform, locks become part of the resource graph and suitable `depends_on` 
 
 {{% /notice %}}
 
-<br>
-
 ## Tags
 
 {{< highlight lineNos="false" type="terraform" wrap="true" title="Variable Declaration" >}}
@@ -91,8 +85,6 @@ In Terraform, locks become part of the resource graph and suitable `depends_on` 
   - This **MUST** be able to be overridden by the module consumer so they can specify alternate tags for child, extension and cross-referenced resources, if they desire via a parameter/variable
     - If overridden by the module consumer, no merge/union of tags will take place from the primary resource and only the tags specified for the child, extension and cross-referenced resources will be applied
 
-<br>
-
 ## Managed Identities
 
 {{< highlight lineNos="false" type="terraform" wrap="true" title="Variable Declaration" >}}
@@ -109,8 +101,6 @@ In Terraform, locks become part of the resource graph and suitable `depends_on` 
 - In Bicep we therefore have removed the need for this to be declared and just converted it to a simple array of Resource IDs
 - However, in Terraform we have left it as a object/map as this simplifies `for_each` and other loop mechanisms and provides more consistency in plan, apply, destroy operations
   - Especially when adding, removing or changing the order of the User Assigned Managed Identities as they are declared
-
-<br>
 
 ## Private Endpoints
 
@@ -131,8 +121,6 @@ In Terraform, locks become part of the resource graph and suitable `depends_on` 
   - However, they should do so with caution as should a new service appear for their resource module, a new release will need to be cut to add this new service to the allowed values.
     - Whereas not specifying allowed values will allow flexibility from day 0 without the need for any changes and releases to be made.
 
-<br>
-
 ## Customer Managed Keys
 
 {{< highlight lineNos="false" type="terraform" wrap="true" title="Variable Declaration" >}}
@@ -142,8 +130,6 @@ In Terraform, locks become part of the resource graph and suitable `depends_on` 
 {{< highlight lineNos="false" type="terraform" wrap="true" title="Input Example with Values" >}}
   {{% include file="/static/includes/interfaces/tf/int.cmk.input.tf" %}}
 {{< /highlight >}}
-
-<br>
 
 ## Azure Monitor Alerts
 
