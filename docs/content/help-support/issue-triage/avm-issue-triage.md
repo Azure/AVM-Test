@@ -28,8 +28,6 @@ During the triage process, the AVM Core Team should also check the status of fol
 
 {{% /notice %}}
 
-<br>
-
 ## Module Proposal triage
 
 An issue is considered to be a module proposal if
@@ -133,8 +131,6 @@ Although, it's not directly part of the module proposal triage process, to begin
 
 {{% /notice %}}
 
-<br>
-
 ## Post-Development issue management
 
 Once module is developed and `v0.1.0` has been published to the relevant registry
@@ -151,8 +147,6 @@ Once module is developed and `v0.1.0` has been published to the relevant registr
 - Once the module is fully developed, tested and published to the relevant registry, and the Module Proposal issue was closed, it **MUST remain closed**.
 
 {{% /notice %}}
-
-<br>
 
 ## Orphaned modules
 
@@ -249,8 +243,6 @@ To look for Orphaned Modules:
 {{% /expand %}}
 
 7. Close the Orphaned Module issue.
-
-<br>
 
 ## General feedback/question, documentation update and other standard issues
 

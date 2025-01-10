@@ -446,6 +446,155 @@ enableGitInfo = true
     weight = 1
     params = { alwaysopen = false, collapsibleMenu = true }
 
+
+  [[menu.defined]]
+    identifier = 'bicep-module-contribution'
+    parent = 'contributing'
+    name = 'Bicep Modules'
+    pageRef = '/contributing/bicep'
+    weight = 2
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'bicep-contribution-prerequisites'
+      parent = 'bicep-module-contribution'
+      name = 'Prerequisites'
+      pageRef = '/contributing/bicep/prerequisites'
+      weight = 1
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'bicep-contribution-composition'
+      parent = 'bicep-module-contribution'
+      name = 'Composition'
+      pageRef = '/contributing/bicep/composition'
+      weight = 2
+      params = { alwaysopen = false, collapsibleMenu = false }
+
+    [[menu.defined]]
+      identifier = 'bicep-contribution-flow'
+      parent = 'bicep-module-contribution'
+      name = 'Contribution Flow'
+      pageRef = '/contributing/bicep/bicep-contribution-flow'
+      weight = 3
+      params = { alwaysopen = true, collapsibleMenu = true }
+
+      [[menu.defined]]
+        identifier = 'bicep-owner-contribution-flow'
+        parent = 'bicep-contribution-flow'
+        name = 'Owner Contribution Flow'
+        pageRef = '/contributing/bicep/bicep-contribution-flow/owner-contribution-flow'
+        weight = 1
+        params = { alwaysopen = true, collapsibleMenu = true }      
+
+      [[menu.defined]]
+        identifier = 'update-module-files'
+        parent = 'bicep-contribution-flow'
+        name = 'Update Module Files'
+        pageRef = '/contributing/bicep/bicep-contribution-flow/generate-bicep-module-files'
+        weight = 2
+        params = { alwaysopen = true, collapsibleMenu = true }      
+
+      [[menu.defined]]
+        identifier = 'validate-module-locally'
+        parent = 'bicep-contribution-flow'
+        name = 'Validate Module Locally'
+        pageRef = '/contributing/bicep/bicep-contribution-flow/validate-bicep-module-locally'
+        weight = 3
+        params = { alwaysopen = true, collapsibleMenu = true }      
+
+      [[menu.defined]]
+        identifier = 'enable-disable-workflows'
+        parent = 'bicep-contribution-flow'
+        name = 'Enable or Disable Workflows'
+        pageRef = '/contributing/bicep/bicep-contribution-flow/enable-or-disable-workflows'
+        weight = 4
+        params = { alwaysopen = true, collapsibleMenu = true }      
+
+      [[menu.defined]]
+        identifier = 'custom-ci-secrets'
+        parent = 'bicep-contribution-flow'
+        name = 'Custom CI Secrets'
+        pageRef = '/contributing/bicep/bicep-contribution-flow/custom-ci-secrets'
+        weight = 5
+        params = { alwaysopen = true, collapsibleMenu = true }      
+  
+  [[menu.defined]]
+    identifier = 'terraform-module-contribution'
+    parent = 'contributing'
+    name = 'Terraform Modules'
+    pageRef = '/contributing/terraform'
+    weight = 3
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'prerequisites'
+      parent = 'terraform-module-contribution'
+      name = 'Prerequisites'
+      pageRef = '/contributing/terraform/prerequisites'
+      weight = 1
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'composition'
+      parent = 'terraform-module-contribution'
+      name = 'Composition'
+      pageRef = '/contributing/terraform/composition'
+      weight = 2
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'terraform-contribution-flow'
+      parent = 'terraform-module-contribution'
+      name = 'Contribution Flow'
+      pageRef = '/contributing/terraform/terraform-contribution-flow'
+      weight = 3
+      params = { alwaysopen = true, collapsibleMenu = true }
+
+      [[menu.defined]]
+        identifier = 'terraform-owner-contribution-flow'
+        parent = 'terraform-contribution-flow'
+        name = 'Owner Contribution Flow'
+        pageRef = '/contributing/terraform/terraform-contribution-flow/owner-contribution-flow'
+        weight = 1
+        params = { alwaysopen = false, collapsibleMenu = true }
+
+    [[menu.defined]]
+      identifier = 'review'
+      parent = 'terraform-module-contribution'
+      name = 'Review'
+      pageRef = '/contributing/terraform/review'
+      weight = 4
+      params = { alwaysopen = false, collapsibleMenu = true }
+
+  [[menu.defined]]
+    identifier = 'contirbution-qna'
+    parent = 'contributing'
+    name = 'Contribution Q&A'
+    pageRef = '/contributing/q-and-a'
+    weight = 4
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+
+  [[menu.defined]]
+    identifier = 'website-contribution'
+    parent = 'contributing'
+    name = 'Website'
+    pageRef = '/contributing/website'
+    weight = 5
+    params = { alwaysopen = false, collapsibleMenu = true }
+
+
+  [[menu.defined]]
+    identifier = 'code-of-conduct'
+    parent = 'contributing'
+    pre = '<i class="fa-solid fa-globe"></i> '
+    name = 'Code of Conduct'
+    url = 'https://opensource.microsoft.com/codeofconduct/'
+    weight = 6
+
+
+
 [[menu.shortcuts]]
   pre = '<i class="fa-fw fab fa-github"></i> '
   name = 'GitHub Repo'
