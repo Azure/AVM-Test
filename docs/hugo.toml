@@ -72,6 +72,7 @@ enableGitInfo = true
   parent = 'home'
   name = 'Overview'
   weight = 1
+  params = { alwaysopen = true, collapsibleMenu = true }
 
   [[menu.defined]]
     identifier = 'introduction'
@@ -86,7 +87,7 @@ enableGitInfo = true
   name = 'Module Indexes'
   pageRef = '/indexes'
   weight = 2
-  params = { alwaysopen = true }
+  params = { alwaysopen = true, collapsibleMenu = true }
 
   [[menu.defined]]
     identifier = 'bicep-module-indexes'
@@ -157,6 +158,7 @@ enableGitInfo = true
   parent = 'home'
   name = 'Usage Guide'
   weight = 3
+  params = { alwaysopen = true, collapsibleMenu = true }
 
   [[menu.defined]]
     identifier = 'quickstart'
@@ -187,6 +189,7 @@ enableGitInfo = true
   parent = 'home'
   name = 'Specifications & Definitions'
   weight = 4
+  params = { alwaysopen = false, collapsibleMenu = true }
 
   [[menu.defined]]
     identifier = 'team-def-and-raci'
@@ -313,6 +316,7 @@ enableGitInfo = true
   parent = 'home'
   name = 'Help & Support'
   weight = 5
+  params = { alwaysopen = false, collapsibleMenu = true }
 
   [[menu.defined]]
     identifier = 'module-support'
@@ -437,6 +441,7 @@ enableGitInfo = true
   parent = 'home'
   name = 'Contributing'
   weight = 6
+  params = { alwaysopen = false, collapsibleMenu = true }
 
   [[menu.defined]]
     identifier = 'process-overview'
@@ -599,7 +604,7 @@ enableGitInfo = true
   name = 'Resources'
   pageRef = '/resources'
   weight = 7
-  params = { alwaysopen = true }
+  params = { alwaysopen = true, collapsibleMenu = true }
 
   [[menu.defined]]
     identifier = 'community'
