@@ -31,6 +31,7 @@ enableGitInfo = true
     alwaysopen = true
     collapsibleMenu = false
     disableRootBreadcrumb = false
+    clarityId = 'prb1m4vask'
 
 [module]
   [[module.imports]]
@@ -59,7 +60,7 @@ enableGitInfo = true
 
 [markup.goldmark.parser]
   autoHeadingID = true
-  
+
 # [[menu.defined]]
 #   pre = '<i class="fa-fw fas fa-home"></i> '
 #   identifier = 'home'
@@ -96,7 +97,7 @@ enableGitInfo = true
     pageRef = '/indexes/bicep'
     weight = 1
     params = { alwaysopen = false, collapsibleMenu = true }
-    
+
     [[menu.defined]]
       identifier = 'bicep-resource-module-indexes'
       parent = 'bicep-module-indexes'
@@ -128,7 +129,7 @@ enableGitInfo = true
     pageRef = '/indexes/terraform'
     weight = 2
     params = { alwaysopen = false, collapsibleMenu = true }
-    
+
     [[menu.defined]]
       identifier = 'terraform-resource-module-indexes'
       parent = 'terraform-module-indexes'
@@ -490,7 +491,7 @@ enableGitInfo = true
         name = 'Owner Contribution Flow'
         pageRef = '/contributing/bicep/bicep-contribution-flow/owner-contribution-flow'
         weight = 1
-        params = { alwaysopen = true, collapsibleMenu = true }      
+        params = { alwaysopen = true, collapsibleMenu = true }
 
       [[menu.defined]]
         identifier = 'update-module-files'
@@ -498,7 +499,7 @@ enableGitInfo = true
         name = 'Update Module Files'
         pageRef = '/contributing/bicep/bicep-contribution-flow/generate-bicep-module-files'
         weight = 2
-        params = { alwaysopen = true, collapsibleMenu = true }      
+        params = { alwaysopen = true, collapsibleMenu = true }
 
       [[menu.defined]]
         identifier = 'validate-module-locally'
@@ -506,7 +507,7 @@ enableGitInfo = true
         name = 'Validate Module Locally'
         pageRef = '/contributing/bicep/bicep-contribution-flow/validate-bicep-module-locally'
         weight = 3
-        params = { alwaysopen = true, collapsibleMenu = true }      
+        params = { alwaysopen = true, collapsibleMenu = true }
 
       [[menu.defined]]
         identifier = 'enable-disable-workflows'
@@ -514,7 +515,7 @@ enableGitInfo = true
         name = 'Enable or Disable Workflows'
         pageRef = '/contributing/bicep/bicep-contribution-flow/enable-or-disable-workflows'
         weight = 4
-        params = { alwaysopen = true, collapsibleMenu = true }      
+        params = { alwaysopen = true, collapsibleMenu = true }
 
       [[menu.defined]]
         identifier = 'custom-ci-secrets'
@@ -522,8 +523,8 @@ enableGitInfo = true
         name = 'Custom CI Secrets'
         pageRef = '/contributing/bicep/bicep-contribution-flow/custom-ci-secrets'
         weight = 5
-        params = { alwaysopen = true, collapsibleMenu = true }      
-  
+        params = { alwaysopen = true, collapsibleMenu = true }
+
   [[menu.defined]]
     identifier = 'terraform-module-contribution'
     parent = 'contributing'
