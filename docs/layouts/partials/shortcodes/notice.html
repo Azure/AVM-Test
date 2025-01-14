@@ -60,8 +60,8 @@
       {{- if not (or (in (slice "open" "summary") $k) (strings.HasPrefix $k "on")) }}
           {{- printf " %s=%q" $k $v | safeHTMLAttr }}
       {{- end }}
-  {{- end }}{{ if $expander }} style="border: 1px solid rgb(199, 199, 199); margin 10px; bottom: padding 10px" {{ end }}>
-  <summary class="box-label{{ if and (not $expander) (not $icon) (not $title) }} a11y-only{{ end }}" {{ if $expander }} style="background-color: rgb(240, 240, 240); padding: 10px; border: 1px solid rgb(240,240,240)" {{ end }}>{{ if $expander }}
+  {{- end }}{{ if $expander }} style="border: 1px solid rgb(235, 235, 235); margin 10px;" {{ end }}>
+  <summary class="box-label{{ if and (not $expander) (not $icon) (not $title) }} a11y-only{{ end }}" {{ if $expander }} style="background-color: rgb(235, 235, 235); padding: 10px; border: 1px solid rgb(240,240,240)" {{ end }}>{{ if $expander }}
     <i class="expander-icon fa-fw fas fa-chevron-right"></i> {{ end }}{{ if $icon }}
     <i class="{{ $icon }}"></i> {{ end }}{{ if $title }}
     {{ $title }}{{ else }}

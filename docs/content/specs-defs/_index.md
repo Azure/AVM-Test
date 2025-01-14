@@ -1,9 +1,16 @@
-+++
-title = "Specifications & Definitions"
-linkTitle = 'Specifications & Definitions'
-type = "chapter"
-weight = 4
-collapsibleMenu = false
-[_build]
-  render = 'never'
-+++
+---
+title: Specifications & Definitions
+linkTitle: Specifications & Definitions
+type: chapter
+weight: 4
+url: /specs/
+---
+
+This section lists AVM's Specifications & Definitions.
+
+- [Team Definitions & RACI]({{% siteparam base %}}/specs/shared/team-definitions/)
+- [Module Classifications]({{% siteparam base %}}/specs/shared/module-classifications/)
+- [Module Lifecycle]({{% siteparam base %}}/specs/shared/module-lifecycle/)
+- [Module Specifications]({{% siteparam base %}}/specs/module-specs/)
+  - [Bicep Specific]({{% siteparam base %}}/specs/bcp)
+  - [Terraform Specific]({{% siteparam base %}}/specs/tf)

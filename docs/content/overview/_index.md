@@ -4,7 +4,8 @@ title = 'Overview'
 linkTitle = 'Overview'
 type = 'default'
 weight = 1
-collapsibleMenu = false
-[_build]
-  render = 'never'
 +++
+
+This section provides an overview of the Azure Verified Modules (AVM) program.
+
+- [Introduction]({{% siteparam base %}}/overview/introduction)

@@ -72,6 +72,7 @@ enableGitInfo = true
   identifier = 'overview'
   parent = 'home'
   name = 'Overview'
+  pageRef = '/overview'
   weight = 1
   params = { alwaysopen = true, collapsibleMenu = true }
 
@@ -81,6 +82,7 @@ enableGitInfo = true
     name = 'Introduction'
     pageRef = '/overview/introduction'
     weight = 1
+    params = { alwaysopen = true, collapsibleMenu = true }
 
 [[menu.defined]]
   identifier = 'module-indexes'
@@ -158,6 +160,7 @@ enableGitInfo = true
   identifier = 'usage'
   parent = 'home'
   name = 'Usage Guide'
+  pageRef = '/usage'
   weight = 3
   params = { alwaysopen = true, collapsibleMenu = true }
 
@@ -189,6 +192,7 @@ enableGitInfo = true
   identifier = 'specs-defs'
   parent = 'home'
   name = 'Specifications & Definitions'
+  pageRef = '/specs-defs'
   weight = 4
   params = { alwaysopen = false, collapsibleMenu = true }
 
@@ -316,6 +320,7 @@ enableGitInfo = true
   identifier = 'help-support'
   parent = 'home'
   name = 'Help & Support'
+  pageRef = '/help-support'
   weight = 5
   params = { alwaysopen = false, collapsibleMenu = true }
 
@@ -441,6 +446,7 @@ enableGitInfo = true
   identifier = 'contributing'
   parent = 'home'
   name = 'Contributing'
+  pageRef = '/contributing'
   weight = 6
   params = { alwaysopen = false, collapsibleMenu = true }
 
