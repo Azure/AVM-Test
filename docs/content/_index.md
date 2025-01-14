@@ -12,13 +12,18 @@ description = "Azure Verified Modules Test Site"
 - See [Terraform Quickstart Guide](/usage/quickstart/terraform/)
 {{% /notice %}}
 
+## Introduction
+
+<div style="width:70%; margin: 0 auto;">
 {{< youtube id="JbIMrJKW5N0" title="An introduction to Azure Verified Modules (AVM)" >}}
+</div>
 
 ## Value Proposition
 
-<table style="border: none; border-collapse: collapse; margin: 0; padding: 0;">
+<table style="border: none; border-collapse: collapse; margin:0; padding:0;">
   <tr>
-    <td style="border: none; padding: 0; width:60%">
+    <td style="border: none; padding:0; margin:0; width:65%">
+
 Azure Verified Modules (AVM) is an initiative to consolidate and set the standards for what a good Infrastructure-as-Code module looks like.
 
 Modules will then align to these standards, across languages (Bicep, Terraform etc.) and will then be classified as AVMs and available from their respective language specific registries.
@@ -26,9 +31,10 @@ Modules will then align to these standards, across languages (Bicep, Terraform e
 AVM is a common code base, a toolkit for our Customers, our Partners, and Microsoft. It's an official, Microsoft driven initiative, with a devolved ownership approach to develop modules, leveraging internal & external communities.
 
 Azure Verified Modules enable and accelerate consistent solution development and delivery of cloud-native or migrated applications and their supporting infrastructure by codifying Microsoft guidance (WAF), with best practice configurations.
-    </td>
-    <td style="border: none; padding: 0;">
-        <img src="images/avm_cycle.png" width=70% alt="AVM development cycle">
+
+  </td>
+    <td style="border: none; margin:0; padding: 0;">
+      <img src="images/avm_cycle.png" width=65% alt="AVM development cycle" style="margin:0 auto;padding: 0;">
     </td>
   </tr>
 </table>
@@ -70,15 +76,11 @@ See [Module Support](/help-support/module-support) for more information.
   <tr>
     <td style="border: none; padding: 0; width:60%">
 
-1. Review [Overview](/home/overview/)
-
-2. Review the [Module Classification Definitions](/specs/shared/module-classifications/)
-
-3. Review the [Specifications](/specs/module-specs/)
-
-4. Review the [FAQ](/faq/)
-
-5. Learn how to [contribute to AVM](/contributing/)
+1. Review [Overview]({{% siteparam base %}}/overview/introduction)
+2. Review the [Module Classification Definitions]({{% siteparam base %}}/specs/shared/module-classifications/)
+3. Review the [Specifications]({{% siteparam base %}}/specs/module-specs/)
+4. Review the [FAQ]({{% siteparam base %}}/faq/)
+5. Learn how to [contribute to AVM]({{% siteparam base %}}/contributing/)
     </td>
     <td style="border: none; padding: 0;">
 

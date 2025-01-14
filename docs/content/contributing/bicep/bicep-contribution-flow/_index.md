@@ -100,7 +100,7 @@ The script performs the following steps:
 1. You must have the [Azure PowerShell Modules](https://learn.microsoft.com/powershell/azure/install-azure-powershell) installed and you need to be logged with the context set to the desired Tenant. You must have permissions to create an SPN and grant RBAC over the specified Subscription and Management Group, if provided.
 2. You must have the [GitHub CLI](https://github.com/cli/cli#installation) installed and need to be authenticated with the GitHub user account you wish to use to fork, clone and work with on AVM.
 
-{{% expand title="New-AVMBicepBRMForkSetup.ps1 - PowerShell Helper Script" %}}
+{{% expand title="➕ New-AVMBicepBRMForkSetup.ps1 - PowerShell Helper Script" %}}
 
 The `New-AVMBicepBRMForkSetup.ps1` can be downloaded from <a href="{{% siteparam base %}}/scripts/New-AVMBicepBRMForkSetup.ps1" download>here</a>.
 
@@ -192,7 +192,7 @@ To use the environment's pipelines you should use the information you gathered d
 
 <p>
 
-{{% expand title="How to: Add a repository secret to GitHub" %}}
+{{% expand title="➕ How to: Add a repository secret to GitHub" %}}
 
 1. Navigate to the repository's `Settings`.
 
@@ -270,7 +270,7 @@ To implement your contribution, we kindly ask you to first review the [Bicep spe
 
 If you're working on a new module, we'd also ask you to create its corresponding workflow file. Each module has its own file, but only differs in very few details, such as its triggers and pipeline variables. As a result, you can either copy & update any other module workflow file (starting with `'avm.[res|ptn|utl].'`) or leverage the following template:
 
-{{% expand title="Module workflow template" %}}
+{{% expand title="➕ Module workflow template" %}}
 
   {{< highlight lineNos="false" type="yaml" wrap="true" title="" >}}
 
@@ -375,7 +375,7 @@ If you need a Deployment Script to set additional non-template resources up (for
 
 To test the numerous diagnostic settings targets (Log Analytics Workspace, Storage Account, Event Hub, etc.) the AVM core team have provided a dependencies `.bicep` file to help create all these pre-requisite targets that will be needed during test runs.
 
-{{% expand title="Diagnostic Settings Dependencies - Bicep File" %}}
+{{% expand title="➕ Diagnostic Settings Dependencies - Bicep File" %}}
 
 {{< highlight lineNos="false" type="bicep" wrap="true" title="" >}}
 

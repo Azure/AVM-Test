@@ -120,7 +120,7 @@ Leverage the following steps as a template for how to leverage examples for boot
     Your browser does not support the video tag.
 </video>
 
-{{% expand title="Click here to copy the sample code from the video." expanded="false" %}}
+{{% expand title="➕ Click here to copy the sample code from the video." expanded="false" %}}
 
 ``` terraform
 provider "azurerm" {

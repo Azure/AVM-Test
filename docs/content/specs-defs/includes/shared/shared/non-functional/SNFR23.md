@@ -21,7 +21,7 @@ priority: 1160
 
 GitHub repositories where modules are held **MUST** use the below labels and **SHOULD** not use any additional labels:
 
-{{% expand title="AVM Standard GitHub Labels" expanded="false" %}}
+{{% expand title="➕ AVM Standard GitHub Labels" expanded="false" %}}
 
 These labels are available in a CSV file from [here]({{% siteparam base %}}/governance/avm-standard-github-labels.csv)
 
@@ -31,7 +31,7 @@ These labels are available in a CSV file from [here]({{% siteparam base %}}/gove
 
 To help apply these to a module GitHub repository you can use the below PowerShell script:
 
-{{% expand title="Set-AvmGitHubLabels.ps1" expanded="false" %}}
+{{% expand title="➕ Set-AvmGitHubLabels.ps1" expanded="false" %}}
 
 For most scenario this is the command you'll need to call the below PowerShell script with, replacing the value for `RepositoryName`:
 

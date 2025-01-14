@@ -89,7 +89,7 @@ You **MUST** still confirm that the requestor is a Microsoft FTE and that they u
 2. Clarify the roles and responsibilities of the module owner:
     - Clarify they understand and accept what "module ownership" means by replying in a comment to the requestor/proposed owner:
 
-{{% expand title="Standard AVM Core Team Reply to Proposed Module Owners" %}}
+{{% expand title="➕ Standard AVM Core Team Reply to Proposed Module Owners" %}}
 
 {{< highlight lineNos="false" type="markdown" wrap="true" title="" >}}
 
@@ -108,7 +108,7 @@ You **MUST** still confirm that the requestor is a Microsoft FTE and that they u
 4. Update the AVM Module Indexes, following the [process documented internally](https://dev.azure.com/CSUSolEng/Azure%20Verified%20Modules/_wiki/wikis/AVM%20Internal%20Wiki/286/Module-index-file-update-process).
 5. Use the following text to approve module development
 
-{{% expand title="Final Confirmation for Proposed Module Owners" %}}
+{{% expand title="➕ Final Confirmation for Proposed Module Owners" %}}
 
 {{< highlight lineNos="false" type="markdown" wrap="true" title="" >}}
 
@@ -182,7 +182,7 @@ Once the **Orphaned Module issue** was closed, it **MUST remain closed**. If the
 
 Include the following text in the information notice:
 
-{{% expand title="Orphaned module notice for module README file" %}}
+{{% expand title="➕ Orphaned module notice for module README file" %}}
 
 {{< highlight lineNos="false" type="markdown" wrap="true" title="" >}}
 
@@ -206,7 +206,7 @@ To look for Orphaned Modules:
 1. When a new potential owner is identified, clarify the roles and responsibilities of the module owner:
     - Clarify they understand and accept what "module ownership" means by replying in a comment to the requestor/proposed owner:
 
-{{% expand title="Standard AVM Core Team Reply to New Owners of an Orphaned Module" %}}
+{{% expand title="➕ Standard AVM Core Team Reply to New Owners of an Orphaned Module" %}}
 
 {{< highlight lineNos="false" type="markdown" wrap="true" title="" >}}
 
@@ -232,7 +232,7 @@ To look for Orphaned Modules:
     - Once the information notice is removed, submit a Pull Request.
 6. Use the following text to confirm the new ownership of an orphaned module:
 
-{{% expand title="Final Confirmation for New Owners of an Orphaned Module" %}}
+{{% expand title="➕ Final Confirmation for New Owners of an Orphaned Module" %}}
 
 {{< highlight lineNos="false" type="markdown" wrap="true" title="" >}}
 
