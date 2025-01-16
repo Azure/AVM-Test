@@ -1,11 +1,10 @@
-+++
-date = '2024-01-06T14:22:41-08:00'
-draft = false
-title = 'Module Specifications'
-linkTitle = 'Module Specifications'
-weight = 1
-url = '/specs/module-specs/'
-+++
+---
+draft: false
+title: Module Specifications
+linktitle: Module Specifications
+weight: 1
+url: /specs/module-specs/
+---
 
 This section documents all the specifications for Azure Verified Modules (AVM) and their respective IaC languages.
 

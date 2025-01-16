@@ -1,10 +1,9 @@
-+++
-date = '2024-12-19T11:03:15-08:00'
-draft = false
-title = 'Bicep Quickstart Guide'
-linktitle = 'Bicep'
-weight = 1
-+++
+---
+draft: false
+title: Bicep Quickstart Guide
+linktitle: Bicep
+weight: 1
+---
 
 ## Introduction
 
@@ -280,7 +279,7 @@ Here is how quickly you can deliver the solution detailed in this section:
 Now that your template and parameter file is ready, you can deploy your solution to Azure. Use PowerShell or the Azure CLI to deploy your solution.
 
 {{% tabs title="Deploy with" groupid="scriptlanguage" %}}
-  {{% tab title ="PowerShell" %}}
+  {{% tab title="PowerShell" %}}
 
   ```powershell
   # Log in to Azure

@@ -1,10 +1,9 @@
-+++
-date = '2024-12-19T14:06:06-08:00'
-draft = false
-title = 'Bicep Resource Modules'
-linktitle = 'Resource Modules'
-weight = 1
-+++
+---
+draft: false
+title: Bicep Resource Modules
+linktitle: Resource Modules
+weight: 1
+---
 
 {{% notice style="info" %}}
 

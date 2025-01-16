@@ -1,9 +1,9 @@
-+++
-title = "Usage Guide"
-linkTitle = 'Usage Guide'
-type = "default"
-weight = 3
-+++
+---
+title: Usage Guide
+linktitle: Usage Guide
+type: default
+weight: 3
+---
 
 This section describes usage guidance.
 

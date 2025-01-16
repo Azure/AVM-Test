@@ -1,10 +1,9 @@
-+++
-title = "Module Indexes"
-linktitle = "Module Indexes"
-type = "default"
-weight = 2
-alwaysopen = true
-+++
+---
+title: Module Indexes
+linktitle: Module Indexes
+type: default
+weight: 2
+---
 
 ## Summary
 

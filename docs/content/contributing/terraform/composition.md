@@ -193,7 +193,7 @@ We can use an optional `time_sleep` resource to wait for the role assignment to 
 ```hcl
 # In variables.tf...
 variable "wait_for_rbac_before_foo_operations" {
-  type = object({
+  type: object({
     create  = optional(string, "30s")
     destroy = optional(string, "0s")
   })

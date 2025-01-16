@@ -197,7 +197,7 @@ The **new parameter structure** requires a change to the used parameters and mov
 // main.bicep:
 param item itemType?
 
-type itemType = {
+type itemtype: {
   name: string // the name parameter did not change
 
   properties ={

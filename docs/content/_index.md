@@ -1,9 +1,9 @@
-+++
-title = "Azure Verified Modules"
-linkTitle = "Azure Verified Modules"
-type = "home"
-description = "Azure Verified Modules Test Site"
-+++
+---
+title: Azure Verified Modules
+linktitle: Azure Verified Modules
+type: home
+description: Azure Verified Modules Test Site
+---
 
 {{% notice style="tip" title="New Quickstart Guides for Bicep and Terraform" %}}
 **Check out our new [Quickstart Guides](/usage/quickstart/)!**

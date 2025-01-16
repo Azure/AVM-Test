@@ -27,7 +27,7 @@ For `object` type `variable`, `description` can be composed in HEREDOC format:
 
 ```terraform
 variable "kubernetes_cluster_key_management_service" {
-  type = object({
+  type: object({
     key_vault_key_id         = string
     key_vault_network_access = optional(string)
   })

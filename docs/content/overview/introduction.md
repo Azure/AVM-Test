@@ -1,10 +1,10 @@
-+++
-draft = false
-title = 'Introduction'
-linkTitle = 'Introduction'
-type = 'default'
-weight = 1
-+++
+---
+draft: false
+title: Introduction
+linktitle: Introduction
+type: default
+weight: 1
+---
 
 
 ## What is Azure Verified Modules?

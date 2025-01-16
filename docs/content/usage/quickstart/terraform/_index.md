@@ -1,10 +1,9 @@
-+++
-date = '2024-12-19T11:03:22-08:00'
-draft = false
-title = 'Terraform Quickstart Guide'
-linktitle = 'Terraform'
-weight = 2
-+++
+---
+draft: false
+title: Terraform Quickstart Guide
+linktitle: Terraform
+weight: 2
+---
 
 ## Introduction
 
@@ -197,7 +196,7 @@ module "key_vault" {
         "verify",
         "wrapKey"
       ]
-      key_type = "RSA"
+      key_type: "RSA"
       name     = "cmk-for-storage-account"
       key_size = 2048
     }
@@ -268,7 +267,7 @@ module "avm-res-keyvault-vault" {
         "verify",
         "wrapKey"
       ]
-      key_type = "RSA"
+      key_type: "RSA"
       name     = "cmk-for-storage-account"
       key_size = 2048
     }

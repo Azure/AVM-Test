@@ -1,9 +1,8 @@
-+++
-date = '2024-12-18T22:15:53-08:00'
-draft = false
-title = 'Quickstart Guide'
-linkTitle = 'Quickstart'
-+++
+---
+draft: false
+title: Quickstart Guide
+linktitle: Quickstart
+---
 
 This QuickStart guide offers step-by-step instructions for integrating Azure Verified Modules (AVM) into your solutions. It includes the initial setup, essential tools, and configurations required to deploy and manage your Azure resources efficiently using AVM.
 
