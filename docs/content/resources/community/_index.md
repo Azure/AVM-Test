@@ -1,5 +1,6 @@
 ---
-title: "Community Calls"
+title: Community Calls
+linktitle: Community
 ---
 
 🎉 Join Our Vibrant Community Calls! 🎉

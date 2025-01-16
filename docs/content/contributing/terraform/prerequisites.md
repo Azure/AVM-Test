@@ -1,5 +1,6 @@
 ---
 title: Terraform Contribution Prerequisites
+linktitle: Prerequisites
 ---
 
 

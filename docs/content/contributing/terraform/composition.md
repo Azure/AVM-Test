@@ -1,5 +1,6 @@
 ---
 title: Terraform Composition
+linktitle: Composition
 ---
 
 

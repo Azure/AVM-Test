@@ -1,5 +1,6 @@
 ---
 title: Frequently Asked Questions (FAQ)
+linktitle: FAQ
 aliases: ['/faq']
 ---
 

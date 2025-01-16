@@ -1,5 +1,6 @@
 ---
 title: Terraform Contribution Flow
+linktitle: Contribution Flow
 ---
 
 

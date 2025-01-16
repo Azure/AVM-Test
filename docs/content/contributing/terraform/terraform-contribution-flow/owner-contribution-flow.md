@@ -1,5 +1,6 @@
 ---
 title: Terraform Owner Contribution Flow
+linktitle: Owner Contribution Flow
 ---
 
 This section describes the contribution flow for module owners who are responsible for creating and maintaining Terraform Module repositories.

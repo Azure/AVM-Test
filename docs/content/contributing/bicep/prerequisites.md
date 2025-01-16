@@ -1,5 +1,6 @@
 ---
 title: Bicep Contribution Prerequisites
+linktitle: Prerequisites
 ---
 
 

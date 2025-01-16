@@ -1,5 +1,6 @@
 ---
 title: Bicep Contribution Flow
+linktitle: Contribution Flow
 ---
 
 ## High-level contribution flow

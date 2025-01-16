@@ -1,5 +1,6 @@
 ---
 title: Bicep Composition
+linktitle: Composition
 ---
 
 {{% notice style="important" %}}

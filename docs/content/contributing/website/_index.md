@@ -1,5 +1,6 @@
 ---
 title: Website Contribution Guide
+linktitle: Website
 ---
 
 Looking to contribute to the AVM Website, well you have made it to the right place/page. 👍
