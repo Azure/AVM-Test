@@ -2,6 +2,8 @@
 title: Glossary
 ---
 
+## Terms, Abbreviations, and Acronyms
+
 This page holds a table of all the terms, abbreviations, and acronyms that are used across this site.
 
 | Term/Abbreviation/Acronym | Definition                                                                                                                                                                                                                                                                                                                                                                                                                               |

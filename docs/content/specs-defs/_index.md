@@ -1,10 +1,13 @@
 ---
+draft: false
 title: Specifications & Definitions
 linkTitle: Specifications & Definitions
 type: default
 weight: 4
 url: /specs/
 ---
+
+## Summary
 
 This section lists AVM's Specifications & Definitions.
 

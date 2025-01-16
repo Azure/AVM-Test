@@ -3,6 +3,8 @@ title: Module Classifications
 url: /specs/shared/module-classifications/
 ---
 
+## Module Classification Definitions
+
 AVM defines two module classifications, **Resource Modules** and **Pattern Modules**, that can be created, published, and consumed, these are defined further in the table below:
 
 <!-- markdownlint-disable -->

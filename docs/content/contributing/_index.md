@@ -2,6 +2,8 @@
 title: Contributing
 ---
 
+## Summary
+
 This section lists all contribution guidance available to module owners and contributors.
 
 - [Process Overview]({{% siteparam base %}}/contributing/process/)

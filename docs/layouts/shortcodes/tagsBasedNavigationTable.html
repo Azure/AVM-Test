@@ -98,7 +98,7 @@
 
 {{/*  {{ $tagsToShow = add $tagsToShow (add "<span class=\"R-taxonomy taxonomy-tags cstyle tags\"  style = \"--VARIABLE-TAGS-BG-color: rgb(146, 146, 146);\"><a class=\"term-link\" style=\"display:inline-block;\"" " href=\"" $baseURL "tags/" (. | urlize) "\"" "title='All specifications tagged with' " . ">" . "</a></span>") }}  */}}
 
-{{ $tagsToShow = add $tagsToShow (add "<span class='R-taxonomy taxonomy-tags cstyle tags'  style = '--VARIABLE-TAGS-BG-color: rgb(146, 146, 146);'><a class='term-link' style='display:inline-block;' href='" $baseURL "tags/" (. | urlize) "' title=\"All specifications tagged with '" . "'\">" . "</a></span>") }}
+{{ $tagsToShow = add $tagsToShow (add "<span class='R-taxonomy taxonomy-tags cstyle tags'  style = '--VARIABLE-TAGS-BG-color: rgb(146, 146, 146);margin-left: 0;'><a class='term-link' style='display:inline-block;margin-left: 0; margin-right: 10;' href='" $baseURL "tags/" (. | urlize) "' title=\"All specifications tagged with '" . "'\">" . "</a></span>") }}
 
 {{ end }}
 
@@ -111,7 +111,7 @@
 
   {{ if $showHint }}
 
-    {{ partial "shortcodes/notice.html" (dict "page"  . "style" "code" "title" "The content below is listed based on the following tags" "content" $tagsToShow )}}
+    {{ partial "shortcodes/notice.html" (dict "page"  . "style" "code" "title" "The content below is listed based on the following tags" "content" (add "<i class='fa-solid fa-tag'>&nbsp</i>" $tagsToShow) )}}
 
   {{ end }}
   
@@ -184,16 +184,16 @@
           {{- $link := replaceRE "^-" "#" (index (findRE `^\s*####\s.+` $page.RawContent) 0 | anchorize) -}}
 
           <tr>
-            <td>{{- $index -}}</td>
-            <td><a href="{{- $link -}}">{{- $id -}}</a></td>
+            <td style="text-align: right;">{{- $index -}}</td>
+            <td style="width: 40px;"><a href="{{- $link -}}">{{- $id -}}</a></td>
             <td>{{- $title -}}</td>
             {{ if $showLanguage }}<td>{{ range $language }}<span class="R-taxonomy taxonomy-tags cstyle tags" style = "line-height: 0.8; margin-bottom: 2px; margin-top: 2px; font-size: 12px;"><a class="R-taxonomy taxonomy-tags cstyle tags" href="{{ $baseURL }}tags/{{ add "Language-" . | urlize }}">{{ . }}</a></span>{{ end }}</td>{{ end }}
             {{ if $showClass }}<td>{{ range $class }}<span class="R-taxonomy taxonomy-tags cstyle tags" style = "line-height: 0.8; margin-bottom: 2px; margin-top: 2px; font-size: 12px;"><a class="R-taxonomy taxonomy-tags cstyle tags" href="{{ $baseURL }}tags/{{ add "Class-" . | urlize }}">{{ . }}</a></span>{{ end }}</td>{{ end }}
             {{ if $showCategory }}<td>{{ range $category }}<span class="R-taxonomy taxonomy-tags cstyle tags" style = "line-height: 0.8; margin-bottom: 2px; margin-top: 2px; font-size: 12px;"><a class="R-taxonomy taxonomy-tags cstyle tags" href="{{ $baseURL }}tags/{{ add "Category-" . | urlize }}">{{ . }}</a></span>{{ end }}</td>{{ end }}
             {{/*  <td>{{ range $type }}<span class="tag-button"><a href="{{ $baseURL }}tags/{{ . | urlize }}">{{ . }}</a></span>{{ if not (eq (index $type (sub (len $type) 1)) .) }}, {{ end }}{{ end }}</td>  */}}
-            {{ if $showSeverity }}<td style="text-align: right; width: 40px;"><ul>{{ range $severity }}<span class="R-taxonomy taxonomy-tags cstyle tags" style = "--VARIABLE-TAGS-BG-color: rgb(146, 146, 146);"><li><a class="term-link" href="{{ $baseURL }}tags/{{ add "Severity-" . | urlize }}">{{ . }}</a></li></span>{{ end }}</ul></td>{{ end }}
-            {{ if $showPersona }}<td style="text-align: right; width: 240px;">{{ range $persona }}<span class="R-taxonomy taxonomy-tags cstyle tags" style = "--VARIABLE-TAGS-BG-color: rgb(146, 146, 146);"><a class="term-link" style="display: inline-block;" href="{{ $baseURL }}tags/{{ add "Persona-" . | urlize }}">{{ . }}</a></span>{{ end }}</td>{{ end }}
-            {{ if $showLifecycle }}<td style="text-align: right;">{{ range $lifecycle }}<span class="R-taxonomy taxonomy-tags cstyle tags" style = "--VARIABLE-TAGS-BG-color: rgb(146, 146, 146);"><a class="term-link" href="{{ $baseURL }}tags/{{ add "Lifecycle-" . | urlize }}">{{ . }}</a></span>{{ end }}</td>{{ end }}
+            {{ if $showSeverity }}<td style="text-align: center; width: 40px;">{{ range $severity }}<span class="R-taxonomy taxonomy-tags cstyle tags" style = "--VARIABLE-TAGS-BG-color: rgb(146, 146, 146);"><a class="term-link" href="{{ $baseURL }}tags/{{ add "Severity-" . | urlize }}">{{ . }}</a></span>{{ end }}</td>{{ end }}
+            {{ if $showPersona }}<td style="text-align: center; width: 215px;">{{ range $persona }}<span class="R-taxonomy taxonomy-tags cstyle tags" style = "--VARIABLE-TAGS-BG-color: rgb(146, 146, 146);margin-left: 1; margin-right: 2;"><a class="term-link" style="display: inline-block;margin-left: 0; margin-right: 0;" href="{{ $baseURL }}tags/{{ add "Persona-" . | urlize }}">{{ . }}</a></span>{{ end }}</td>{{ end }}
+            {{ if $showLifecycle }}<td style="text-align: center; width: 40px;">{{ range $lifecycle }}<span class="R-taxonomy taxonomy-tags cstyle tags" style = "--VARIABLE-TAGS-BG-color: rgb(146, 146, 146);"><a class="term-link" href="{{ $baseURL }}tags/{{ add "Lifecycle-" . | urlize }}">{{ . }}</a></span>{{ end }}</td>{{ end }}
           </tr>
         {{- end -}}
       {{- end -}}
