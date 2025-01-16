@@ -1,5 +1,6 @@
 ---
 title: Terraform Resource Module Specifications
+linktitle: Resource
 url: /specs/tf/res/
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Bicep Specifications
+linktitle: Bicep
 url: /specs/bcp/
 ---
 

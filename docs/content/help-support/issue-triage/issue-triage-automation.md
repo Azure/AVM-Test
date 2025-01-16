@@ -1,5 +1,6 @@
 ---
-title: Issue/Triage Automation
+title: Issue Triage Automation
+linktitle: Issue Triage Automation
 ---
 
 This page details the automation that is in place to help with the triage of issues and PRs raised against the AVM modules.

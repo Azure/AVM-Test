@@ -1,5 +1,6 @@
 ---
 title: Terraform Specifications
+linktitle: Terraform
 url: /specs/tf/
 ---
 

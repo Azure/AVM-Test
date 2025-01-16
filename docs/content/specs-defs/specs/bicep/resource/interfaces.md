@@ -1,5 +1,6 @@
 ---
 title: Bicep Interfaces
+linktitle: Interfaces
 url: /specs/bcp/res/interfaces/
 ---
 

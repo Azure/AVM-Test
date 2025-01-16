@@ -1,7 +1,7 @@
 ---
 title: Specifications & Definitions
 linkTitle: Specifications & Definitions
-type: chapter
+type: default
 weight: 4
 url: /specs/
 ---

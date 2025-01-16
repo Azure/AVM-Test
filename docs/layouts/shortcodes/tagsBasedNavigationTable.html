@@ -231,7 +231,7 @@
   {{- end -}}
 
   {{- if $summarize -}}
-    {{ partial "shortcodes/expand.html" (dict "page"  . "title" "See Specifications for this category" "content" $content "expanded" $summaryOpenByDefault) }}
+    {{ partial "shortcodes/expand.html" (dict "page"  . "title" "➕ See Specifications for this category" "content" $content "expanded" $summaryOpenByDefault) }}
   {{- else -}}
     <br>
     {{- $content | safeHTML -}}

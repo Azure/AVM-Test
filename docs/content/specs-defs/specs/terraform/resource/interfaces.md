@@ -1,5 +1,6 @@
 ---
 title: Terraform Interfaces
+linktitle: Interfaces
 url: /specs/tf/interfaces/
 ---
 

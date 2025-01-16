@@ -1,5 +1,6 @@
 ---
 title: Bicep Pattern Module Specifications
+linktitle: Pattern
 url: /specs/bcp/ptn/
 ---
 
