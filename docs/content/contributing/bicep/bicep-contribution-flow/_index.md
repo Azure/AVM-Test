@@ -282,12 +282,12 @@ Each workflow in AVM deploying resources uses a logic that automatically replace
     ![NavigateToSettings]({{% siteparam base %}}/images/bicep-ci/forkSettings.png?width=40vw "Navigate to settings")
 <br>
 
-1. In the list of settings, expand `Secrets` and select `Actions`. You can create a new repository secret by selecting `New repository secret` on the top right.
+2. In the list of settings, expand `Secrets` and select `Actions`. You can create a new repository secret by selecting `New repository secret` on the top right.
 
     ![NavigateToSecrets]({{% siteparam base %}}/images/bicep-ci/forkSettingsSecrets.png?width=40vw "Navigate to secrets")
 <br>
 
-1. In the opening view, you can create a secret by providing a secret `Name`, a secret `Value`, followed by a click on the `Add secret` button.
+3. In the opening view, you can create a secret by providing a secret `Name`, a secret `Value`, followed by a click on the `Add secret` button.
 
     ![AddSecret]({{% siteparam base %}}/images/bicep-ci/forkSettingsSecretAdd.png?width=40vw "Add secret")
 
@@ -517,11 +517,11 @@ Finally, once you are satisfied with your contribution and validated it, open a 
 4. If applicable (i.e., a module is created/updated), please reference the badge status of your pipeline run. This badge will show the reviewer that the code changes were successfully validated & tested in your environment. To create a badge, first select the three dots (`...`) at the top right of the pipeline, and then chose the `Create status badge` option.
 
     ![BadgeDropdown]({{% siteparam base %}}/images/contribution/badgeDropdown.png?height=200px "Badge dropdown")
-    
+
 5. In the opening pop-up, you first need to select your branch and then click on the `Copy status badge Markdown`
 
     ![StatusBadge]({{% siteparam base %}}/images/contribution/pipelineBadge.png?height=400px "Status Badge")
-    
+
 {{% notice style="note" %}}
 
 If you're the **sole owner of the module**, the **AVM core team must review and approve the PR**. To indicate that your PR needs the core team's attention, **apply the** &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#DB4503;color:white;">Needs: Core Team 🧞</mark>&nbsp; **label on it!**
