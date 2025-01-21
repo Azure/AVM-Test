@@ -1,6 +1,6 @@
 ---
 title: Bicep Resource Module Specifications
-linktitle: Resource
+linktitle: Resource Modules
 url: /specs/bcp/res/
 ---
 

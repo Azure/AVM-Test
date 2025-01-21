@@ -1,6 +1,6 @@
 ---
 title: Bicep Utility Module Specifications
-linktitle: Utility
+linktitle: Utility Modules
 url: /specs/bcp/utl/
 ---
 

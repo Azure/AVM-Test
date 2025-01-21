@@ -239,23 +239,15 @@ enableGitInfo = true
       [[menu.defined]]
         identifier = 'bicep-resource-specs'
         parent = 'bicep-specs'
-        name = 'Resource'
+        name = 'Resource Modules'
         pageRef = '/specs-defs/specs/bicep/resource'
         weight = 1
         params = { alwaysopen = false, collapsibleMenu = true }
 
-        [[menu.defined]]
-          identifier = 'bicep-resource-interfaces'
-          parent = 'bicep-resource-specs'
-          name = 'Interfaces'
-          pageRef = '/specs-defs/specs/bicep/resource/interfaces'
-          weight = 1
-          params = { alwaysopen = true, collapsibleMenu = true }
-
       [[menu.defined]]
         identifier = 'bicep-pattern-specs'
         parent = 'bicep-specs'
-        name = 'Pattern'
+        name = 'Pattern  Modules'
         pageRef = '/specs-defs/specs/bicep/pattern'
         weight = 2
         params = { alwaysopen = true, collapsibleMenu = true }
@@ -263,9 +255,17 @@ enableGitInfo = true
       [[menu.defined]]
         identifier = 'bicep-utility-specs'
         parent = 'bicep-specs'
-        name = 'Utility'
+        name = 'Utility  Modules'
         pageRef = '/specs-defs/specs/bicep/utility'
         weight = 3
+        params = { alwaysopen = true, collapsibleMenu = true }
+
+      [[menu.defined]]
+        identifier = 'bicep-resource-interfaces'
+        parent = 'bicep-specs'
+        name = 'Interfaces'
+        pageRef = '/specs-defs/specs/bicep/interfaces'
+        weight = 4
         params = { alwaysopen = true, collapsibleMenu = true }
 
     [[menu.defined]]
@@ -279,23 +279,15 @@ enableGitInfo = true
       [[menu.defined]]
         identifier = 'terraform-resource-specs'
         parent = 'terraform-specs'
-        name = 'Resource'
+        name = 'Resource  Modules'
         pageRef = '/specs-defs/specs/terraform/resource'
         weight = 1
         params = { alwaysopen = false, collapsibleMenu = true }
 
-        [[menu.defined]]
-          identifier = 'terraform-resource-interfaces'
-          parent = 'terraform-resource-specs'
-          name = 'Interfaces'
-          pageRef = '/specs-defs/specs/terraform/resource/interfaces'
-          weight = 1
-          params = { alwaysopen = true, collapsibleMenu = true }
-
       [[menu.defined]]
         identifier = 'terraform-pattern-specs'
         parent = 'terraform-specs'
-        name = 'Pattern'
+        name = 'Pattern  Modules'
         pageRef = '/specs-defs/specs/terraform/pattern'
         weight = 2
         params = { alwaysopen = true, collapsibleMenu = true }
@@ -303,9 +295,17 @@ enableGitInfo = true
       [[menu.defined]]
         identifier = 'terraform-utility-specs'
         parent = 'terraform-specs'
-        name = 'Utility'
+        name = 'Utility  Modules'
         pageRef = '/specs-defs/specs/terraform/utility'
         weight = 3
+        params = { alwaysopen = true, collapsibleMenu = true }
+
+      [[menu.defined]]
+        identifier = 'terraform-resource-interfaces'
+        parent = 'terraform-specs'
+        name = 'Interfaces'
+        pageRef = '/specs-defs/specs/terraform/interfaces'
+        weight = 4
         params = { alwaysopen = true, collapsibleMenu = true }
 
     [[menu.defined]]

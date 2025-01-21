@@ -1,6 +1,6 @@
 ---
 title: Terraform Pattern Module Specifications
-linktitle: Pattern
+linktitle: Pattern Modules
 url: /specs/tf/ptn/
 ---
 

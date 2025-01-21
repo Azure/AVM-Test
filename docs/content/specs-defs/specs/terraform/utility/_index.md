@@ -1,6 +1,6 @@
 ---
 title: Terraform Utility Module Specifications
-linktitle: Utility
+linktitle: Utility Modules
 url: /specs/tf/utl/
 ---
 
