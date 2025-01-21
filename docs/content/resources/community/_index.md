@@ -19,18 +19,18 @@ Let's make each community call a vibrant celebration of connection, collaboratio
 
 ## Upcoming Events
 
-Stay tuned, to be announced! 👂
+<!-- Stay tuned, to be announced! 👂 -->
 
-<!-- ### 24th September 2024
+### 6th February 2025
 
 {{% notice style="note" %}}
 
-This occurrence is optimized for AMERICAS/EMEA time zones.
+This occurrence is optimized for EMEA/APAC time zones.
 
 {{% /notice %}}
 
-- [Registration](https://msit.events.teams.microsoft.com/event/74fc1d31-fc02-411d-bb3c-a4969833d178@72f988bf-86f1-41af-91ab-2d7cd011db47)
-- [GitHub Issue for Q&A section](https://github.com/Azure/Azure-Verified-Modules/issues/1387) -->
+- [Registration](https://msit.events.teams.microsoft.com/event/5c5ccd0d-4993-44b7-9075-700901263276@72f988bf-86f1-41af-91ab-2d7cd011db47)
+- [GitHub Issue for Q&A section](https://github.com/Azure/Azure-Verified-Modules/issues/1793)
 
 ## Previous Events
 
