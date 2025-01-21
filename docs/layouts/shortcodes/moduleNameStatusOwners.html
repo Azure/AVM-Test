@@ -12,6 +12,7 @@
 {{ $ModuleDisplayNameColumnId := 0 }}
 {{ $AlternativeNamesColumnId := 0 }}
 {{ $ModuleNameColumnId := 0 }}
+{{ $ParentModuleColumnId := 0 }}
 {{ $ModuleStatusColumnId := 0 }}
 {{ $RepoURLColumnId := 0 }}
 {{ $PublicRegistryReferenceColumnId := 0 }}
@@ -35,18 +36,19 @@
   {{ $ModuleDisplayNameColumnId = 2 }}
   {{ $AlternativeNamesColumnId = 3 }}
   {{ $ModuleNameColumnId = 4 }}
-  {{ $ModuleStatusColumnId = 5 }}
-  {{ $RepoURLColumnId = 6 }}
-  {{ $PublicRegistryReferenceColumnId = 7 }}
-  {{ $TelemetryIdPrefixColumnId = 8 }}
-  {{ $PrimaryModuleOwnerGHHandleColumnId = 9 }}
-  {{ $PrimaryModuleOwnerDisplayNameColumnId = 10 }}
-  {{ $SecondaryModuleOwnerGHHandleColumnId = 11 }}
-  {{ $SecondaryModuleOwnerDisplayNameColumnId = 12 }}
-  {{ $ModuleOwnersGHTeamColumnId = 13 }}
-  {{ $ModuleContributorsGHTeamColumnId = 14 }}
-  {{ $DescriptionColumnId = 15 }}
-  {{ $CommentsColumnId = 16 }}
+  {{ $ParentModuleColumnId = 5 }}
+  {{ $ModuleStatusColumnId = 6 }}
+  {{ $RepoURLColumnId = 7 }}
+  {{ $PublicRegistryReferenceColumnId = 8 }}
+  {{ $TelemetryIdPrefixColumnId = 9 }}
+  {{ $PrimaryModuleOwnerGHHandleColumnId = 10 }}
+  {{ $PrimaryModuleOwnerDisplayNameColumnId = 11 }}
+  {{ $SecondaryModuleOwnerGHHandleColumnId = 12 }}
+  {{ $SecondaryModuleOwnerDisplayNameColumnId = 13 }}
+  {{ $ModuleOwnersGHTeamColumnId = 14 }}
+  {{ $ModuleContributorsGHTeamColumnId = 15 }}
+  {{ $DescriptionColumnId = 16 }}
+  {{ $CommentsColumnId = 17 }}
 
   {{ range $row, $rows }}
     {{ $map := dict
@@ -55,6 +57,7 @@
       "ModuleDisplayName" (index $row $ModuleDisplayNameColumnId)
       "AlternativeNames" (index $row $AlternativeNamesColumnId)
       "ModuleName" (index $row $ModuleNameColumnId)
+      "ParentModule" (index $row $ParentModuleColumnId)
       "ModuleStatus" (index $row $ModuleStatusColumnId)
       "RepoURL" (index $row $RepoURLColumnId)
       "PublicRegistryReference" (index $row $PublicRegistryReferenceColumnId)
