@@ -12,6 +12,7 @@ enableGitInfo = true
     images = ['images/avm_logo.png']
     description = 'Azure Verified Modules: The Microsoft IaC Module Strategy'
     logo = 'images/avm_logo.png'
+    og_logo = 'images/avm_logo.png'
     disableExplicitIndexURLs = true
     disableLanguageSwitchingButton = false
     themeVariant = [
