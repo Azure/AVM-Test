@@ -3,7 +3,7 @@ title: Azure Verified Modules
 linktitle: Azure Verified Modules
 type: home
 description: 'Azure Verified Modules: The Microsoft IaC Module Strategy'
-logo: images/avm_logo.png
+logo: images/favicon.svg
 ---
 
 {{% notice style="caution" icon="fa-solid fa-calendar-days" title="AVM Community Calls" %}}

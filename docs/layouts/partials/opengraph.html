@@ -18,7 +18,7 @@
 {{- end }}
 
 {{- with .Params.logo -}}
-    <meta property="og:logo" content="{{ .Site.Params.logo | absURL }}" />
+    <meta property="og:logo" content="{{ . | absURL }}" />
 {{- end -}}
 
 {{- if and .IsPage (not (partial "_relearn/pageIsSpecial.gotmpl" .)) }}

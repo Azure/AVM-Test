@@ -3,15 +3,11 @@ languageCode = 'en-us'
 title = 'AVM'
 theme = 'hugo-theme-relearn'
 
-images = ['images/hero.png']
-
 enableGitInfo = true
 
 [params]
     base = '/AVM-Test'
     images = ['images/avm_logo.png']
-    description = 'Azure Verified Modules: The Microsoft IaC Module Strategy'
-    logo = 'images/avm_logo.png'
     disableExplicitIndexURLs = true
     disableLanguageSwitchingButton = false
     themeVariant = [
