@@ -9,6 +9,8 @@ enableGitInfo = true
 
 [params]
     base = '/AVM-Test'
+    images = ['images/avm_logo.png']
+    description = 'Azure Verified Modules: The Microsoft IaC Module Strategy'
     disableExplicitIndexURLs = true
     disableLanguageSwitchingButton = false
     themeVariant = [
