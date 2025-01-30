@@ -1,6 +1,7 @@
 ---
 title: Bicep Contribution Prerequisites
 linktitle: Prerequisites
+description: Bicep Contribution Prerequisites for the Azure Verified Modules (AVM) program
 ---
 
 
@@ -62,7 +63,6 @@ The following tooling/extensions are recommended to assist you developing for th
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 - For visibility of Bracket Pairs:
   - Inside Visual Studio Code, add `editor.bracketPairColorization.enabled`: true to your `settings.json`, to enable bracket pair colorization.
-
 
 #### Desktop Tooling
 

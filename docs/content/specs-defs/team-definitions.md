@@ -1,9 +1,11 @@
 ---
 title: Team Definitions & RACI
 url: /specs/shared/team-definitions/
+description: Team Definitions & RACI for the Azure Verified Modules (AVM) program
 ---
 
 ## Teams
+
 In AVM there will be multiple different teams involved throughout the initiatives lifecycle and ongoing long-term support. These teams will be listed below alongside their definitions.
 
 {{% notice style="important" %}}

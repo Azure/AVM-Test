@@ -1,12 +1,14 @@
 ---
 title: Terraform Contribution Flow
 linktitle: Contribution Flow
+description: Terraform Contribution Flow for the Azure Verified Modules (AVM) program
 ---
 
 
 ## High-level contribution flow
 
-{{< mermaid zoom="false">}}
+{{< mermaid zoom="false" >}}
+
 ---
 config:
   nodeSpacing: 20
@@ -21,6 +23,7 @@ config:
     mergeEdges: true
     nodePlacementStrategy: LINEAR_SEGMENTS
 ---
+
 flowchart TD
   A(1 - Fork the module source repository)
     click A "{{% siteparam base %}}/contributing/terraform/terraform-contribution-flow/#1-fork-the-module-source-repository"
@@ -37,6 +40,7 @@ flowchart TD
   C --> D
   D -->|yes|E
   D -->|no|C
+
 {{< /mermaid >}}
 
 ## GitFlow for contributors
@@ -45,11 +49,13 @@ The GitFlow process outlined here depicts and suggests a way of working with Git
 
 {{< mermaid zoom="true" >}}
 ---
+
 config:
   logLevel: debug
   gitGraph:
     rotateCommitLabel: false
 ---
+
 gitGraph LR:
   commit id:"fork"
   branch fork/main

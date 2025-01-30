@@ -1,6 +1,7 @@
 ---
 title: Issue Triage Automation
 linktitle: Issue Triage Automation
+description: Issue Triage Automation for the Azure Verified Modules (AVM) program's repositories
 ---
 
 This page details the automation that is in place to help with the triage of issues and PRs raised against the AVM modules.
@@ -33,6 +34,7 @@ If a bug/feature/request/general question that has the labels of &nbsp;<mark sty
 - Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; label.
 
 {{% notice style="tip" %}}
+
 - To prevent further actions to take effect, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; label must be removed, once this issue has been responded to.
 - To avoid this rule being (re)triggered, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; must be removed as part of the triage process (when the issue is first responded to).
 {{% /notice %}}
@@ -59,6 +61,7 @@ If a bug/feature/request/general question that has the &nbsp;<mark style="backgr
 - Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; label.
 
 {{% notice style="tip" %}}
+
 - To prevent further actions to take effect, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; label must be removed, once this issue has been responded to.
 - To avoid this rule being (re)triggered, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; must be removed as part of the triage process (when the issue is first responded to).
 {{% /notice %}}
@@ -85,6 +88,7 @@ If after an additional 3 business days there's still no update to the issue that
 - Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label.
 
 {{% notice style="tip" %}}
+
 - To avoid this rule being (re)triggered, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; and &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; labels must be removed when the issue is first responded to!
 - Remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label once the issue has been responded to.
 {{% /notice %}}
@@ -111,6 +115,7 @@ If after an additional 3 business days there's still no update to the issue that
 - Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label.
 
 {{% notice style="tip" %}}
+
 - To avoid this rule being (re)triggered, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; and &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; labels must be removed when the issue is first responded to!
 - Remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label once the issue has been responded to.
 {{% /notice %}}
@@ -137,6 +142,7 @@ If there's still no response after 5 days (total from start of issue being raise
 - Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label.
 
 {{% notice style="tip" %}}
+
 - To avoid this rule being (re)triggered, the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FBCA04;">Needs: Triage 🔍</mark>&nbsp; and &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#850000;color:white;">Status: Response Overdue 🚩</mark>&nbsp; labels must be removed when the issue is first responded to!
 - Remove the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#FF0000;color:white;">Needs: Immediate Attention ‼️</mark>&nbsp; label once the issue has been responded to.
 {{% /notice %}}
@@ -221,6 +227,7 @@ If an issue/PR has been labelled with &nbsp;<mark style="background-image:none;w
 - Close the issue.
 
 {{% notice style="tip" %}}
+
 - In case the issue needs to be reopened (e.g., the author responds after the issue was closed), the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#808080;color:white;">Status: No Recent Activity 💤</mark>&nbsp; label must be removed.
 {{% /notice %}}
 
@@ -247,6 +254,7 @@ Remind module owner(s) to start or continue working on this module if there was 
 - Add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#E99695;color:white;">Needs: Attention 👋</mark>&nbsp; label.
 
 {{% notice style="tip" %}}
+
 - To silence this notification, provide an update every 3 weeks on the Module Proposal issue, or add the &nbsp;<mark style="background-image:none;white-space: nowrap;background-color:#B60205;color:white;">Status: Long Term ⏳</mark>&nbsp; label.
 {{% /notice %}}
 

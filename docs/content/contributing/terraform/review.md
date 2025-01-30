@@ -1,6 +1,7 @@
 ---
 title: Review of Terraform Modules
 linktitle: Review
+description: Terraform Module Review Process for the Azure Verified Modules (AVM) program
 ---
 
 
@@ -21,7 +22,6 @@ The AVM module review is a critical step before an AVM Terraform module gets pub
 I have completed my initial development of the module and I would like to request a review of my module before publishing it to the Terraform Registry. The latest code is in a PR titled [AVM-Review-PR](REPLACE WITH URL TO YOUR PR) on the module repo and all checks on that PR are passing.
 
 {{< /highlight >}}
-
 
 {{% /expand %}}
 
@@ -74,5 +74,6 @@ GitHub Repo Link: <REPLACE WITH THE LINK OF THE MODULE IN GITHUB>"
 {{% /expand %}}
 
 13. Once the module owner perform the requested action in the previous step, the module reviewer updates the module proposal by performing the following steps:
+
 - Assign label Status: Module Available :green_circle: to the module proposal.
 - Update the module index excel file and CSV file by creating a PR to update the module index and links the module proposal as an issue that gets closed once the PR is merged which will move the module proposal from "In Review" to "Done" in the [AVM - Module Triage](https://github.com/orgs/Azure/projects/529) project.

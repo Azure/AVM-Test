@@ -3,19 +3,24 @@ draft: false
 title: Terraform Pattern Modules
 linktitle: Pattern Modules
 weight: 2
+description: Terraform Pattern Module Index showing all available, orphaned and planned modules
 ---
+
+## Module catalog
+
+{{% moduleStats language="Terraform" moduleType="Pattern" showLanguage=true showClassification=true %}}
+
+{{% expand title="➕ Additional information" %}}
 
 {{% notice style="info" %}}
 
 This page contains various views of the module index (catalog) for **Terraform Pattern Modules**. To see these views, **click on the expandable sections** with the "➕" sign below.
 
-- {{% icon icon="fa-brands fa-github" %}} To see the **full, unfiltered, unformatted module index** on GitHub, click [here](https://github.com/Azure/{{% siteparam base %}}/blob/main/docs/static/module-indexes/TerraformPatternModules.csv).
+- {{% icon icon="fa-brands fa-github" %}} To see the **full, unfiltered, unformatted module index** on GitHub, click [here]({{% siteparam baseURL %}}blob/main/docs/static/module-indexes/TerraformPatternModules.csv).
 
 - {{% icon icon="download" %}} To download the source CSV file, click [here]({{% siteparam base %}}/module-indexes/TerraformPatternModules.csv).
 
 {{% /notice %}}
-
-## Module catalog
 
 {{% notice style="note" %}}
 
@@ -23,19 +28,7 @@ Modules listed below that aren't shown with the status of **`Module Available �
 
 {{% /notice %}}
 
-The following table shows the number of all available, orphaned and proposed **Terraform Pattern Modules**.
-
-{{% moduleStats language="Terraform" moduleType="Pattern" showLanguage=true showClassification=true %}}
-
-### Module Publication History - 📅
-
-{{% expand title="➕ Module Publication History - Module names, status and owners" expanded="false" %}}
-
-{{% moduleHistory header=true csv="/static/module-indexes/TerraformPatternModules.csv" language="Terraform" moduleType="pattern" exclude="Proposed :new:" monthsToShow=9999 %}}
-
 {{% /expand %}}
-
----
 
 ### Published modules - 🟢 & 👀
 
@@ -45,8 +38,6 @@ The following table shows the number of all available, orphaned and proposed **T
 
 {{% /expand %}}
 
----
-
 ### Proposed modules - 🆕
 
 {{% expand title="➕ Proposed Modules - Module names, status and owners" expanded="false" %}}
@@ -54,8 +45,6 @@ The following table shows the number of all available, orphaned and proposed **T
 {{% moduleNameStatusOwners header=true csv="/static/module-indexes/TerraformPatternModules.csv" language="Terraform" moduleType="pattern" exclude="Available :green_circle:,Orphaned :eyes:" %}}
 
 {{% /expand %}}
-
----
 
 ### All modules - 📇
 
@@ -65,7 +54,13 @@ The following table shows the number of all available, orphaned and proposed **T
 
 {{% /expand %}}
 
----
+### Module Publication History - 📅
+
+{{% expand title="➕ Module Publication History - Module names, status and owners" expanded="false" %}}
+
+{{% moduleHistory header=true csv="/static/module-indexes/TerraformPatternModules.csv" language="Terraform" moduleType="pattern" exclude="Proposed :new:" monthsToShow=9999 %}}
+
+{{% /expand %}}
 
 ## For Module Owners & Contributors
 

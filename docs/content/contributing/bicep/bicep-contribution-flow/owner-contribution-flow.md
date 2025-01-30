@@ -1,5 +1,6 @@
 ---
 title: Owner Contribution Flow
+description: Bicep Owner Contribution Flow for the Azure Verified Modules (AVM) program
 ---
 
 This section describes the contribution flow for module owners who are responsible for creating and maintaining Bicep Modules.
@@ -144,7 +145,7 @@ This checklist can be used in the development of AVM Bicep Modules.
 {{% include file="/static/scripts/sample-localtest-helper.ps1" %}}
 
 {{< /highlight >}}
-    
+
     {{% /expand %}}
 
 7. Create a PR and reference the status badge of your pipeline run - [see here]({{% siteparam base %}}/contributing/bicep/bicep-contribution-flow/#6-create-a-pull-request-to-the-public-bicep-registry).

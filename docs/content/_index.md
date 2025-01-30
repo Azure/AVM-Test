@@ -2,8 +2,7 @@
 title: Azure Verified Modules
 linktitle: Azure Verified Modules
 type: home
-description: 'Azure Verified Modules: The Microsoft IaC Module Strategy'
-logo: images/favicon.svg
+description: 'Azure Verified Modules - The Microsoft IaC Module Strategy'
 ---
 
 {{% notice style="caution" icon="fa-solid fa-calendar-days" title="AVM Community Calls" %}}
@@ -23,9 +22,9 @@ The AVM team is hosting its next external community call on the **6th February 2
 - **New navigation option**: Use the arrows ( <i class="fa-solid fa-chevron-left"></i> and <i class="fa-solid fa-chevron-right"></i> ) in the top right corner to navigate back and forth between pages.
 - **New search**: Look for a module - e.g., "*virtual network*" or "*vnet*" - using the search bar ( <i class="fa-solid fa-magnifying-glass"></i> ) in the top right corner and follow the search results to the related Bicep or Terraform index page.
 - **New TOC menu**: Try our new table of contents ( <i class="fa-solid fa-rectangle-list"></i> ) now moved to the top left corner of the page to provide easier in-page navigation consistently.
-- **New print functionality**: Click the printer icon ( <i class="fa-solid fa-print"></i> ) in the top right corner to generate a PDF or print parts of the documentation. Note, this feature will show all content in the hierarchy below the current page - i.e., when on the home page, it fill include he entire AVM documentation.
-- Other minor updates and bug fixes: such as:
-  - Compacted, zoomable mermaid diagrams for better viewing.
+- **New print functionality**: Click the printer icon ( <i class="fa-solid fa-print"></i> ) in the top right corner to generate a PDF or print parts of the documentation. Note, this feature will show all content in the hierarchy below the current page - i.e., when invoked from the home page, it will include he entire AVM documentation.
+- Other minor updates and bug fixes, such as:
+  - More compact, zoomable mermaid diagrams for better viewing.
   - Last modified date on each page is now a clickable link to the GitHub commit history for that page.
   - Minor menu updates, including the default collapsed/expanded configuration.
 
@@ -55,7 +54,7 @@ Azure Verified Modules enable and accelerate consistent solution development and
 
   </td>
     <td style="border: none; margin:0; padding: 0;">
-      <img src="images/avm_cycle.png" width=65% alt="AVM development cycle" style="margin:0 auto;padding: 0;">
+      <img src="{{%siteparam base%}}/images/avm_cycle.png" width=65% alt="AVM development cycle" style="margin:0 auto;padding: 0;">
     </td>
   </tr>
 </table>
@@ -65,7 +64,7 @@ Azure Verified Modules enable and accelerate consistent solution development and
 <table style="border: none; border-collapse: collapse; margin: 0; padding: 0;">
   <tr>
     <td style="border: none; padding: 0; width:55%">
-        <img src="images/avm_modules.png" width=80% alt="AVM module classifications">
+        <img src="{{%siteparam base%}}/images/avm_modules.png" width=80% alt="AVM module classifications">
     </td>
     <td style="border: none; padding: 0;">
 Azure Verified Modules provides two types of modules: Resource and Pattern modules.
@@ -88,7 +87,7 @@ AVM is owned, developed & supported by Microsoft, you may raise a GitHub issue o
 
 You can also log a support ticket and these will be redirected to the AVM team and the module owner(s).
 
-See [Module Support](/help-support/module-support) for more information.
+See [Module Support]({{%siteparam base%}}/help-support/module-support) for more information.
 {{% /notice %}}
 
 ## Next Steps
@@ -105,8 +104,9 @@ See [Module Support](/help-support/module-support) for more information.
     </td>
     <td style="border: none; padding: 0;">
 
-    ![AVM](images/avm_logo.png?width=10vw "AVM")
+    ![AVM]({{%siteparam base%}}/images/avm_logo.png?width=10vw "AVM")
 
     </td>
+
   </tr>
 </table>

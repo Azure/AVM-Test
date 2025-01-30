@@ -1,11 +1,13 @@
 ---
 title: Bicep Contribution Flow
 linktitle: Contribution Flow
+description: Bicep Contribution Flow for the Azure Verified Modules (AVM) program
 ---
 
 ## High-level contribution flow
 
 {{< mermaid zoom="false">}}
+
 ---
 config:
   nodeSpacing: 20
@@ -20,6 +22,7 @@ config:
     mergeEdges: true
     nodePlacementStrategy: LINEAR_SEGMENTS
 ---
+
 flowchart TD
   A("1 - Fork the module source repository")
     click A "{{% siteparam base %}}/contributing/bicep/bicep-contribution-flow/#1-fork-the-module-source-repository"
@@ -39,6 +42,7 @@ flowchart TD
   D --> E
   E -->|yes|F
   E -->|no|D
+
 {{< /mermaid >}}
 
 ## GitFlow for contributors
@@ -47,11 +51,13 @@ The GitFlow process outlined here introduces a central anchor branch. This branc
 
 {{< mermaid zoom="true" >}}
 ---
+
 config:
   logLevel: debug
   gitGraph:
     rotateCommitLabel: false
 ---
+
 gitGraph LR:
   commit id:"Fork Repo"
   branch anchor
@@ -79,20 +85,19 @@ When implementing the GitFlow process as described, it is advisable to configure
 
 ## PowerShell Helper Script To Setup Fork & CI Test Environment
 
-{{% notice style="caution" title="Only available for Service Principal + Secret authentication method [Deprecated]" %}}
+{{% notice style="caution" title="Now defaults to OIDC setup" %}}
 
-The PowerShell Helper Script currently only supports the Service Principal + Secret authentication method, which is deprecated.
-It is recommended to start adopting OpenID Connect (OIDC) authentication instead.
+The PowerShell Helper Script has recently added support for the OIDC setup and configuration as documented in detail on this page. This is now the default for the script.
+
+The easiest way to get yourself set back up, is to delete your fork repository, including the local clone of it that you have and start over with the script. This will ensure you have the correct setup for the OIDC authentication method for the AVM CI.
 
 {{% /notice %}}
-
-To simplify the setup of the fork, clone and configuration of the required secrets, SPN and RBAC assignments in your Azure environment for the CI framework to function correctly in your fork, we have created a PowerShell script that you can use to do steps [1](#1-fork-the-module-source-repository), [2](#2-configure-a-deployment-identity-in-azure) & [3](#3-configure-your-ci-environment) below.
 
 {{% notice style="important" %}}
 
-You will still need to complete [step 3.3](#33-set-readwrite-workflow-permissions) manually at this time.
-
 {{% /notice %}}
+
+To simplify the setup of the fork, clone and configuration of the required GitHub Environments, Secrets, User-Assigned Managed Identity (UAMI), Federated Credentials and RBAC assignments in your Azure environment for the CI framework to function correctly in your fork, we have created a PowerShell script that you can use to do steps [1](#1-fork-the-module-source-repository), [2](#2-configure-a-deployment-identity-in-azure) & [3](#3-configure-your-ci-environment) below.
 
 The script performs the following steps:
 
@@ -100,8 +105,8 @@ The script performs the following steps:
 2. Clones the repo locally to your machine, based on the location you specify in the parameter: `-GitHubRepositoryPathForCloneOfForkedRepository`.
 3. Prompts you and takes you directly to the place where you can enable GitHub Actions Workflows on your forked repo.
 4. Disables all AVM module workflows, as per [Enable or Disable Workflows]({{% siteparam base %}}/contributing/bicep/bicep-contribution-flow/enable-or-disable-workflows/).
-5. Creates an Azure Service Principal (SPN) and grants it the RBAC roles of `User Access Administrator` & `Contributor` at Management Group level, if specified in the `-GitHubSecret_ARM_MGMTGROUP_ID` parameter, and at Azure Subscription level if you provide it via the `-GitHubSecret_ARM_SUBSCRIPTION_ID` parameter.
-6. Creates the required GitHub Actions Secrets in your forked repo as per [step 3](#3-configure-your-ci-environment), based on the input provided in parameters and the values from resources the script creates, such as the SPN.
+5. Creates an User-Assigned Managed Identity (UAMI) and federated credentials for OIDC with your forked GitHub repo and grants it the RBAC roles of `User Access Administrator` & `Contributor` at Management Group level, if specified in the `-GitHubSecret_ARM_MGMTGROUP_ID` parameter, and at Azure Subscription level if you provide it via the `-GitHubSecret_ARM_SUBSCRIPTION_ID` parameter.
+6. Creates the required GitHub Environments & required Secrets in your forked repo as per [step 3](#3-configure-your-ci-environment), based on the input provided in parameters and the values from resources the script creates and configures for OIDC. Also set the workflow permissions to `Read and write permissions` as per step 3.3.
 
 ### Pre-requisites
 
@@ -113,8 +118,9 @@ The script performs the following steps:
 The `New-AVMBicepBRMForkSetup.ps1` can be downloaded from <a href="{{% siteparam base %}}/scripts/New-AVMBicepBRMForkSetup.ps1" download>here</a>.
 
 Once downloaded, you can run the script by running the below - **Please change all the parameter values in the below script usage example to your own values (see the parameter documentation in the script itself)!**:
+
 ```powershell
-.\<PATH-TO-SCRIPT-DOWNLOAD-LOCATION>\New-AVMBicepBRMForkSetup.ps1 -GitHubRepositoryPathForCloneOfForkedRepository "<pathToCreateForkedRepoIn>" -GitHubSecret_ARM_MGMTGROUP_ID "<managementGroupId>" -GitHubSecret_ARM_SUBSCRIPTION_ID "<subscriptionId>" -GitHubSecret_ARM_TENANT_ID "<tenantId>" -GitHubSecret_TOKEN_NAMEPREFIX "<unique3to5AlphanumericStringForAVMDeploymentNames>"
+.\<PATH-TO-SCRIPT-DOWNLOAD-LOCATION>\New-AVMBicepBRMForkSetup.ps1 -GitHubRepositoryPathForCloneOfForkedRepository "<pathToCreateForkedRepoIn>" -GitHubSecret_ARM_MGMTGROUP_ID "<managementGroupId>" -GitHubSecret_ARM_SUBSCRIPTION_ID "<subscriptionId>" -GitHubSecret_ARM_TENANT_ID "<tenantId>" -GitHubSecret_TOKEN_NAMEPREFIX "<unique3to5AlphanumericStringForAVMDeploymentNames>" -UAMIRsgLocation "<Azure Region/Location of your choice such as 'uksouth'>"
 ```
 
 For more examples, see the below script's parameters section.
@@ -140,7 +146,7 @@ Each time in the following sections we refer to 'your xyz', it is an indicator t
 
 {{% /notice %}}
 
-Bicep AVM Modules (Resource, Pattern and Utility modules) are located in the `/avm` directory of the [`Azure/bicep-registry-modules`](https://aka.ms/BRM) repository, as per [SNFR19](/Azure-Verified-Modules/specs/shared/#id-snfr19---category-publishing---registries-targeted).
+Bicep AVM Modules (Resource, Pattern and Utility modules) are located in the `/avm` directory of the [`Azure/bicep-registry-modules`](https://aka.ms/BRM) repository, as per [SNFR19]({{% siteparam base %}}/spec/SNFR19).
 
 Module owners are expected to fork the [`Azure/bicep-registry-modules`](https://aka.ms/BRM) repository and work on a branch from within their fork, before creating a Pull Request (PR) back into the [`Azure/bicep-registry-modules`](https://aka.ms/BRM) repository's upstream `main` branch.
 
@@ -191,7 +197,7 @@ Some Azure resources may require additional roles to be assigned to the deployme
 In those cases, for the first PR adding such modules to the public registry, we recommend the author to reach out to AVM maintainers or, alternatively, to [create a CI environment GitHub issue](https://github.com/Azure/bicep-registry-modules/issues/new?template=avm_ci_environment_issue.yml) in BRM, specifying the additional prerequisites. This ensures that the required additional roles get assigned in the upstream CI environment before the corresponding PR gets merged.
 
 {{% /notice %}}
-
+<!-- markdownlint-disable MD029 -->
 2. Configure a federated identity credential on a user-assigned managed identity to trust tokens issued by GitHub Actions to your GitHub repository.
     - In the Microsoft Entra admin center, navigate to the user-assigned managed identity you created. Under `Settings` in the left nav bar, select `Federated credentials` and then `Add Credential`.
       ![OIDCFederatedCredentials]({{% siteparam base %}}/images/bicep-ci/msiOIDCAddFederatedIdentity_01.png?width=30vw "OIDC federated credentials")
@@ -200,22 +206,28 @@ In those cases, for the first PR adding such modules to the public registry, we 
     - For the `Organization`, specify your GitHub organization name, for the `Repository` the value `bicep-registry-modules`.
     - For the `Entity` type, select `Environment` and specify the value `avm-validation`.
     - Add a Name for the federated credential, for example, `avm-gh-env-validation`.
-    - The `Issuer`, `Audiences`, and `Subject identifier` fields autopopulate based on the values you entered.
+    - The `Issuer`, `Audiences`, and `Subject identifier` fields auto-populate based on the values you entered.
     - Select `Add` to configure the federated credential.
       ![OIDCAdd]({{% siteparam base %}}/images/bicep-ci/msiOIDCAddFederatedIdentity_03.png?width=35vw "OIDC Add")
-    - You might find the following links useful:
+    - You might find the following links & information useful:
+      - If configuring the federated credential via API (e.g. Bicep, PowerShell etc.), you will need the following information points that are configured automatically for you via the portal experience:
+        - Issuer = `https://token.actions.githubusercontent.com`
+        - Subject = `repo:<GitHub Org>/<GitHub Repo>:environment:avm-validation`
+        - Audience = `api://AzureADTokenExchange` (although this is default in the API so not required to set)
       - [Configure a federated identity credential on a user-assigned managed identity](https://learn.microsoft.com/en-us/entra/workload-id/workload-identity-federation-create-trust-user-assigned-managed-identity)
 3. Note down the following pieces of information
     - Client ID
     - Tenant ID
     - Subscription ID
     - Parent Management Group ID
-
     ![OIDCInfo]({{% siteparam base %}}/images/bicep-ci/msiOIDCInfo.png?width=35vw "OIDC Info")
+<!-- markdownlint-restore -->
 
 Additional references:
+
 - [Configure a federated identity credential](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure-openid-connect#prerequisites)
 - [Azure login GitHub action - Login with OIDC](https://github.com/Azure/login?tab=readme-ov-file#login-with-openid-connect-oidc-recommended)
+
 
 {{% /expand %}}
 
@@ -324,11 +336,11 @@ Create the following environment secrets in the `avm-validation` GitHub environm
 3. In the `Environment secrets` Section click on the `Add environment secret` button.
 
     ![NavigateToEnvSecrets]({{% siteparam base %}}/images/bicep-ci/forkSettingsEnvironmentSecretAdd.png "Navigate to env secrets")
-<br>    
+<br>
 
 4. In the opening view, you can create a secret by providing a secret `Name`, a secret `Value`, followed by a click on the `Add secret` button.
     ![AddEnvSecret]({{% siteparam base %}}/images/bicep-ci/forkSettingsEnvironmentSecretAdd_02.png "Add env secret")
-<br>    
+<br>
 
 {{% /expand %}}
 
@@ -412,7 +424,7 @@ After any change to a module and before running tests, we highly recommend runni
 
 Before opening a Pull Request to the Bicep Public Registry, ensure your module is ready for publishing, by validating that it meets all the Testing Specifications as per [SNFR1]({{% siteparam base %}}/spec/SNFR1), [SNFR2]({{% siteparam base %}}/spec/SNFR2), [SNFR3]({{% siteparam base %}}/spec/SNFR3), [SNFR4]({{% siteparam base %}}/spec/SNFR4), [SNFR5]({{% siteparam base %}}/spec/SNFR5), [SNFR6]({{% siteparam base %}}/spec/SNFR6), [SNFR7]({{% siteparam base %}}/spec/SNFR7).
 
-For example, to meet [SNFR2]({{% siteparam base %}}/specc/SNFR2), ensure the updated module is deployable against a testing Azure subscription and compliant with the intended configuration.
+For example, to meet [SNFR2]({{% siteparam base %}}/spec/SNFR2), ensure the updated module is deployable against a testing Azure subscription and compliant with the intended configuration.
 
 Depending on the type of contribution you implemented (for example, a new resource module feature) we would kindly ask you to also update the `e2e` test run by the pipeline. For a new parameter this could mean to either add its usage to an existing test file, or to add an entirely new test as per [BCPRMNFR1]({{% siteparam base %}}/spec/BCPRMNFR1).
 
@@ -477,7 +489,6 @@ Dependency file (`dependencies.bicep`) guidelines:
   📜 [Example of test using purge protected Key Vault dependency](https://github.com/Azure/bicep-registry-modules/blob/main/avm/res/cognitive-services/account/tests/e2e/system-assigned-cmk-encryption/main.test.bicep#L43)
 
   {{% /notice %}}
-
 
   {{% notice style="tip" %}}
 

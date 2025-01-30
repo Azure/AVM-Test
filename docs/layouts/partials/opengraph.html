@@ -17,7 +17,7 @@
     <meta property="og:locale" content="{{ replace . `-` `_` }}">
 {{- end }}
 
-{{- with .Params.logo -}}
+{{- with .Site.Params.logo -}}
     <meta property="og:logo" content="{{ . | absURL }}" />
 {{- end -}}
 

@@ -1,6 +1,7 @@
 ---
 title: Bicep Composition
 linktitle: Composition
+description: Bicep Composition description for the Azure Verified Modules (AVM) program
 ---
 
 {{% notice style="important" %}}
@@ -28,7 +29,7 @@ Each Bicep AVM module that lives within the [`Azure/bicep-registry-modules`](htt
   - `version.json` (BRM requirement)
   - `README.md` (auto generated AVM Module documentation)
 
-### Directory and File Structure Example 
+### Directory and File Structure Example
 
 ```txt
 / Root of Azure/bicep-registry-modules

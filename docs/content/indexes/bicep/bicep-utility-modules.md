@@ -3,19 +3,24 @@ draft: false
 title: Bicep Utility Modules
 linktitle: Utility Modules
 weight: 3
+description: Bicep Utility Module Index showing all available, orphaned and planned modules
 ---
+
+## Module catalog
+
+{{% moduleStats language="Bicep" moduleType="Utility" showLanguage=true showClassification=true %}}
+
+{{% expand title="➕ Additional information" %}}
 
 {{% notice style="info" %}}
 
 This page contains various views of the module index (catalog) for **Bicep Utility Modules**. To see these views, **click on the expandable sections** with the "➕" sign below.
 
-- {{% icon icon="fa-brands fa-github" %}} To see the **full, unfiltered, unformatted module index** on GitHub, click [here](https://github.com/Azure/{{% siteparam base %}}/blob/main/docs/static/module-indexes/BicepUtilityModules.csv).
+- {{% icon icon="fa-brands fa-github" %}} To see the **full, unfiltered, unformatted module index** on GitHub, click [here]({{% siteparam baseURL %}}blob/main/docs/static/module-indexes/BicepUtilityModules.csv).
 
 - {{% icon icon="download" %}} To download the source CSV file, click [here]({{% siteparam base %}}/module-indexes/BicepUtilityModules.csv).
 
 {{% /notice %}}
-
-## Module catalog
 
 {{% notice style="note" %}}
 
@@ -23,19 +28,7 @@ Modules listed below that aren't shown with the status of **`Module Available �
 
 {{% /notice %}}
 
-The following table shows the number of all available, orphaned and proposed **Bicep Utility Modules**.
-
-{{% moduleStats language="Bicep" moduleType="Utility" showLanguage=true showClassification=true %}}
-
-### Module Publication History - 📅
-
-{{% expand title="➕ Module Publication History - Module names, status and owners" expanded="false" %}}
-
-{{% moduleHistory header=true csv="/static/module-indexes/BicepUtilityModules.csv" language="Bicep" moduleType="utility" exclude="Proposed :new:" monthsToShow=9999 %}}
-
 {{% /expand %}}
-
----
 
 ### Published modules - 🟢 & 👀
 
@@ -45,8 +38,6 @@ The following table shows the number of all available, orphaned and proposed **B
 
 {{% /expand %}}
 
----
-
 ### Proposed modules - 🆕
 
 {{% expand title="➕ Proposed Modules - Module names, status and owners" expanded="false" %}}
@@ -54,8 +45,6 @@ The following table shows the number of all available, orphaned and proposed **B
 {{% moduleNameStatusOwners header=true csv="/static/module-indexes/BicepUtilityModules.csv" language="Bicep" moduleType="utility" exclude="Available :green_circle:,Orphaned :eyes:" %}}
 
 {{% /expand %}}
-
----
 
 ### All modules - 📇
 
@@ -65,7 +54,13 @@ The following table shows the number of all available, orphaned and proposed **B
 
 {{% /expand %}}
 
----
+### Module Publication History - 📅
+
+{{% expand title="➕ Module Publication History - Module names, status and owners" expanded="false" %}}
+
+{{% moduleHistory header=true csv="/static/module-indexes/BicepUtilityModules.csv" language="Bicep" moduleType="utility" exclude="Proposed :new:" monthsToShow=9999 %}}
+
+{{% /expand %}}
 
 ## For Module Owners & Contributors
 

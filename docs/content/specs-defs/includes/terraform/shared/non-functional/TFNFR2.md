@@ -1,5 +1,6 @@
 ---
 title: TFNFR2 - Module Documentation Generation
+description: Module Specification for the Azure Verified Modules (AVM) program
 url: /spec/TFNFR2
 type: default
 tags: [
@@ -17,12 +18,12 @@ tags: [
 priority: 21020
 ---
 
-#### ID: TFNFR2 - Category: Documentation - Module Documentation Generation
+## ID: TFNFR2 - Category: Documentation - Module Documentation Generation
 
 Terraform modules documentation **MUST** be automatically generated via [Terraform Docs](https://github.com/terraform-docs/terraform-docs).
 
 A file called `.terraform-docs.yml` **MUST** be present in the root of the module and have the following content:
 
 {{< highlight lineNos="false" type="yaml" wrap="true" title="" >}}
-  {{% include file="/static/includes/terraform-docs.yml" %}}  
+  {{% include file="/static/includes/terraform-docs.yml" %}}
 {{< /highlight >}}

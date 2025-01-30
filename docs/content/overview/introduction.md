@@ -4,6 +4,7 @@ title: Introduction
 linktitle: Introduction
 type: default
 weight: 1
+description: Introduction to the Azure Verified Modules (AVM) program
 ---
 
 
@@ -20,7 +21,6 @@ Azure Verified Modules (AVM), as "One Microsoft", we want to provide and define 
 {{% notice style="tip" title="Mission Statement" icon="heart" %}}
 Our mission is to deliver a comprehensive Azure Verified Modules library in multiple IaC languages, following the principles of the well-architected framework, serving as the trusted Microsoft source of truth. Supported by Microsoft, AVM will accelerate deployment time for Azure resources and architectural patterns, empowering every person and organization on the planet on their IaC journey.
 {{% /notice %}}
-
 
 ### Definition of "Verified" Summary
 

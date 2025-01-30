@@ -8,6 +8,7 @@ enableGitInfo = true
 [params]
     base = '/AVM-Test'
     images = ['images/avm_logo.png']
+    logo = 'images/favicon.svg'
     disableExplicitIndexURLs = true
     disableLanguageSwitchingButton = false
     themeVariant = [
